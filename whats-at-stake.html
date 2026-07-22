@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>What's at stake | CT Private Office</title>
+<meta name="description" content="A three input calculator that estimates the Capital Gains Tax and Inheritance Tax on your estate and business, and shows how much of it is legally saveable with proper structuring." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+:root {
+  --navy: #1A1F2E;
+  --navy-surface: #242B3D;
+  --gold: #C9A84C;
+  --pale-gold: #E5D08A;
+  --cream: #F5EFE6;
+  --dim-cream: rgba(245,239,230,0.70);
+  --wine: #A83232;
+  --border: rgba(245,239,230,0.14);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: linear-gradient(180deg, #1A1F2E 0%, #242B3D 100%); color: var(--cream); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 96px; }
+.eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin: 0 0 18px; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 44px); line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 14px; }
+h1 em { color: var(--gold); font-style: normal; }
+.lede { font-size: 17px; color: var(--dim-cream); line-height: 1.55; max-width: 640px; margin: 0 0 40px; }
+.card { background: var(--navy-surface); border: 1px solid var(--border); border-radius: 10px; padding: 32px 28px; margin-bottom: 24px; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+@media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } .grid.full { grid-column: 1 / -1; } }
+label { display: block; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dim-cream); margin-bottom: 10px; }
+.slider-row { display: flex; align-items: center; gap: 14px; }
+input[type="range"] { flex: 1; -webkit-appearance: none; appearance: none; height: 4px; background: rgba(245,239,230,0.16); border-radius: 2px; outline: none; }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; background: var(--gold); border-radius: 50%; cursor: pointer; border: 3px solid var(--navy); }
+input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; background: var(--gold); border-radius: 50%; cursor: pointer; border: 3px solid var(--navy); }
+.readout { font-family: 'JetBrains Mono', monospace; font-size: 16px; color: var(--cream); min-width: 130px; text-align: right; font-weight: 500; }
+.toggle { display: inline-flex; background: rgba(0,0,0,0.25); border: 1px solid var(--border); border-radius: 999px; padding: 4px; }
+.toggle button { background: transparent; border: 0; color: var(--dim-cream); font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px; padding: 8px 18px; border-radius: 999px; cursor: pointer; }
+.toggle button.active { background: var(--gold); color: var(--navy); }
+.results { border: 1px solid var(--gold); background: rgba(201,168,76,0.06); border-radius: 10px; padding: 30px 28px; margin-top: 8px; }
+.results-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin: 0 0 20px; }
+.number-row { display: grid; grid-template-columns: 1fr; gap: 18px; margin-bottom: 22px; }
+@media (min-width: 720px) { .number-row { grid-template-columns: 1fr 1fr 1fr; } }
+.stat { border-top: 1px solid var(--border); padding-top: 14px; }
+.stat-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dim-cream); margin-bottom: 6px; }
+.stat-number { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; color: var(--cream); letter-spacing: -0.01em; }
+.stat-number.big { color: var(--gold); font-size: 40px; }
+.stat-sub { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--dim-cream); margin-top: 4px; }
+.saveable { margin: 22px 0 26px; padding: 18px; background: rgba(0,0,0,0.22); border-left: 3px solid var(--gold); border-radius: 4px; }
+.saveable-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.saveable-line { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--cream); line-height: 1.45; }
+.cta { display: block; width: 100%; padding: 18px 22px; background: var(--gold); color: var(--navy); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.01em; text-align: center; text-decoration: none; border-radius: 6px; border: 0; cursor: pointer; transition: background 0.2s; }
+.cta:hover { background: var(--pale-gold); }
+.cta-second { display: block; text-align: center; margin-top: 14px; color: var(--dim-cream); font-size: 13px; text-decoration: none; }
+.cta-second:hover { color: var(--gold); }
+.gate-input { width: 100%; padding: 15px 16px; background: rgba(0,0,0,0.25); border: 1px solid var(--border); border-radius: 6px; color: var(--cream); font-family: 'Inter', sans-serif; font-size: 15px; outline: none; }
+.gate-input:focus { border-color: var(--gold); }
+.gate-input::placeholder { color: rgba(245,239,230,0.4); }
+.gate-small { font-size: 11px; color: var(--dim-cream); margin: 12px 0 0; line-height: 1.5; }
+.gate-error { font-size: 13px; color: var(--pale-gold); margin: 10px 0 0; display: none; }
+.foot { margin-top: 34px; font-size: 12px; color: var(--dim-cream); line-height: 1.55; border-top: 1px solid var(--border); padding-top: 20px; }
+.foot strong { color: var(--cream); font-weight: 500; }
+.brand { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin-bottom: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">CT Private Office</div>
+  <p class="eyebrow">What's at stake</p>
+  <h1>See what tax <em>your</em> estate and business are heading into.</h1>
+  <p class="lede">Three inputs. Live figures for 2026/27. Numbers you can act on, plus an honest range of what's legally saveable with proper structuring.</p>
+
+  <div class="card">
+    <div class="grid">
+      <div>
+        <label for="estate">Personal estate (excluding your business)</label>
+        <div class="slider-row">
+          <input type="range" id="estate" min="0" max="10000000" step="50000" value="1500000" />
+          <div class="readout" id="estate-out">&pound;1,500,000</div>
+        </div>
+      </div>
+      <div>
+        <label for="business">Business value (or expected sale proceeds)</label>
+        <div class="slider-row">
+          <input type="range" id="business" min="0" max="20000000" step="100000" value="3000000" />
+          <div class="readout" id="business-out">&pound;3,000,000</div>
+        </div>
+      </div>
+      <div>
+        <label for="horizon">Years to sale or exit</label>
+        <div class="slider-row">
+          <input type="range" id="horizon" min="0" max="20" step="1" value="5" />
+          <div class="readout" id="horizon-out">5 yrs</div>
+        </div>
+      </div>
+      <div>
+        <label>Household</label>
+        <div class="toggle" id="couple-toggle">
+          <button data-val="single">Single</button>
+          <button data-val="couple" class="active">Married / couple</button>
+        </div>
+      </div>
+      <div>
+        <label>UK tax resident</label>
+        <div class="toggle" id="resident-toggle">
+          <button data-val="yes" class="active">Yes</button>
+          <button data-val="no">No / leaving</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="gate">
+    <p class="results-eyebrow">Your number is ready</p>
+    <p style="font-family:'Inter',sans-serif; font-size:15px; color:var(--dim-cream); line-height:1.55; margin:0 0 20px;">Tell us where to send it and your results appear right here: the CGT, the IHT, what's driving them, and the legal routes that apply to a situation like yours.</p>
+    <div class="grid">
+      <div><input class="gate-input" type="text" id="lead-name" placeholder="First name" autocomplete="given-name" /></div>
+      <div><input class="gate-input" type="email" id="lead-email" placeholder="Email address" autocomplete="email" /></div>
+    </div>
+    <div class="gate-error" id="gate-error">That email doesn't look right. Check it and try again.</div>
+    <button class="cta" id="gate-btn" style="margin-top:20px;">Show me my number &rarr;</button>
+    <p class="gate-small">We'll email you your results and the occasional planning note worth having. No spam, unsubscribe any time. <a href="https://apply.ctprivateoffice.com/privacy" style="color:var(--gold);">Privacy policy</a>.</p>
+  </div>
+
+  <div class="results" id="results" style="display:none;">
+    <p class="results-eyebrow">Your exposure, on today's rules</p>
+    <div class="number-row">
+      <div class="stat">
+        <div class="stat-label">Capital Gains Tax on sale</div>
+        <div class="stat-number" id="cgt">&pound;0</div>
+        <div class="stat-sub">BADR 18% on first &pound;1m, 24% above</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Inheritance Tax exposure</div>
+        <div class="stat-number" id="iht">&pound;0</div>
+        <div class="stat-sub" id="iht-sub">40% above the nil-rate bands</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Total tax at stake</div>
+        <div class="stat-number big" id="total">&pound;0</div>
+        <div class="stat-sub">CGT on the sale, then IHT on what's left, on today's rules</div>
+      </div>
+    </div>
+
+    <div class="saveable" id="saveable-block">
+      <div class="saveable-label">Legally saveable with proper structuring</div>
+      <div class="saveable-line" id="saveable">Between <strong>&pound;0</strong> and <strong>&pound;0</strong>, depending on the route. Subject to fact and design; never a scheme.</div>
+      <div class="stat-sub" id="horizon-note" style="margin-top:8px;"></div>
+    </div>
+
+    <a class="cta" id="cta" href="https://apply.ctprivateoffice.com/?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=high">Apply to work with CT Private Office &rarr;</a>
+    <a class="cta-second" id="cta-second" href="https://apply.ctprivateoffice.com/who-is-sarah?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake">Who is Sarah, and why does this work stand up &rarr;</a>
+  </div>
+
+  <p class="foot">
+    <strong>How the numbers are built.</strong> The model assumes one scenario: you sell the business, then your estate is assessed on the net proceeds. CGT uses 18% Business Asset Disposal Relief on the first &pound;1m and 24% on the balance; it assumes you qualify for BADR (a 5%+ holding in a trading company, held two years, as an officer or employee) with the full &pound;1m lifetime limit unused, and a negligible base cost. For a couple, only one BADR limit is modelled, so a couple splitting shares may do better. IHT uses the 2026/27 nil-rate band (&pound;325,000 per person, frozen to April 2031), residence nil-rate band (&pound;175,000 per person, tapered above &pound;2m and lost by &pound;2.35m single / &pound;2.7m couple) and the 40% headline rate, applied to your estate plus the sale proceeds net of CGT. The residence band assumes a home worth at least that band passing to children or grandchildren. Business Property Relief, trusts and Family Investment Company routes are not modelled here, that is the point of the saveable range. The model is built for UK residents with their whole estate in UK IHT scope; if you are non resident or planning to leave, the scope rules change and your route is the application, not this page's numbers. Figures are indicative and rounded, not tax advice.
+  </p>
+</div>
+
+<script>
+(function () {
+  var estate = document.getElementById('estate');
+  var business = document.getElementById('business');
+  var horizon = document.getElementById('horizon');
+  var estateOut = document.getElementById('estate-out');
+  var businessOut = document.getElementById('business-out');
+  var horizonOut = document.getElementById('horizon-out');
+  var cgtOut = document.getElementById('cgt');
+  var ihtOut = document.getElementById('iht');
+  var ihtSub = document.getElementById('iht-sub');
+  var totalOut = document.getElementById('total');
+  var saveableOut = document.getElementById('saveable');
+  var saveableBlock = document.getElementById('saveable-block');
+  var horizonNote = document.getElementById('horizon-note');
+  var gate = document.getElementById('gate');
+  var gateBtn = document.getElementById('gate-btn');
+  var gateError = document.getElementById('gate-error');
+  var leadName = document.getElementById('lead-name');
+  var leadEmail = document.getElementById('lead-email');
+  var results = document.getElementById('results');
+  var cta = document.getElementById('cta');
+  var toggle = document.getElementById('couple-toggle');
+  var resToggle = document.getElementById('resident-toggle');
+  var married = true;
+  var resident = true;
+
+  toggle.addEventListener('click', function (e) {
+    if (e.target.tagName !== 'BUTTON') return;
+    Array.prototype.forEach.call(toggle.children, function (b) { b.classList.remove('active'); });
+    e.target.classList.add('active');
+    married = e.target.getAttribute('data-val') === 'couple';
+    calc();
+  });
+
+  resToggle.addEventListener('click', function (e) {
+    if (e.target.tagName !== 'BUTTON') return;
+    Array.prototype.forEach.call(resToggle.children, function (b) { b.classList.remove('active'); });
+    e.target.classList.add('active');
+    resident = e.target.getAttribute('data-val') === 'yes';
+    calc();
+  });
+
+  function fmt(n) {
+    if (n < 0) n = 0;
+    return '£' + Math.round(n).toLocaleString('en-GB');
+  }
+
+  function calc() {
+    var E = parseInt(estate.value, 10);
+    var B = parseInt(business.value, 10);
+    var Y = parseInt(horizon.value, 10);
+    estateOut.textContent = fmt(E);
+    businessOut.textContent = fmt(B);
+    horizonOut.textContent = Y + ' yr' + (Y === 1 ? '' : 's');
+
+    var cgt = 0.18 * Math.min(B, 1000000) + 0.24 * Math.max(0, B - 1000000);
+
+    // One honest scenario: sell the business, then the estate holds the NET proceeds.
+    var estateAtDeath = E + B - cgt;
+    var nrb = married ? 650000 : 325000;
+    var rnrbFull = married ? 350000 : 175000;
+    var taperStart = 2000000;
+    var rnrb = rnrbFull;
+    if (estateAtDeath > taperStart) {
+      var loss = (estateAtDeath - taperStart) / 2;
+      rnrb = Math.max(0, rnrbFull - loss);
+    }
+    var chargeable = Math.max(0, estateAtDeath - nrb - rnrb);
+    var iht = 0.40 * chargeable;
+
+    var totalTax = cgt + iht;
+    // The saveable range moves with the mix: IHT carries the bigger legal
+    // levers (reliefs, trusts, FICs, gifting) than CGT (ownership design,
+    // exit timing), so the two are ranged separately.
+    var lowSave = 0.20 * cgt + 0.30 * iht;
+    var highSave = 0.40 * cgt + 0.70 * iht;
+
+    cgtOut.textContent = fmt(cgt);
+    ihtOut.textContent = fmt(iht);
+    totalOut.textContent = fmt(totalTax);
+    ihtSub.textContent = married
+      ? 'Couple bands: £650k NRB, £350k RNRB, tapered above £2m'
+      : 'Single bands: £325k NRB, £175k RNRB, tapered above £2m';
+    saveableBlock.style.display = totalTax > 0 ? '' : 'none';
+    saveableOut.innerHTML = 'Between <strong>' + fmt(lowSave) + '</strong> and <strong>' + fmt(highSave) + '</strong>, depending on the route: ownership design and exit timing on the CGT side, reliefs, trusts and Family Investment Companies on the IHT side. Subject to fact and design; never a scheme.';
+    if (Y >= 7) {
+      horizonNote.textContent = 'Your ' + Y + ' year runway is long enough to run a full 7 year gifting clock before exit, the strongest position to plan from.';
+    } else if (Y >= 3) {
+      horizonNote.textContent = 'A ' + Y + ' year runway leaves room for real structuring before the sale; the 7 year gifting clock would still be running at exit.';
+    } else {
+      horizonNote.textContent = 'A short runway narrows the options. The levers that need years to work, gifting, hurdle shares, residence, are mostly off the table.';
+    }
+
+    // Routing (Sarah, 2026-07-08): the £995 Strategy Review is for UK-resident
+    // HNWs only, estate over the nil rate band. Non-residents and the biggest
+    // cases go straight to the existing front door; everyone else to T4P plans.
+    var band;
+    if (!resident) band = 'nonres';
+    else if (totalTax >= 500000) band = 'high';
+    else if (estateAtDeath > nrb && totalTax > 0) band = 'mid';
+    else band = 'low';
+
+    if (band === 'high') {
+      cta.textContent = 'Apply to work with CT Private Office →';
+      cta.href = 'https://apply.ctprivateoffice.com/?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=high';
+    } else if (band === 'nonres') {
+      cta.textContent = 'Apply to work with CT Private Office →';
+      cta.href = 'https://apply.ctprivateoffice.com/?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=nonresident';
+    } else if (band === 'mid') {
+      cta.textContent = 'Get the Tax Strategy Blueprint · £450 →';
+      cta.href = 'https://apply.ctprivateoffice.com/blueprint?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=mid';
+    } else {
+      cta.textContent = 'See the Tax 4 Pros plans →';
+      cta.href = 'https://apply.ctprivateoffice.com/plans?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=low';
+    }
+  }
+
+  // Email gate: results stay hidden until the lead leaves a name + email.
+  // Capture fires into the GHL inbound webhook (Calculator Lead Capture
+  // workflow) which creates the contact, sends the ack, and cards the lead.
+  // Fire-and-forget: a network failure must never cost the visitor their result.
+  gateBtn.addEventListener('click', function () {
+    var email = leadEmail.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+      gateError.style.display = 'block';
+      return;
+    }
+    gateError.style.display = 'none';
+    try {
+      fetch('https://services.leadconnectorhq.com/hooks/6GPl4TryP7F4DBJBSJMc/webhook-trigger/a93bef9e-9720-4d64-a05c-4d29a63ab679', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          first_name: (leadName && leadName.value ? leadName.value.trim() : ''),
+          source: 'whats-at-stake-calculator',
+          estate_value: estate.value,
+          business_value: business.value,
+          exit_horizon_years: horizon.value,
+          household: married ? 'couple' : 'single',
+          uk_resident: resident ? 'yes' : 'no',
+          cgt: cgtOut.textContent,
+          iht: ihtOut.textContent,
+          total_tax_at_stake: totalOut.textContent
+        })
+      }).catch(function () {});
+    } catch (err) {}
+    gate.style.display = 'none';
+    results.style.display = '';
+    calc();
+    results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  leadEmail.addEventListener('keydown', function (e) { if (e.key === 'Enter') gateBtn.click(); });
+
+  [estate, business, horizon].forEach(function (i) { i.addEventListener('input', calc); });
+  calc();
+})();
+</script>
+</body>
+</html>

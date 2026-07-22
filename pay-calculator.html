@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>What is your pay structure costing you? | Tax 4 Pros</title>
+<meta name="description" content="A two-input calculator for UK limited company directors: what you pay in tax on your current pay structure, what a structured setup pays, and the gap per year." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+:root {
+  --navy: #1A1F2E;
+  --navy-surface: #242B3D;
+  --gold: #C9A84C;
+  --pale-gold: #E5D08A;
+  --cream: #F5EFE6;
+  --dim-cream: rgba(245,239,230,0.70);
+  --border: rgba(245,239,230,0.14);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: linear-gradient(180deg, #1A1F2E 0%, #242B3D 100%); color: var(--cream); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 96px; }
+.eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin: 0 0 18px; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 44px); line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 14px; }
+h1 em { color: var(--gold); font-style: normal; }
+.lede { font-size: 17px; color: var(--dim-cream); line-height: 1.55; max-width: 640px; margin: 0 0 40px; }
+.card { background: var(--navy-surface); border: 1px solid var(--border); border-radius: 10px; padding: 32px 28px; margin-bottom: 24px; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+@media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+label { display: block; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dim-cream); margin-bottom: 10px; }
+.slider-row { display: flex; align-items: center; gap: 14px; }
+input[type="range"] { flex: 1; -webkit-appearance: none; appearance: none; height: 4px; background: rgba(245,239,230,0.16); border-radius: 2px; outline: none; }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; background: var(--gold); border-radius: 50%; cursor: pointer; border: 3px solid var(--navy); }
+input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; background: var(--gold); border-radius: 50%; cursor: pointer; border: 3px solid var(--navy); }
+.readout { font-family: 'JetBrains Mono', monospace; font-size: 16px; color: var(--cream); min-width: 130px; text-align: right; font-weight: 500; }
+.toggle { display: inline-flex; background: rgba(0,0,0,0.25); border: 1px solid var(--border); border-radius: 999px; padding: 4px; }
+.toggle button { background: transparent; border: 0; color: var(--dim-cream); font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px; padding: 8px 18px; border-radius: 999px; cursor: pointer; }
+.toggle button.active { background: var(--gold); color: var(--navy); }
+.results { border: 1px solid var(--gold); background: rgba(201,168,76,0.06); border-radius: 10px; padding: 30px 28px; margin-top: 8px; }
+.results-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin: 0 0 20px; }
+.number-row { display: grid; grid-template-columns: 1fr; gap: 18px; margin-bottom: 22px; }
+@media (min-width: 720px) { .number-row { grid-template-columns: 1fr 1fr 1fr; } }
+.stat { border-top: 1px solid var(--border); padding-top: 14px; }
+.stat-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dim-cream); margin-bottom: 6px; }
+.stat-number { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; color: var(--cream); letter-spacing: -0.01em; }
+.stat-number.big { color: var(--gold); font-size: 40px; }
+.stat-sub { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--dim-cream); margin-top: 4px; }
+.saveable { margin: 22px 0 26px; padding: 18px; background: rgba(0,0,0,0.22); border-left: 3px solid var(--gold); border-radius: 4px; }
+.saveable-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.saveable-line { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--cream); line-height: 1.45; }
+.cta { display: block; width: 100%; padding: 18px 22px; background: var(--gold); color: var(--navy); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.01em; text-align: center; text-decoration: none; border-radius: 6px; border: 0; cursor: pointer; transition: background 0.2s; }
+.cta:hover { background: var(--pale-gold); }
+.cta-second { display: block; text-align: center; margin-top: 14px; color: var(--dim-cream); font-size: 13px; text-decoration: none; }
+.cta-second:hover { color: var(--gold); }
+.gate-input { width: 100%; padding: 15px 16px; background: rgba(0,0,0,0.25); border: 1px solid var(--border); border-radius: 6px; color: var(--cream); font-family: 'Inter', sans-serif; font-size: 15px; outline: none; }
+.gate-input:focus { border-color: var(--gold); }
+.gate-input::placeholder { color: rgba(245,239,230,0.4); }
+.gate-small { font-size: 11px; color: var(--dim-cream); margin: 12px 0 0; line-height: 1.5; }
+.gate-error { font-size: 13px; color: var(--pale-gold); margin: 10px 0 0; display: none; }
+.foot { margin-top: 34px; font-size: 12px; color: var(--dim-cream); line-height: 1.55; border-top: 1px solid var(--border); padding-top: 20px; }
+.foot strong { color: var(--cream); font-weight: 500; }
+.brand { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin-bottom: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Tax 4 Pros</div>
+  <p class="eyebrow">The pay structure check</p>
+  <h1>What is your pay structure <em>costing</em> you?</h1>
+  <p class="lede">Two questions. Live figures for 2026/27. The tax your current setup pays, the tax a properly structured setup pays, and the gap, every year, until it is fixed.</p>
+
+  <div class="card">
+    <div class="grid">
+      <div>
+        <label for="profit">Company profit, before your pay</label>
+        <div class="slider-row">
+          <input type="range" id="profit" min="30000" max="500000" step="5000" value="120000" />
+          <div class="readout" id="profit-out">&pound;120,000</div>
+        </div>
+      </div>
+      <div>
+        <label>How you pay yourself today</label>
+        <div class="toggle" id="pay-toggle">
+          <button data-val="salary" class="active">All salary (or close)</button>
+          <button data-val="split">Low salary + dividends</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="gate">
+    <p class="results-eyebrow">Your number is ready</p>
+    <p style="font-family:'Inter',sans-serif; font-size:15px; color:var(--dim-cream); line-height:1.55; margin:0 0 20px;">Tell us where to send it and your results appear right here: what your current setup pays, what a structured setup pays, and where the gap comes from.</p>
+    <div class="grid">
+      <div><input class="gate-input" type="text" id="lead-name" placeholder="First name" autocomplete="given-name" /></div>
+      <div><input class="gate-input" type="email" id="lead-email" placeholder="Email address" autocomplete="email" /></div>
+    </div>
+    <div class="gate-error" id="gate-error">That email doesn't look right. Check it and try again.</div>
+    <button class="cta" id="gate-btn" style="margin-top:20px;">Show me my number &rarr;</button>
+    <p class="gate-small">We'll email you your results and the occasional planning note worth having. No spam, unsubscribe any time. <a href="https://tax4pros.co.uk/privacy" style="color:var(--gold);">Privacy policy</a>.</p>
+  </div>
+
+  <div class="results" id="results" style="display:none;">
+    <p class="results-eyebrow">Your pay structure, on today's rules</p>
+    <div class="number-row">
+      <div class="stat">
+        <div class="stat-label">Your route, total tax</div>
+        <div class="stat-number" id="current">&pound;0</div>
+        <div class="stat-sub" id="current-sub">every layer counted</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Salary + dividend route</div>
+        <div class="stat-number" id="optimised">&pound;0</div>
+        <div class="stat-sub">&pound;12,570 salary, the rest as dividends, every layer counted</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">The gap, every year</div>
+        <div class="stat-number big" id="gap">&pound;0</div>
+        <div class="stat-sub" id="gap-sub">same profit, two structures</div>
+      </div>
+    </div>
+
+    <div class="saveable">
+      <div class="saveable-label">What this means</div>
+      <div class="saveable-line" id="verdict"></div>
+    </div>
+
+    <a class="cta" id="cta" href="https://apply.ctprivateoffice.com/plans?utm_source=pay_calculator&utm_medium=funnel&utm_campaign=pay_structure">See the Tax 4 Pros plans &rarr;</a>
+    <a class="cta-second" href="https://apply.ctprivateoffice.com/whats-at-stake?utm_source=pay_calculator&utm_medium=funnel&utm_campaign=cross_over">Wealth building beyond the company? See what your estate is heading into &rarr;</a>
+  </div>
+
+  <p class="foot">
+    <strong>How the numbers are built.</strong> Both routes extract the full profit in the year and count every layer of tax on it. The salary route pays the whole profit as salary: employer National Insurance at 15% above &pound;5,000, employee National Insurance at 8% to &pound;50,270 and 2% above, and income tax at 20% / 40% / 45% with the &pound;12,570 personal allowance tapered above &pound;100,000. The structured route pays a &pound;12,570 salary, corporation tax on the rest (19% to &pound;50,000, marginal relief to &pound;250,000, then 25%), and dividend tax on the distribution at 10.75% / 35.75% / 39.35% with the &pound;500 allowance. Assumes a sole director with no Employment Allowance, a standalone company with no associated companies and a 12 month accounting period, no other personal income, no student loan, England / Northern Ireland rates (Scottish salary bands differ), and no pension contributions, which are often the bigger lever and part of the real conversation. Retaining profit in the company instead of extracting it changes everything, which is also part of the real conversation. Figures are indicative and rounded, not tax advice.
+  </p>
+</div>
+
+<script>
+(function () {
+  var profit = document.getElementById('profit');
+  var profitOut = document.getElementById('profit-out');
+  var currentOut = document.getElementById('current');
+  var currentSub = document.getElementById('current-sub');
+  var optimisedOut = document.getElementById('optimised');
+  var gapOut = document.getElementById('gap');
+  var gapSub = document.getElementById('gap-sub');
+  var verdict = document.getElementById('verdict');
+  var payToggle = document.getElementById('pay-toggle');
+  var gate = document.getElementById('gate');
+  var gateBtn = document.getElementById('gate-btn');
+  var gateError = document.getElementById('gate-error');
+  var leadEmail = document.getElementById('lead-email');
+  var results = document.getElementById('results');
+  var allSalary = true;
+
+  payToggle.addEventListener('click', function (e) {
+    if (e.target.tagName !== 'BUTTON') return;
+    Array.prototype.forEach.call(payToggle.children, function (b) { b.classList.remove('active'); });
+    e.target.classList.add('active');
+    allSalary = e.target.getAttribute('data-val') === 'salary';
+    calc();
+  });
+
+  function fmt(n) {
+    if (n < 0) n = 0;
+    return '£' + Math.round(n).toLocaleString('en-GB');
+  }
+
+  function personalAllowance(income) {
+    return Math.max(0, 12570 - Math.max(0, (income - 100000) / 2));
+  }
+
+  function incomeTaxOnSalary(gross) {
+    var pa = personalAllowance(gross);
+    var ti = Math.max(0, gross - pa);
+    var higherLimit = 125140 - pa;
+    var basic = Math.min(ti, 37700);
+    var higher = Math.max(0, Math.min(ti, higherLimit) - 37700);
+    var addl = Math.max(0, ti - higherLimit);
+    return 0.20 * basic + 0.40 * higher + 0.45 * addl;
+  }
+
+  function employeeNI(gross) {
+    return 0.08 * Math.max(0, Math.min(gross, 50270) - 12570) + 0.02 * Math.max(0, gross - 50270);
+  }
+
+  function corpTax(p) {
+    if (p <= 0) return 0;
+    if (p <= 50000) return 0.19 * p;
+    if (p >= 250000) return 0.25 * p;
+    return 0.25 * p - 0.015 * (250000 - p);
+  }
+
+  // Route A: the whole profit paid as salary. Gross salary is what the profit
+  // funds once employer NI is paid on top.
+  function allSalaryRoute(P) {
+    var gross = P <= 5000 ? P : (P + 750) / 1.15;
+    var erNI = P - gross;
+    return erNI + employeeNI(gross) + incomeTaxOnSalary(gross);
+  }
+
+  // Route B: £12,570 salary, corporation tax on the rest, the balance out as
+  // dividends. Dividend bands stack on taxable income after the salary.
+  function splitRoute(P) {
+    var salary = 12570;
+    var erNI = 0.15 * (salary - 5000);
+    var ctProfit = Math.max(0, P - salary - erNI);
+    var ct = corpTax(ctProfit);
+    var dividends = ctProfit - ct;
+    var income = salary + dividends;
+    var pa = personalAllowance(income);
+    var nd = Math.max(0, salary - pa);
+    var ndTax = 0.20 * nd;
+    var ti = income - pa;
+    var higherLimit = 125140 - pa;
+    var allow = Math.min(500, dividends);
+    var a = nd + allow;
+    var basicDiv = Math.max(0, Math.min(ti, 37700) - a);
+    var higherDiv = Math.max(0, Math.min(ti, higherLimit) - Math.max(37700, a));
+    var addlDiv = Math.max(0, ti - Math.max(higherLimit, a));
+    var divTax = 0.1075 * basicDiv + 0.3575 * higherDiv + 0.3935 * addlDiv;
+    return erNI + ct + ndTax + divTax;
+  }
+
+  function calc() {
+    var P = parseInt(profit.value, 10);
+    profitOut.textContent = fmt(P);
+
+    var salaryTax = allSalaryRoute(P);
+    var splitTax = splitRoute(P);
+    var currentTax = allSalary ? salaryTax : splitTax;
+    var gap = currentTax - splitTax; // signed: negative means salary is the cheaper full-extraction route
+
+    currentOut.textContent = fmt(currentTax);
+    currentSub.textContent = (allSalary ? 'all as salary, ' : 'salary + dividends, ')
+      + 'an effective ' + Math.round(100 * currentTax / P) + '% of your profit';
+    optimisedOut.textContent = fmt(splitTax);
+    gapOut.textContent = fmt(Math.abs(gap));
+
+    if (!allSalary) {
+      gapSub.textContent = 'your split matches the model';
+      verdict.textContent = 'If your salary really is at £12,570, your split is already close to the mark. The money now is in the levers this page does not model: pension contributions, retaining profit instead of extracting it, family shares, and structure. That is exactly the plans conversation.';
+    } else if (gap >= 500) {
+      gapSub.textContent = 'same profit, two structures';
+      verdict.textContent = 'That is ' + fmt(gap) + ' a year. On today’s rules and this profit, ' + fmt(gap * 10) + ' over a decade, recovered with a compliant pay structure, using the rules as written. And this is before pensions, retained profit and family shares, the levers a proper review adds on top.';
+    } else {
+      gapSub.textContent = 'the two routes cost about the same';
+      verdict.textContent = 'At this profit, extracting everything costs roughly the same whichever way you pay yourself. The dividend advantage has been taxed away at this level. The saving now is in retained profit, pension contributions and structure, and that is the review conversation.';
+    }
+  }
+
+  // Email gate: results stay hidden until the lead leaves a name + email.
+  // Capture fires into the GHL inbound webhook (Calculator Lead Capture
+  // workflow) which creates the contact, sends the ack, and cards the lead.
+  // Fire-and-forget: a network failure must never cost the visitor their result.
+  gateBtn.addEventListener('click', function () {
+    var email = leadEmail.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+      gateError.style.display = 'block';
+      return;
+    }
+    gateError.style.display = 'none';
+    var nameEl = document.getElementById('lead-name');
+    try {
+      fetch('https://services.leadconnectorhq.com/hooks/6GPl4TryP7F4DBJBSJMc/webhook-trigger/a93bef9e-9720-4d64-a05c-4d29a63ab679', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          first_name: (nameEl && nameEl.value ? nameEl.value.trim() : ''),
+          source: 't4p-pay-calculator',
+          company_profit: profit.value,
+          pay_style: allSalary ? 'all-salary' : 'salary-plus-dividends',
+          current_route_tax: currentOut.textContent,
+          split_route_tax: optimisedOut.textContent,
+          annual_gap: gapOut.textContent
+        })
+      }).catch(function () {});
+    } catch (err) {}
+    gate.style.display = 'none';
+    results.style.display = '';
+    calc();
+    results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  leadEmail.addEventListener('keydown', function (e) { if (e.key === 'Enter') gateBtn.click(); });
+
+  profit.addEventListener('input', calc);
+  calc();
+})();
+</script>
+</body>
+</html>

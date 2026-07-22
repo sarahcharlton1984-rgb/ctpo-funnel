@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Director's Take-Home Calculator 2026/27 | Tax 4 Pros</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.55; }
+.wrap { max-width:640px; margin:0 auto; padding:28px 20px 60px; }
+.wordmark { font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }
+.rule { width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }
+h1 { font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:28px; font-weight:600; text-align:center; line-height:1.2; margin-bottom:8px; }
+.sub { text-align:center; color:#5a6b78; font-size:14px; margin-bottom:28px; }
+.card { background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:24px; margin-bottom:18px; box-shadow:0 1px 4px rgba(13,28,43,.08); }
+label { display:block; font-weight:600; color:#0D1C2B; font-size:14px; margin-bottom:6px; }
+.hint { font-weight:400; color:#8a97a1; font-size:12.5px; }
+input[type=range] { width:100%; accent-color:#C9A84C; margin:14px 0 6px; }
+.bigval { font-family:'EB Garamond',Georgia,serif; font-size:34px; color:#0D1C2B; font-weight:600; text-align:center; }
+.row { display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px solid #eee7da; font-size:14.5px; }
+.row:last-child { border-bottom:0; }
+.row b { color:#0D1C2B; }
+.total { background:#0D1C2B; color:#fff; border-radius:6px; padding:18px 22px; display:flex; justify-content:space-between; align-items:baseline; margin-top:14px; }
+.total .lbl { font-size:14px; color:#cfd6dd; }
+.total .val { font-family:'EB Garamond',Georgia,serif; font-size:30px; font-weight:600; color:#E8D9A0; }
+.warn { border-left:3px solid #C9A84C; background:#FBF7EE; padding:12px 16px; font-size:13.5px; margin-top:12px; border-radius:0 4px 4px 0; }
+.warn b { color:#0D1C2B; }
+.toggle { display:flex; align-items:center; gap:10px; margin-top:14px; font-size:14px; }
+.toggle input { width:18px; height:18px; accent-color:#C9A84C; }
+.eff { text-align:center; color:#5a6b78; font-size:13.5px; margin-top:10px; }
+.foot { color:#8a97a1; font-size:12px; text-align:center; margin-top:26px; line-height:1.5; }
+.cta { display:block; text-align:center; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:14px 20px; border-radius:5px; margin-top:20px; font-size:15px; }
+.cta:hover { background:#16283c; }
+a { color:#0D1C2B; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="wordmark">Tax 4 Pros</div>
+  <hr class="rule">
+  <h1>Director's Take-Home Calculator</h1>
+  <p class="sub">Salary of &pound;12,570 plus dividends, 2026/27 rates. England, Wales and Northern Ireland.</p>
+
+  <div class="card">
+    <label for="income">How much do you want to take out this year? <span class="hint">(salary + dividends, total)</span></label>
+    <div class="bigval" id="incomeLabel">&pound;60,000</div>
+    <input type="range" id="income" min="13000" max="200000" step="1000" value="60000">
+    <div class="toggle">
+      <input type="checkbox" id="kids">
+      <label for="kids" style="margin:0;font-weight:400;">My household claims Child Benefit</label>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row"><span>Salary (uses your personal allowance)</span><b id="salary">&pound;12,570</b></div>
+    <div class="row"><span>Dividends</span><b id="divs">&pound;47,430</b></div>
+    <div class="row"><span>Income tax on salary</span><b id="salTax">&pound;0</b></div>
+    <div class="row"><span>Dividend tax</span><b id="divTax">&pound;0</b></div>
+    <div class="row" id="hicbcRow" style="display:none;"><span>Child Benefit charge (HICBC)</span><b id="hicbc">&pound;0</b></div>
+    <div class="total"><span class="lbl">You keep</span><span class="val" id="takeHome">&pound;0</span></div>
+    <div class="eff" id="effRate"></div>
+    <div id="warns"></div>
+  </div>
+
+  <p class="foot">Your personal tax only. The company also pays about &pound;1,136 employer's National Insurance on the salary, and corporation tax on the profits before any dividend can be paid. Dividends need available retained profit. Scottish income tax bands differ. This is education, not personal advice.</p>
+
+
+  <div class="card" id="leadCard">
+    <div class="row" style="display:block">
+      <b>Want this as a personalised breakdown?</b>
+      <div style="margin:.4rem 0 .7rem;opacity:.85">Pop your email in and we'll send it over.</div>
+      <input type="email" id="leadEmail" placeholder="you@company.co.uk"
+             style="width:100%;padding:.7rem;border:1px solid #cfc5b0;border-radius:6px;font:inherit">
+      <button id="leadBtn" style="margin-top:.6rem;padding:.7rem 1.1rem;border:0;border-radius:6px;
+             background:#0D1C2B;color:#fff;font:inherit;cursor:pointer">Send it to me</button>
+      <div id="leadMsg" style="margin-top:.5rem;min-height:1.2em"></div>
+    </div>
+  </div>
+
+  <a class="cta" href="https://apply.ctprivateoffice.com">Apply to work with us</a>
+</div>
+
+<script>
+(function () {
+  // 2026/27, England / Wales / NI. Band limits are TAXABLE income (after the
+  // personal allowance): basic to 37,700, higher to 125,140, additional above.
+  var PA = 12570, BAND = 37700, HIGHER_LIMIT = 125140;
+  var DIV_ALLOW = 500, DIV_B = 0.1075, DIV_H = 0.3575, DIV_A = 0.3935;
+  var SALARY = 12570;
+  // Child Benefit weekly rates 2026/27 (DWP rates from 6 Apr 2026),
+  // used for the two-child HICBC illustration.
+  var CB_ELDEST_WK = 27.05, CB_ADDL_WK = 17.90;
+
+  var fmt = function (n) { return '£' + Math.round(n).toLocaleString('en-GB'); };
+
+  function calc(total, kids) {
+    var salary = Math.min(SALARY, total);
+    var divs = Math.max(0, total - salary);
+    var ani = total;
+    var pa = Math.max(0, PA - Math.max(0, (ani - 100000) / 2));
+
+    // salary first (non-savings)
+    var taxableSal = Math.max(0, salary - pa);
+    var salTax = 0;
+    if (taxableSal > 0) {
+      var b = Math.min(taxableSal, BAND);
+      salTax += b * 0.20;
+      var rem = taxableSal - b;
+      if (rem > 0) {
+        var h = Math.min(rem, HIGHER_LIMIT - BAND);
+        salTax += h * 0.40; rem -= h;
+        if (rem > 0) salTax += rem * 0.45;
+      }
+    }
+    // dividends stacked on top, walked through the bands; the £500
+    // allowance is a nil rate that still consumes band
+    var paLeft = Math.max(0, pa - salary);
+    var taxableDiv = Math.max(0, divs - paLeft);
+    var divTax = 0;
+    var a = Math.min(DIV_ALLOW, taxableDiv);
+    var p = taxableSal;
+    var remaining = taxableDiv;
+    while (remaining > 0.001) {
+      var rate, top;
+      if (p < BAND) { rate = DIV_B; top = BAND; }
+      else if (p < HIGHER_LIMIT) { rate = DIV_H; top = HIGHER_LIMIT; }
+      else { rate = DIV_A; top = Infinity; }
+      var take = Math.min(remaining, top - p);
+      var freePart = Math.min(a, take);
+      divTax += (take - freePart) * rate;
+      a -= freePart;
+      p += take; remaining -= take;
+    }
+    var hicbc = 0;
+    if (kids && ani > 60000) {
+      var cbAnnual = (CB_ELDEST_WK + CB_ADDL_WK) * 52; // two-child household illustration
+      hicbc = cbAnnual * Math.min(1, (ani - 60000) / 20000);
+    }
+    return { salary: salary, divs: divs, salTax: salTax, divTax: divTax, hicbc: hicbc, pa: pa };
+  }
+
+  function render() {
+    var total = parseInt(document.getElementById('income').value, 10);
+    var kids = document.getElementById('kids').checked;
+    var r = calc(total, kids);
+    document.getElementById('incomeLabel').textContent = fmt(total);
+    document.getElementById('salary').textContent = fmt(r.salary);
+    document.getElementById('divs').textContent = fmt(r.divs);
+    document.getElementById('salTax').textContent = fmt(r.salTax);
+    document.getElementById('divTax').textContent = fmt(r.divTax);
+    var hicbcRow = document.getElementById('hicbcRow');
+    if (r.hicbc > 0) { hicbcRow.style.display = 'flex'; document.getElementById('hicbc').textContent = fmt(r.hicbc); }
+    else hicbcRow.style.display = 'none';
+    var keep = total - r.salTax - r.divTax - r.hicbc;
+    document.getElementById('takeHome').textContent = fmt(keep);
+    document.getElementById('effRate').textContent = 'Effective personal tax rate: ' + (100 * (total - keep) / total).toFixed(1) + '%';
+
+    var w = [];
+    if (total > 100000) w.push('<div class="warn"><b>You are in the stealth tax zone.</b> Past £100,000 your personal allowance is being withdrawn, an effective rate of about 60% on this slice. A pension contribution before year end can bring you back under. See the guide.</div>');
+    else if (total > 92000) w.push('<div class="warn"><b>You are approaching £100,000.</b> One pound over starts the 60% stealth zone, and for parents of young children the free childcare hours go with it. Plan the last few thousand, don’t drift over.</div>');
+    if (kids && total > 60000 && total < 80000) w.push('<div class="warn"><b>The Child Benefit trap.</b> Between £60,000 and £80,000 you repay 1% of the household’s Child Benefit for every £200 of income over £60,000. A pension contribution reduces the income HMRC counts.</div>');
+    if (kids && total >= 80000) w.push('<div class="warn"><b>Child Benefit fully clawed back.</b> At £80,000+ the charge equals the full Child Benefit. Still worth claiming for the State Pension credit, tick the "no payment" box instead.</div>');
+    if (total > 50270 && total <= 92000) w.push('<div class="warn"><b>You’re past the higher rate threshold.</b> Dividends above £50,270 are taxed at 35.75% instead of 10.75%. If you don’t need the money personally, leaving it in the company or a pension contribution may beat drawing it.</div>');
+    document.getElementById('warns').innerHTML = w.join('');
+  }
+
+  document.getElementById('income').addEventListener('input', render);
+  document.getElementById('kids').addEventListener('change', render);
+  render();
+})();
+</script>
+
+<script>
+(function () {
+  // GHL inbound webhook for the "Calculator Lead Capture" workflow — a public
+  // capture endpoint (like a form action), safe to call from the browser.
+  var LEAD_WEBHOOK = "https://services.leadconnectorhq.com/hooks/6GPl4TryP7F4DBJBSJMc/webhook-trigger/a93bef9e-9720-4d64-a05c-4d29a63ab679";
+  var btn = document.getElementById('leadBtn');
+  var msg = document.getElementById('leadMsg');
+  var em  = document.getElementById('leadEmail');
+  function send() {
+    var email = (em.value || '').trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.textContent = 'Please enter a valid email.'; return; }
+    btn.disabled = true; msg.textContent = 'Sending...';
+    var income = document.getElementById('income').value;
+    fetch(LEAD_WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, income: String(income), source: 'Calculator' })
+    }).then(function (r) {
+      msg.textContent = r.ok ? 'Thanks, it is on its way.' : 'Something went wrong, please try again.';
+      btn.disabled = !r.ok;
+    }).catch(function () { msg.textContent = 'Something went wrong, please try again.'; btn.disabled = false; });
+  }
+  btn.addEventListener('click', send);
+  em.addEventListener('keydown', function (e) { if (e.key === 'Enter') send(); });
+})();
+</script>
+</body>
+</html>
