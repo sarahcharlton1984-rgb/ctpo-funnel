@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+  <title>Tax 4 Pros funnel pages</title>
+  <link>https://tax4pros.co.uk</link>
+  <description>Plans, trust page and four search articles</description>
+  <language>en-GB</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://tax4pros.co.uk</wp:base_site_url>
+  <wp:base_blog_url>https://tax4pros.co.uk</wp:base_blog_url>
+  <item>
+    <title>Plans and pricing</title>
+    <link>https://tax4pros.co.uk/plans/</link>
+    <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://tax4pros.co.uk/?p=901</guid>
+    <description></description>
+    <content:encoded><![CDATA[<style>
+.t4p-doc{ box-sizing: border-box; margin: 0; padding: 0; }.t4p-doc{ font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.55; }.t4p-doc .wrap{ max-width:680px; margin:0 auto; padding:28px 20px 60px; }.t4p-doc .wordmark{ font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }.t4p-doc .rule{ width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }.t4p-doc h1{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:30px; font-weight:600; text-align:center; line-height:1.2; margin-bottom:10px; }.t4p-doc .sub{ text-align:center; color:#5a6b78; font-size:15px; margin-bottom:14px; }.t4p-doc .promise{ text-align:center; color:#0D1C2B; font-size:14px; font-weight:600; margin-bottom:30px; }.t4p-doc .card{ background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:24px; margin-bottom:18px; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .card.feature{ border-top-width:5px; }.t4p-doc .tier-top{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:4px; }.t4p-doc .tier-name{ font-family:'EB Garamond',Georgia,serif; font-size:22px; font-weight:600; color:#0D1C2B; }.t4p-doc .tier-price{ font-family:'EB Garamond',Georgia,serif; font-size:28px; font-weight:600; color:#0D1C2B; white-space:nowrap; }.t4p-doc .tier-price small{ font-family:'Inter',sans-serif; font-size:13px; font-weight:400; color:#8a97a1; }.t4p-doc .tier-for{ color:#5a6b78; font-size:14px; margin-bottom:14px; }.t4p-doc .tag{ display:inline-block; background:#0D1C2B; color:#E8D9A0; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; padding:4px 9px; border-radius:3px; margin-bottom:10px; font-weight:600; }.t4p-doc ul.inc{ list-style:none; }.t4p-doc ul.inc li{ padding:7px 0 7px 24px; border-bottom:1px solid #eee7da; font-size:14.5px; position:relative; }.t4p-doc ul.inc li:last-child{ border-bottom:0; }.t4p-doc ul.inc li:before{ content:""; position:absolute; left:4px; top:15px; width:8px; height:8px; border-radius:50%; background:#C9A84C; }.t4p-doc h2{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:23px; font-weight:600; margin:36px 0 14px; text-align:center; }.t4p-doc .why{ background:#fff; border-radius:6px; padding:22px 24px; margin-bottom:18px; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .why dt{ font-weight:600; color:#0D1C2B; font-size:15px; margin-top:16px; }.t4p-doc .why dt:first-child{ margin-top:0; }.t4p-doc .why dd{ color:#5a6b78; font-size:14.5px; margin-top:3px; }.t4p-doc .warn{ border-left:3px solid #C9A84C; background:#FBF7EE; padding:14px 18px; font-size:14px; margin:18px 0; border-radius:0 4px 4px 0; color:#4a5a66; }.t4p-doc .warn b{ color:#0D1C2B; }.t4p-doc .cta{ display:block; text-align:center; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:15px 20px; border-radius:5px; margin-top:22px; font-size:15.5px; }.t4p-doc .cta:hover{ background:#16283c; }.t4p-doc .cta-sub{ text-align:center; color:#8a97a1; font-size:13px; margin-top:9px; }.t4p-doc .alt{ display:block; text-align:center; color:#0D1C2B; font-size:14px; margin-top:18px; }.t4p-doc .foot{ color:#8a97a1; font-size:12px; text-align:center; margin-top:34px; line-height:1.6; }.t4p-doc a{ color:#0D1C2B; }@media (max-width:520px){.t4p-doc .tier-top{ gap:4px; }}
+</style>
+<div class="t4p-doc">
+<p class="sub">Fixed monthly accountancy for limited company directors. One price, agreed before we start.</p>
+  <p class="promise">No surprise invoice at the year end. Ever.</p>
+
+  <!--
+    PRICES BELOW ARE PLACEHOLDERS BASED ON A £295 AVERAGE FEE AND THE EXISTING £995 ACCOUNT.
+    CONFIRM ALL THREE AGAINST THE REAL RATE CARD BEFORE THIS PAGE GOES LIVE.
+  -->
+
+  <div class="card">
+    <div class="tier-top">
+      <span class="tier-name">Essentials</span>
+      <span class="tier-price">&pound;145<small> /month</small></span>
+    </div>
+    <p class="tier-for">Sole traders and small limited companies that need the filing done properly and on time.</p>
+    <ul class="inc">
+      <li>Annual accounts and corporation tax return</li>
+      <li>One director's self assessment</li>
+      <li>Confirmation statement filed</li>
+      <li>VAT returns where you are registered</li>
+      <li>Bookkeeping software included and set up</li>
+      <li>Deadline reminders before they matter, not after</li>
+    </ul>
+  </div>
+
+  <div class="card feature">
+    <span class="tag">Most directors choose this</span>
+    <div class="tier-top">
+      <span class="tier-name">Director</span>
+      <span class="tier-price">&pound;295<small> /month</small></span>
+    </div>
+    <p class="tier-for">Established limited companies taking profit out of the business, where how you pay yourself actually changes what you keep.</p>
+    <ul class="inc">
+      <li>Everything in Essentials</li>
+      <li>Payroll for you and up to five staff</li>
+      <li>Your pay structure reviewed every year, not assumed</li>
+      <li>Quarterly management figures so you know where you stand</li>
+      <li>A tax planning conversation before the year end, while it can still be changed</li>
+      <li>Direct access to us. Ask a question, get an answer the same week</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="tier-top">
+      <span class="tier-name">Finance Function</span>
+      <span class="tier-price">&pound;995<small> /month</small></span>
+    </div>
+    <p class="tier-for">Businesses that need the whole finance department without hiring one.</p>
+    <ul class="inc">
+      <li>Everything in Director</li>
+      <li>Full bookkeeping done for you, monthly</li>
+      <li>Monthly management accounts and commentary</li>
+      <li>Payroll for a larger team, plus pensions</li>
+      <li>Cashflow forecasting and budget tracking</li>
+      <li>A scheduled call every month, in the diary</li>
+    </ul>
+  </div>
+
+  <div class="warn">
+    <b>Prices are per company and fixed for twelve months.</b> If your business changes shape and the work genuinely changes with it, we agree the new fee with you first. You will never open an invoice you were not expecting.
+  </div>
+
+  <h2>Why directors move to us</h2>
+  <dl class="why">
+    <dt>You know the price before you start</dt>
+    <dd>One monthly figure covering everything on the list. Most practices quote a fee, then bill extra for the questions. We do not.</dd>
+
+    <dt>You are live inside a week</dt>
+    <dd>Moving accountant is the bit everyone dreads. We handle the professional clearance, the records and the software migration. You sign two things.</dd>
+
+    <dt>Someone actually asks you questions</dt>
+    <dd>Filing your accounts and reducing your tax are two different jobs. Plenty of firms only do the first and never mention the second. Your pay structure gets looked at every single year.</dd>
+
+    <dt>It is all digital, and it is quick</dt>
+    <dd>No printing, no posting, no waiting three weeks for a reply. Sign on your phone.</dd>
+
+    <dt>The complicated work stays in house</dt>
+    <dd>If something bigger comes up, a sale, a restructure, a move abroad, an inheritance tax problem, we have a specialist advisory arm in CT Private Office. You are not handed to a stranger.</dd>
+  </dl>
+
+  <h2>Not sure which one you need?</h2>
+  <p class="sub">Fifteen minutes on a call and you will know where you stand, what you are currently paying in tax, and whether we are worth moving for. No pitch, no obligation.</p>
+
+  <a class="cta" href="https://apply.ctprivateoffice.com/?utm_source=plans&utm_medium=funnel&utm_campaign=book_review">Book a 15 minute review</a>
+  <p class="cta-sub">Or reply to any email from us and ask. That works too.</p>
+
+  <a class="alt" href="https://apply.ctprivateoffice.com/pay-calculator?utm_source=plans&utm_medium=funnel&utm_campaign=back_to_calculator">First, see what your current pay structure is costing you &rarr;</a>
+
+  <p class="foot">
+    Tax 4 Pros Ltd. Registered office 20 Wenlock Road, London N1 7GU.<br>
+    Fees shown exclude VAT. Prices are for a single company with a twelve month accounting period.<br>
+    <a href="https://tax4pros.co.uk/privacy">Privacy policy</a>
+  </p>
+</div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Fixed monthly accountancy for limited company directors. One price, agreed up front. No surprise invoices at the year end.]]></excerpt:encoded>
+    <wp:post_id>901</wp:post_id>
+    <wp:post_date><![CDATA[2026-08-31 07:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-08-31 07:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[plans]]></wp:post_name>
+    <wp:status><![CDATA[draft]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Why directors switch to us</title>
+    <link>https://tax4pros.co.uk/why-us/</link>
+    <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://tax4pros.co.uk/?p=902</guid>
+    <description></description>
+    <content:encoded><![CDATA[<style>
+.t4p-doc{ box-sizing: border-box; margin: 0; padding: 0; }.t4p-doc{ font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.6; }.t4p-doc .wrap{ max-width:680px; margin:0 auto; padding:28px 20px 60px; }.t4p-doc .wordmark{ font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }.t4p-doc .rule{ width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }.t4p-doc h1{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:30px; font-weight:600; text-align:center; line-height:1.2; margin-bottom:10px; }.t4p-doc .sub{ text-align:center; color:#5a6b78; font-size:15px; margin-bottom:30px; }.t4p-doc h2{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:23px; font-weight:600; margin:34px 0 12px; }.t4p-doc p{ margin-bottom:13px; }.t4p-doc p.lead{ font-size:16.5px; }.t4p-doc .card{ background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:24px; margin-bottom:18px; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .quote{ font-family:'EB Garamond',Georgia,serif; font-size:20px; line-height:1.4; color:#0D1C2B; border-left:3px solid #C9A84C; padding-left:18px; margin:20px 0; }.t4p-doc ol.steps{ list-style:none; counter-reset:s; }.t4p-doc ol.steps li{ counter-increment:s; padding:14px 0 14px 46px; border-bottom:1px solid #eee7da; position:relative; font-size:15px; }.t4p-doc ol.steps li:last-child{ border-bottom:0; }.t4p-doc ol.steps li:before{ content:counter(s); position:absolute; left:0; top:14px; width:28px; height:28px; border-radius:50%; background:#0D1C2B; color:#E8D9A0; font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; font-family:'Inter',sans-serif; }.t4p-doc ol.steps li b{ color:#0D1C2B; display:block; margin-bottom:2px; }.t4p-doc ol.steps li span{ color:#5a6b78; font-size:14.5px; }.t4p-doc dl.facts dt{ font-weight:600; color:#0D1C2B; font-size:14px; }.t4p-doc dl.facts dd{ color:#5a6b78; font-size:14.5px; margin-bottom:12px; }.t4p-doc dl.facts dd:last-child{ margin-bottom:0; }.t4p-doc .warn{ border-left:3px solid #C9A84C; background:#FBF7EE; padding:14px 18px; font-size:14.5px; margin:18px 0; border-radius:0 4px 4px 0; color:#4a5a66; }.t4p-doc .warn b{ color:#0D1C2B; }.t4p-doc .cta{ display:block; text-align:center; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:15px 20px; border-radius:5px; margin-top:24px; font-size:15.5px; }.t4p-doc .cta:hover{ background:#16283c; }.t4p-doc .alt{ display:block; text-align:center; color:#0D1C2B; font-size:14px; margin-top:16px; }.t4p-doc .foot{ color:#8a97a1; font-size:12px; text-align:center; margin-top:34px; line-height:1.6; }.t4p-doc a{ color:#0D1C2B; }
+</style>
+<div class="t4p-doc">
+<p class="sub">What we do, what moving actually involves, and who you would be dealing with.</p>
+
+  <div class="card">
+    <p class="lead">Most accountants file your past. That is a real job and it has to be done properly. But filing your accounts and reducing your tax are two different pieces of work, and a lot of firms only ever do the first one.</p>
+    <p class="lead">Nobody sits down with you before the year end, while things can still be changed, and asks how much you actually need to take out of the business. So the year closes, the return gets filed, and you find out in January what it cost.</p>
+    <p class="lead" style="margin-bottom:0;">That is the gap we exist to close.</p>
+  </div>
+
+  <h2>What you get every month</h2>
+  <p>One fixed fee, agreed before we start, covering the compliance and the thinking. The filing happens quietly in the background and on time. The part you actually notice is that somebody looks at how you pay yourself once a year, before the year end rather than after it, and tells you plainly whether it still fits.</p>
+  <p>You can ask us a question without wondering what it will cost. That is included, because a firm that bills for questions trains you not to ask them, and the questions are where the money is.</p>
+
+  <h2>Moving is the bit everyone dreads</h2>
+  <p>It is also the reason most directors stay somewhere they have outgrown. So here is exactly what happens, start to finish.</p>
+  <div class="card">
+    <ol class="steps">
+      <li><b>A fifteen minute call</b><span>You tell us what the business looks like. We tell you honestly whether we would make a difference. If we would not, we say so.</span></li>
+      <li><b>You sign two things</b><span>An engagement letter and a form authorising us to act for you with HMRC. Both go through on your phone.</span></li>
+      <li><b>We write to your current accountant</b><span>This is called professional clearance and it is routine. We ask for your records. You do not have to have an awkward conversation, and you do not have to explain yourself.</span></li>
+      <li><b>We take over the records and the software</b><span>Books, prior year accounts, tax history, payroll. If you are on Xero or similar we pick it up as it is. If you are on spreadsheets we set you up properly.</span></li>
+      <li><b>You are live</b><span>Usually inside a week of signing. Then we look at your pay structure, which for most people is the first time anyone has.</span></li>
+    </ol>
+  </div>
+  <div class="warn">
+    <b>You can move at any point in your financial year.</b> You do not have to wait for the year end, and waiting usually costs you a planning window rather than saving you anything.
+  </div>
+
+  <h2>Who you are dealing with</h2>
+  <p>Tax 4 Pros was founded by Sarah Charlton, a tax strategist who spent years watching company directors do everything right in their business and then hand over half the outcome at the wrong moments. On extraction, on sale, and on the estate left behind. There was almost always something that could have been done, and nobody had shown them.</p>
+  <p class="quote">Never a scheme, never a product sale. The rules as written, used properly, and every piece of it defensible.</p>
+  <p>If something bigger comes up later, a sale, a restructure, a move abroad, an inheritance tax problem, there is a specialist advisory arm in CT Private Office. You stay with the same people rather than being handed to a stranger, and you are never sold into it. It only comes up if your situation actually calls for it.</p>
+
+  <div class="card">
+    <dl class="facts">
+      <dt>Compliance firm</dt><dd>Tax 4 Pros Ltd</dd>
+      <dt>Advisory and structuring</dt><dd>CT Structuring Partners Ltd, trading as CT Private Office</dd>
+      <dt>Registered office</dt><dd>20 Wenlock Road, London N1 7GU</dd>
+      <dt>How we work</dt><dd>Fixed monthly fees. Digital. Direct access. No surprise invoices.</dd>
+    </dl>
+  </div>
+
+  <!--
+    REVIEWS BLOCK. Add three or four real Google reviews here once the Google
+    Business Profile has them. Name, trade, one or two sentences, verbatim.
+    Do not write these. They must be real and they must be quoted as given.
+  -->
+
+  <h2>Worth fifteen minutes?</h2>
+  <p>On the call you will find out what your current setup is costing you, whether there is anything meaningful to change, and whether we are worth moving for. If you are already set up sensibly we will tell you that, and you will have lost a quarter of an hour.</p>
+
+  <a class="cta" href="https://apply.ctprivateoffice.com/?utm_source=why_us&utm_medium=funnel&utm_campaign=book_review">Book a 15 minute review</a>
+  <a class="alt" href="/plans/?utm_source=why_us&utm_medium=funnel&utm_campaign=plans">See the plans and what they cost &rarr;</a>
+  <a class="alt" href="https://apply.ctprivateoffice.com/pay-calculator?utm_source=why_us&utm_medium=funnel&utm_campaign=calculator">Or check what your pay structure is costing you first &rarr;</a>
+
+  <p class="foot">
+    Tax 4 Pros Ltd. Registered office 20 Wenlock Road, London N1 7GU.<br>
+    This page is general information, not personal tax advice.<br>
+    <a href="https://tax4pros.co.uk/privacy">Privacy policy</a>
+  </p>
+</div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[What Tax 4 Pros does, what switching actually involves, and who you are dealing with.]]></excerpt:encoded>
+    <wp:post_id>902</wp:post_id>
+    <wp:post_date><![CDATA[2026-08-31 07:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-08-31 07:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[why-us]]></wp:post_name>
+    <wp:status><![CDATA[draft]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>How much should an accountant cost for a limited company?</title>
+    <link>https://tax4pros.co.uk/accountant-cost-limited-company/</link>
+    <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://tax4pros.co.uk/?p=903</guid>
+    <description></description>
+    <content:encoded><![CDATA[<style>
+.t4p-doc{ box-sizing:border-box; margin:0; padding:0; }.t4p-doc{ font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.65; }.t4p-doc .wrap{ max-width:680px; margin:0 auto; padding:28px 20px 60px; }.t4p-doc .wordmark{ font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }.t4p-doc .wordmark a{ color:inherit; text-decoration:none; }.t4p-doc .rule{ width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }.t4p-doc h1{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:31px; font-weight:600; line-height:1.18; margin-bottom:10px; }.t4p-doc .standfirst{ color:#5a6b78; font-size:16.5px; margin-bottom:8px; }.t4p-doc .byline{ color:#8a97a1; font-size:13px; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid #e4dccd; }.t4p-doc h2{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:23px; font-weight:600; margin:32px 0 11px; }.t4p-doc h3{ font-family:'Inter',sans-serif; color:#0D1C2B; font-size:16px; font-weight:600; margin:22px 0 6px; }.t4p-doc p{ margin-bottom:14px; }.t4p-doc ul, .t4p-doc ol{ margin:0 0 14px 20px; }.t4p-doc li{ margin-bottom:7px; }.t4p-doc strong{ color:#0D1C2B; }.t4p-doc table{ width:100%; border-collapse:collapse; margin-bottom:16px; font-size:14.5px; background:#fff; border-radius:6px; overflow:hidden; }.t4p-doc th, .t4p-doc td{ text-align:left; padding:11px 14px; border-bottom:1px solid #eee7da; }.t4p-doc th{ background:#0D1C2B; color:#E8D9A0; font-size:12px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; }.t4p-doc tr:last-child td{ border-bottom:0; }.t4p-doc .tablewrap{ overflow-x:auto; }.t4p-doc .pull{ border-left:3px solid #C9A84C; background:#FBF7EE; padding:16px 20px; margin:22px 0; border-radius:0 4px 4px 0; }.t4p-doc .pull p{ margin-bottom:0; color:#4a5a66; }.t4p-doc .pull b{ color:#0D1C2B; }.t4p-doc .inline-cta{ background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:22px 24px; margin:28px 0; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .inline-cta b{ font-family:'EB Garamond',Georgia,serif; font-size:19px; color:#0D1C2B; display:block; margin-bottom:5px; }.t4p-doc .inline-cta p{ font-size:14.5px; color:#5a6b78; margin-bottom:13px; }.t4p-doc .btn{ display:inline-block; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:5px; font-size:14.5px; }.t4p-doc .btn:hover{ background:#16283c; }.t4p-doc .foot{ color:#8a97a1; font-size:12px; text-align:center; margin-top:34px; line-height:1.6; padding-top:20px; border-top:1px solid #e4dccd; }.t4p-doc a{ color:#0D1C2B; }
+</style>
+<div class="t4p-doc">
+<p class="standfirst">The honest answer is that the number matters less than what sits behind it. Two firms quoting the same fee can be selling completely different things.</p>
+<p class="byline">Sarah Charlton, tax strategist and founder of Tax 4 Pros</p>
+
+<p>Right. Every director asks this question and almost nobody gets a straight answer, because the profession has spent decades quoting a headline figure and then billing around it.</p>
+
+<p>So here is how accountancy pricing actually works, what should be inside the fee, and the specific things to ask before you agree to anything.</p>
+
+<h2>Why the range is so wide</h2>
+
+<p>You will see monthly fees for a limited company quoted anywhere from under a hundred pounds to several hundred. That range is real, and it is not simply a matter of some firms being greedy. It reflects three genuine differences.</p>
+
+<h3>What is actually included</h3>
+<p>The cheapest quotes usually cover the bare statutory minimum: your annual accounts, your corporation tax return, and possibly one self assessment. Everything else is billed as it arises. Payroll, VAT, a second director's return, the confirmation statement, and very often the questions.</p>
+
+<h3>Whether anyone does any thinking</h3>
+<p>This is the big one. Filing your accounts is a process. Looking at whether your setup still makes sense is a judgement. Plenty of firms only sell the first and let you assume you are buying both.</p>
+
+<h3>How much of it is you</h3>
+<p>A low fee often assumes your bookkeeping arrives clean and finished. If you are handing over a shoebox, someone is doing that work, and it will appear on an invoice at some point.</p>
+
+<div class="pull">
+<p><b>The test that cuts through all of it:</b> ask what is not included. A firm with a genuinely fixed fee can answer that in one sentence. A firm that cannot is telling you something.</p>
+</div>
+
+<h2>What should be inside the fee</h2>
+
+<p>For an established limited company with a director taking money out of the business, a complete monthly fee should cover the following without further charge.</p>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>Included</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Annual accounts and corporation tax return</td><td>The statutory floor. Every firm does this.</td></tr>
+<tr><td>Director's self assessment</td><td>Frequently quoted separately. Ask.</td></tr>
+<tr><td>Confirmation statement</td><td>Small job, commonly billed as an extra.</td></tr>
+<tr><td>Payroll</td><td>If you take a salary, you need it running every month.</td></tr>
+<tr><td>VAT returns</td><td>Where you are registered.</td></tr>
+<tr><td>Bookkeeping software</td><td>Should be included and set up, not an extra subscription.</td></tr>
+<tr><td>An annual look at how you pay yourself</td><td>The one that actually changes your outcome.</td></tr>
+<tr><td>Asking a question</td><td>If this is metered, you will stop asking, and that costs you more than the fee.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="inline-cta">
+<b>What is your current setup costing you?</b>
+<p>Two questions, live 2026/27 figures. It shows the tax your current pay structure pays, what a properly structured one pays, and the gap between them every year.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/pay-calculator?utm_source=blog_cost&utm_medium=article&utm_campaign=mid_article">Check my pay structure</a>
+</div>
+
+<h2>The extras that turn a quote into a bill</h2>
+
+<p>When you are comparing firms, these are the line items that most often sit outside a headline monthly fee. Ask about each one by name.</p>
+
+<ul>
+<li><strong>A second director or shareholder's self assessment.</strong> Common in husband and wife companies and routinely charged separately.</li>
+<li><strong>Anything at Companies House beyond the confirmation statement.</strong> Share issues, changes of officer, registered office.</li>
+<li><strong>Catching up bookkeeping.</strong> If your records are behind, someone has to fix them before the accounts can be prepared.</li>
+<li><strong>Dealing with HMRC.</strong> Enquiries, penalty appeals, payment plans. Some firms sell insurance for this rather than including it.</li>
+<li><strong>Ad hoc advice.</strong> The phrase to listen for is "that would be chargeable." It is the moment the relationship changes.</li>
+<li><strong>Year end tax planning.</strong> Often presented as a premium service. It is the part that makes the rest worth paying for.</li>
+</ul>
+
+<h2>Cheap is not the same as good value, and expensive is not either</h2>
+
+<p>A firm charging a hundred pounds a month and filing everything correctly is not doing a bad job. If your company is straightforward, you take a small salary, and there is genuinely nothing to plan, that may be exactly right for you and you should not pay more.</p>
+
+<p>The question is whether your situation is actually that simple. Once you are taking meaningful profit out of a limited company, the difference between a considered pay structure and a default one is usually worth several times the entire annual fee. At that point paying less for a firm that never looks at it is a false economy, and it is one that repeats every single year.</p>
+
+<div class="pull">
+<p><b>The way to judge it:</b> not what the fee is, but what it is a percentage of. If a review of how you pay yourself saves you more than the year's fees, the fee was never the relevant number.</p>
+</div>
+
+<h2>What we charge</h2>
+
+<p>We publish our prices, which is less common in this profession than it should be. Fixed monthly fees, agreed before we start, with the list of what is included on the page. Most directors are on our Director plan at £295 a month, which covers the compliance, the payroll, the quarterly figures and an annual look at your pay structure before the year end rather than after it.</p>
+
+<p>There is no invoice at the year end that you were not expecting, and there is no charge for asking a question.</p>
+
+<div class="inline-cta">
+<b>See the plans</b>
+<p>Three fixed monthly options with the price on the page and everything that is included listed underneath.</p>
+<a class="btn" href="/plans/?utm_source=blog_cost&utm_medium=article&utm_campaign=end_article">See what it costs</a>
+</div>
+
+<p>If you are weighing up a move, <a href="/why-us/">here is exactly what switching involves</a>. It takes less than most people expect, and you can do it at any point in your financial year.</p>
+
+<p class="foot">
+Written for limited company directors in England, Wales and Northern Ireland. Scottish income tax bands differ.<br>
+General information, not personal tax advice. Figures are 2026/27.<br>
+Tax 4 Pros Ltd, 20 Wenlock Road, London N1 7GU. <a href="https://tax4pros.co.uk/privacy">Privacy policy</a>
+</p>
+</div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[What limited company directors actually pay for accountancy, what should be included, and the extras that turn a quote into a bigger bill.]]></excerpt:encoded>
+    <wp:post_id>903</wp:post_id>
+    <wp:post_date><![CDATA[2026-08-31 07:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-08-31 07:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[accountant-cost-limited-company]]></wp:post_name>
+    <wp:status><![CDATA[draft]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[post]]></wp:post_type>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>How to change accountants, and why it is easier than you think</title>
+    <link>https://tax4pros.co.uk/changing-accountants/</link>
+    <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://tax4pros.co.uk/?p=904</guid>
+    <description></description>
+    <content:encoded><![CDATA[<style>
+.t4p-doc{ box-sizing:border-box; margin:0; padding:0; }.t4p-doc{ font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.65; }.t4p-doc .wrap{ max-width:680px; margin:0 auto; padding:28px 20px 60px; }.t4p-doc .wordmark{ font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }.t4p-doc .wordmark a{ color:inherit; text-decoration:none; }.t4p-doc .rule{ width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }.t4p-doc h1{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:31px; font-weight:600; line-height:1.18; margin-bottom:10px; }.t4p-doc .standfirst{ color:#5a6b78; font-size:16.5px; margin-bottom:8px; }.t4p-doc .byline{ color:#8a97a1; font-size:13px; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid #e4dccd; }.t4p-doc h2{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:23px; font-weight:600; margin:32px 0 11px; }.t4p-doc h3{ font-family:'Inter',sans-serif; color:#0D1C2B; font-size:16px; font-weight:600; margin:22px 0 6px; }.t4p-doc p{ margin-bottom:14px; }.t4p-doc ul, .t4p-doc ol{ margin:0 0 14px 20px; }.t4p-doc li{ margin-bottom:7px; }.t4p-doc strong{ color:#0D1C2B; }.t4p-doc .pull{ border-left:3px solid #C9A84C; background:#FBF7EE; padding:16px 20px; margin:22px 0; border-radius:0 4px 4px 0; }.t4p-doc .pull p{ margin-bottom:0; color:#4a5a66; }.t4p-doc .pull b{ color:#0D1C2B; }.t4p-doc ol.steps{ list-style:none; counter-reset:s; margin-left:0; }.t4p-doc ol.steps li{ counter-increment:s; padding:15px 0 15px 46px; border-bottom:1px solid #e4dccd; position:relative; margin-bottom:0; }.t4p-doc ol.steps li:last-child{ border-bottom:0; }.t4p-doc ol.steps li:before{ content:counter(s); position:absolute; left:0; top:16px; width:28px; height:28px; border-radius:50%; background:#0D1C2B; color:#E8D9A0; font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; }.t4p-doc ol.steps li b{ color:#0D1C2B; display:block; margin-bottom:3px; }.t4p-doc ol.steps li span{ color:#5a6b78; font-size:14.5px; }.t4p-doc .inline-cta{ background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:22px 24px; margin:28px 0; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .inline-cta b{ font-family:'EB Garamond',Georgia,serif; font-size:19px; color:#0D1C2B; display:block; margin-bottom:5px; }.t4p-doc .inline-cta p{ font-size:14.5px; color:#5a6b78; margin-bottom:13px; }.t4p-doc .btn{ display:inline-block; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:5px; font-size:14.5px; }.t4p-doc .btn:hover{ background:#16283c; }.t4p-doc .foot{ color:#8a97a1; font-size:12px; text-align:center; margin-top:34px; line-height:1.6; padding-top:20px; border-top:1px solid #e4dccd; }.t4p-doc a{ color:#0D1C2B; }
+</style>
+<div class="t4p-doc">
+<p class="standfirst">Most directors who want to move do not, because they imagine an awkward conversation and a mountain of admin. Neither happens.</p>
+<p class="byline">Sarah Charlton, tax strategist and founder of Tax 4 Pros</p>
+
+<p>Right. The single most common thing I hear from directors who have outgrown their accountant is not that they are happy. It is that moving sounds like a hassle.</p>
+
+<p>So they stay another year. Then another. And the thing they were unhappy about carries on quietly costing them.</p>
+
+<p>Here is exactly what happens when you switch, in order, so you can judge it properly rather than imagining it.</p>
+
+<h2>The five steps, start to finish</h2>
+
+<ol class="steps">
+<li><b>You have a short conversation with the new firm</b><span>Fifteen minutes is usually enough for both sides to know whether it is a fit. A firm worth moving to will tell you if you are already set up sensibly and do not need them.</span></li>
+<li><b>You sign two documents</b><span>An engagement letter setting out what they will do and what it costs, and a 64-8 authorising them to deal with HMRC on your behalf. Both are done electronically.</span></li>
+<li><b>The new firm writes to the old one</b><span>This is called professional clearance. It is a standard courtesy letter asking whether there is any professional reason they should not act for you, and requesting your records. Your new accountant sends it. You do not.</span></li>
+<li><b>Your records transfer</b><span>Prior year accounts, tax computations, the bookkeeping file, payroll records. If you are on cloud software the new firm simply gets added and the old one removed. Nothing is rebuilt from scratch.</span></li>
+<li><b>You are live</b><span>Usually within a week or two of signing, depending on how quickly the old firm responds. Then the actual work starts.</span></li>
+</ol>
+
+<div class="pull">
+<p><b>You do not have to tell your old accountant yourself.</b> The clearance letter does it. If you would rather send a short note out of courtesy you can, and one line is plenty, but it is not required and it is not expected.</p>
+</div>
+
+<h2>The five things people worry about</h2>
+
+<h3>"Do I have to wait until my year end?"</h3>
+<p>No. You can move at any point in your financial year, and mid year is often better. The whole value of a good accountant is in the decisions taken before the year closes, so arriving with three months left gives them something to work with. Arriving the day after the year end means the first year is pure catch up.</p>
+
+<h3>"What if my old accountant refuses to hand things over?"</h3>
+<p>They can hold documents if you genuinely owe them money, which is called a lien, and it is rare. Settle any outstanding invoice and the issue disappears. In practice almost every handover is routine and the profession deals with them constantly.</p>
+
+<h3>"Will it be awkward?"</h3>
+<p>Far less than you think, because it is not personal to them. Firms lose and gain clients every month. The clearance letter is a form they have processed a hundred times.</p>
+
+<h3>"Will I lose my history?"</h3>
+<p>No. Your filed accounts sit at Companies House, your tax history sits with HMRC, and both are accessible to your new firm once the 64-8 is in place. The transfer is a convenience, not a dependency.</p>
+
+<h3>"Is there a gap where nobody is acting for me?"</h3>
+<p>No. The authorisations overlap. You are covered throughout.</p>
+
+<div class="inline-cta">
+<b>Before you decide, get the number</b>
+<p>Two questions and live 2026/27 figures. What your current pay structure costs, what a properly structured one costs, and the gap every year until it is fixed.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/pay-calculator?utm_source=blog_switch&utm_medium=article&utm_campaign=mid_article">Check my pay structure</a>
+</div>
+
+<h2>The better question: should you move at all?</h2>
+
+<p>Being annoyed about a fee is not on its own a reason to switch. A cheaper firm doing the same narrow job leaves you exactly where you are. Here are the reasons that actually justify it.</p>
+
+<ul>
+<li><strong>Nobody has ever asked how much you need to take out of the business.</strong> If the salary and dividend split has been the same for years and nobody has revisited it, nobody is doing the thinking.</li>
+<li><strong>You only hear from them at the deadline.</strong> Tax planning happens before the year end. A firm that surfaces in month eleven has already missed the window.</li>
+<li><strong>You have stopped asking questions because they get billed.</strong> This is the most expensive dynamic in the profession and it is completely invisible on the invoice.</li>
+<li><strong>The business has changed and the setup has not.</strong> You took on staff, bought a property, started a second company, or your profit doubled. The structure that suited a one person startup rarely suits that.</li>
+<li><strong>Something big is coming.</strong> A sale, a restructure, a move abroad, an inheritance tax problem. These need planning years ahead, not at the point they happen.</li>
+</ul>
+
+<p>If none of those apply, stay where you are. Genuinely. Plenty of directors are well served and do not need to move.</p>
+
+<div class="pull">
+<p><b>If several of them apply,</b> the cost of another year of not moving is almost always larger than anything you would save by staying, and unlike a fee it repeats silently every year.</p>
+</div>
+
+<h2>How it works with us</h2>
+
+<p>Fixed monthly fee agreed before we start, with the price published on the site rather than quoted on request. We handle the clearance, the records and the software migration. You sign two things and you are usually live inside a week.</p>
+
+<p>Then we look at how you pay yourself, which for a lot of people is the first time anyone has.</p>
+
+<div class="inline-cta">
+<b>Fifteen minutes and you will know</b>
+<p>What your current setup costs you, whether there is anything worth changing, and whether we are worth moving for. If you are already sorted, we will say so.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/?utm_source=blog_switch&utm_medium=article&utm_campaign=book_review">Book a 15 minute review</a>
+</div>
+
+<p>Or read <a href="/why-us/">what switching to us involves</a> and <a href="/plans/">what the plans cost</a> first.</p>
+
+<p class="foot">
+Written for limited company directors in England, Wales and Northern Ireland.<br>
+General information, not personal tax advice.<br>
+Tax 4 Pros Ltd, 20 Wenlock Road, London N1 7GU. <a href="https://tax4pros.co.uk/privacy">Privacy policy</a>
+</p>
+</div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[What actually happens when you switch accountants: professional clearance, records, timing, and whether you have to tell them yourself.]]></excerpt:encoded>
+    <wp:post_id>904</wp:post_id>
+    <wp:post_date><![CDATA[2026-08-31 07:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-08-31 07:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[changing-accountants]]></wp:post_name>
+    <wp:status><![CDATA[draft]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[post]]></wp:post_type>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Salary vs dividends in 2026/27: how the split actually works</title>
+    <link>https://tax4pros.co.uk/salary-vs-dividends/</link>
+    <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://tax4pros.co.uk/?p=905</guid>
+    <description></description>
+    <content:encoded><![CDATA[<style>
+.t4p-doc{ box-sizing:border-box; margin:0; padding:0; }.t4p-doc{ font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.65; }.t4p-doc .wrap{ max-width:680px; margin:0 auto; padding:28px 20px 60px; }.t4p-doc .wordmark{ font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }.t4p-doc .wordmark a{ color:inherit; text-decoration:none; }.t4p-doc .rule{ width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }.t4p-doc h1{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:31px; font-weight:600; line-height:1.18; margin-bottom:10px; }.t4p-doc .standfirst{ color:#5a6b78; font-size:16.5px; margin-bottom:8px; }.t4p-doc .byline{ color:#8a97a1; font-size:13px; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid #e4dccd; }.t4p-doc h2{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:23px; font-weight:600; margin:32px 0 11px; }.t4p-doc h3{ font-family:'Inter',sans-serif; color:#0D1C2B; font-size:16px; font-weight:600; margin:22px 0 6px; }.t4p-doc p{ margin-bottom:14px; }.t4p-doc ul, .t4p-doc ol{ margin:0 0 14px 20px; }.t4p-doc li{ margin-bottom:7px; }.t4p-doc strong{ color:#0D1C2B; }.t4p-doc table{ width:100%; border-collapse:collapse; margin-bottom:16px; font-size:14.5px; background:#fff; border-radius:6px; overflow:hidden; }.t4p-doc th, .t4p-doc td{ text-align:left; padding:11px 14px; border-bottom:1px solid #eee7da; }.t4p-doc th{ background:#0D1C2B; color:#E8D9A0; font-size:12px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; }.t4p-doc td.num{ text-align:right; font-variant-numeric:tabular-nums; }.t4p-doc th.num{ text-align:right; }.t4p-doc tr:last-child td{ border-bottom:0; }.t4p-doc tr.tot td{ background:#FBF7EE; font-weight:600; color:#0D1C2B; }.t4p-doc .tablewrap{ overflow-x:auto; }.t4p-doc .pull{ border-left:3px solid #C9A84C; background:#FBF7EE; padding:16px 20px; margin:22px 0; border-radius:0 4px 4px 0; }.t4p-doc .pull p{ margin-bottom:0; color:#4a5a66; }.t4p-doc .pull b{ color:#0D1C2B; }.t4p-doc .inline-cta{ background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:22px 24px; margin:28px 0; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .inline-cta b{ font-family:'EB Garamond',Georgia,serif; font-size:19px; color:#0D1C2B; display:block; margin-bottom:5px; }.t4p-doc .inline-cta p{ font-size:14.5px; color:#5a6b78; margin-bottom:13px; }.t4p-doc .btn{ display:inline-block; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:5px; font-size:14.5px; }.t4p-doc .btn:hover{ background:#16283c; }.t4p-doc .foot{ color:#8a97a1; font-size:12px; text-align:center; margin-top:34px; line-height:1.6; padding-top:20px; border-top:1px solid #e4dccd; }.t4p-doc a{ color:#0D1C2B; }
+</style>
+<div class="t4p-doc">
+<p class="standfirst">The low salary plus dividends route still wins for most directors. Here is the mechanism, the rates behind it, and the point where the advantage runs out.</p>
+<p class="byline">Sarah Charlton, tax strategist and founder of Tax 4 Pros</p>
+
+<p>Right. This is the most asked question in owner managed business and it is also the one most often answered with a rule of thumb somebody heard in 2019.</p>
+
+<p>The split matters, but not for the reason most people think. It is not that dividends are magically cheaper. It is that salary and dividends are taxed by completely different systems, and the two systems overlap badly at low levels and barely at all at high ones.</p>
+
+<h2>The two systems</h2>
+
+<p><strong>Salary</strong> is a cost to the company, so it reduces the profit that corporation tax is charged on. But it carries National Insurance twice, once from the company and once from you, and then income tax on top at 20, 40 or 45 percent.</p>
+
+<p><strong>Dividends</strong> are paid out of profit after corporation tax has already been charged. So the company pays tax first, and then you pay dividend tax on what comes out. But there is no National Insurance on a dividend at all, from either side, and the dividend rates are lower than the income tax rates.</p>
+
+<div class="pull">
+<p><b>The whole thing turns on National Insurance.</b> Dividends escape it entirely. That is the advantage. Everything else is detail.</p>
+</div>
+
+<h2>The 2026/27 numbers</h2>
+
+<div class="tablewrap">
+<table>
+<thead><tr><th>What</th><th class="num">Rate or threshold</th></tr></thead>
+<tbody>
+<tr><td>Personal allowance</td><td class="num">£12,570</td></tr>
+<tr><td>Personal allowance taper</td><td class="num">£1 lost per £2 over £100,000</td></tr>
+<tr><td>Basic rate band (taxable)</td><td class="num">to £37,700</td></tr>
+<tr><td>Higher rate limit</td><td class="num">£125,140</td></tr>
+<tr><td>Employer National Insurance</td><td class="num">15% above £5,000</td></tr>
+<tr><td>Employee National Insurance</td><td class="num">8% to £50,270, 2% above</td></tr>
+<tr><td>Dividend allowance</td><td class="num">£500</td></tr>
+<tr><td>Dividend rates</td><td class="num">10.75% / 35.75% / 39.35%</td></tr>
+<tr><td>Corporation tax</td><td class="num">19% to £50k, 25% above £250k</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Corporation tax between £50,000 and £250,000 of profit runs through marginal relief, which produces an effective rate above 25 percent in that band. That is a detail worth knowing, because it means the cost of a dividend is not flat across profit levels.</p>
+
+<h2>Why £12,570 of salary</h2>
+
+<p>The standard structure is a salary at the personal allowance, then dividends on top. It is standard for three reasons that stack.</p>
+
+<ul>
+<li><strong>No income tax on the salary.</strong> It sits entirely inside the personal allowance.</li>
+<li><strong>No employee National Insurance.</strong> At that level you are below the point it starts.</li>
+<li><strong>The salary is still deductible for the company,</strong> so it reduces corporation tax even though almost nothing is paid on it personally.</li>
+</ul>
+
+<p>The company does pay employer National Insurance on the part above £5,000, which is roughly £1,136 on a £12,570 salary. That is a real cost and it is worth knowing about. It is usually still outweighed by the corporation tax saved, and the salary also keeps your National Insurance record ticking for state pension purposes, which a dividend does not.</p>
+
+<div class="inline-cta">
+<b>See your own numbers instead of an example</b>
+<p>Enter your company profit and how you pay yourself today. Live 2026/27 figures, every layer of tax counted on both routes, and the annual gap between them.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/pay-calculator?utm_source=blog_split&utm_medium=article&utm_campaign=mid_article">Check my pay structure</a>
+</div>
+
+<h2>Where the advantage runs out</h2>
+
+<p>This is the part the rule of thumb misses. The dividend advantage is largest at modest profit levels and shrinks as profits rise, for two reasons.</p>
+
+<p>First, corporation tax gets more expensive. Once profits pass £50,000 you are into marginal relief and then the main rate, so the money funding your dividend has been taxed harder before it reaches you.</p>
+
+<p>Second, the dividend rates themselves climb, and at higher levels the gap between the dividend rate and the income tax rate narrows considerably.</p>
+
+<p>Put those together and at high extraction the two routes converge. Extracting everything from a very profitable company costs roughly the same whichever label you put on it.</p>
+
+<div class="pull">
+<p><b>Which is the actual insight:</b> once the split stops mattering much, the question is no longer how you extract. It is whether you should be extracting it all in the first place.</p>
+</div>
+
+<h2>The levers that beat the split</h2>
+
+<p>By the time the salary and dividend question is close to neutral, these are usually worth considerably more, and none of them appear in a simple two route comparison.</p>
+
+<ul>
+<li><strong>Pension contributions.</strong> A company contribution is a deductible expense and carries no National Insurance. Frequently the single largest lever available to a profitable company.</li>
+<li><strong>Retaining profit rather than extracting it.</strong> Tax you have not triggered is the cheapest tax there is. If you do not need the money this year, taking it anyway is a choice with a price.</li>
+<li><strong>Family shareholdings.</strong> Where genuinely commercial and properly structured, using more than one person's allowances and bands changes the arithmetic materially.</li>
+<li><strong>Timing across tax years.</strong> Dividends are taxed when declared, which gives you a lever most people never use.</li>
+</ul>
+
+<p>Each of these depends entirely on your circumstances, and each has conditions attached. None of them is a trick, and anybody presenting them as free money is skipping the conditions.</p>
+
+<h2>The question to start from</h2>
+
+<p>Not "what is the optimal split." Start with how much you actually need to take out of the business this year. Not what the profit was, not what you took last year. What you need.</p>
+
+<p>Once that number exists, the rest of it orders itself. Before it exists, you are optimising a decision nobody has actually made.</p>
+
+<div class="inline-cta">
+<b>Want someone to look at yours properly?</b>
+<p>Fifteen minutes. What your current setup costs, whether there is anything worth changing, and whether we are worth moving for. If you are already sorted, we will tell you.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/?utm_source=blog_split&utm_medium=article&utm_campaign=book_review">Book a 15 minute review</a>
+</div>
+
+<p><a href="/plans/">See what we charge</a> or read <a href="/changing-accountants/">what switching actually involves</a>.</p>
+
+<p class="foot">
+Figures are 2026/27 for England, Wales and Northern Ireland. Scottish income tax bands differ.<br>
+Assumes a sole director, no other personal income and no student loan. General information, not personal tax advice.<br>
+Tax 4 Pros Ltd, 20 Wenlock Road, London N1 7GU. <a href="https://tax4pros.co.uk/privacy">Privacy policy</a>
+</p>
+</div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Why a low salary plus dividends still beats an all salary route in 2026/27, and the point at which the advantage runs out.]]></excerpt:encoded>
+    <wp:post_id>905</wp:post_id>
+    <wp:post_date><![CDATA[2026-08-31 07:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-08-31 07:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[salary-vs-dividends]]></wp:post_name>
+    <wp:status><![CDATA[draft]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[post]]></wp:post_type>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>How much should I pay myself as a company director?</title>
+    <link>https://tax4pros.co.uk/how-much-to-pay-yourself/</link>
+    <pubDate>Mon, 31 Aug 2026 07:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://tax4pros.co.uk/?p=906</guid>
+    <description></description>
+    <content:encoded><![CDATA[<style>
+.t4p-doc{ box-sizing:border-box; margin:0; padding:0; }.t4p-doc{ font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.65; }.t4p-doc .wrap{ max-width:680px; margin:0 auto; padding:28px 20px 60px; }.t4p-doc .wordmark{ font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }.t4p-doc .wordmark a{ color:inherit; text-decoration:none; }.t4p-doc .rule{ width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }.t4p-doc h1{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:31px; font-weight:600; line-height:1.18; margin-bottom:10px; }.t4p-doc .standfirst{ color:#5a6b78; font-size:16.5px; margin-bottom:8px; }.t4p-doc .byline{ color:#8a97a1; font-size:13px; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid #e4dccd; }.t4p-doc h2{ font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:23px; font-weight:600; margin:32px 0 11px; }.t4p-doc h3{ font-family:'Inter',sans-serif; color:#0D1C2B; font-size:16px; font-weight:600; margin:22px 0 6px; }.t4p-doc p{ margin-bottom:14px; }.t4p-doc ul, .t4p-doc ol{ margin:0 0 14px 20px; }.t4p-doc li{ margin-bottom:7px; }.t4p-doc strong{ color:#0D1C2B; }.t4p-doc .pull{ border-left:3px solid #C9A84C; background:#FBF7EE; padding:16px 20px; margin:22px 0; border-radius:0 4px 4px 0; }.t4p-doc .pull p{ margin-bottom:0; color:#4a5a66; }.t4p-doc .pull b{ color:#0D1C2B; }.t4p-doc ol.steps{ list-style:none; counter-reset:s; margin-left:0; }.t4p-doc ol.steps li{ counter-increment:s; padding:15px 0 15px 46px; border-bottom:1px solid #e4dccd; position:relative; margin-bottom:0; }.t4p-doc ol.steps li:last-child{ border-bottom:0; }.t4p-doc ol.steps li:before{ content:counter(s); position:absolute; left:0; top:16px; width:28px; height:28px; border-radius:50%; background:#0D1C2B; color:#E8D9A0; font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; }.t4p-doc ol.steps li b{ color:#0D1C2B; display:block; margin-bottom:3px; }.t4p-doc ol.steps li span{ color:#5a6b78; font-size:14.5px; }.t4p-doc .inline-cta{ background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:22px 24px; margin:28px 0; box-shadow:0 1px 4px rgba(13,28,43,.08); }.t4p-doc .inline-cta b{ font-family:'EB Garamond',Georgia,serif; font-size:19px; color:#0D1C2B; display:block; margin-bottom:5px; }.t4p-doc .inline-cta p{ font-size:14.5px; color:#5a6b78; margin-bottom:13px; }.t4p-doc .btn{ display:inline-block; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:5px; font-size:14.5px; }.t4p-doc .btn:hover{ background:#16283c; }.t4p-doc .foot{ color:#8a97a1; font-size:12px; text-align:center; margin-top:34px; line-height:1.6; padding-top:20px; border-top:1px solid #e4dccd; }.t4p-doc a{ color:#0D1C2B; }
+</style>
+<div class="t4p-doc">
+<p class="standfirst">There is a question that comes before the salary and dividend split, and almost nobody gets asked it.</p>
+<p class="byline">Sarah Charlton, tax strategist and founder of Tax 4 Pros</p>
+
+<p>Right. Here is the question.</p>
+
+<p class="pull"><b>How much do you actually need to take out of the business this year?</b></p>
+
+<p>Not how much profit did you make. Not what did you take last year. Not what does the software suggest. How much do you need.</p>
+
+<p>In years of doing this I have found that almost no director has ever been asked it. The default is to extract whatever is in there, in whatever way seems normal, and find out in January what it cost. And that default is expensive, because <strong>the tax on money you take out and the tax on money you leave in are completely different numbers.</strong></p>
+
+<h2>Work it out in this order</h2>
+
+<ol class="steps">
+<li><b>What do you need to live on</b><span>Your actual household outgoings plus a sensible margin. This is a real number and most people have never written it down. Start here, because everything else is a decision layered on top of it.</span></li>
+<li><b>What is coming that needs cash</b><span>A house move, school fees, a car, a tax bill on last year. Known commitments in the next twelve to eighteen months belong in the number, not in a surprise later.</span></li>
+<li><b>What does the business need to keep</b><span>Working capital, a VAT and corporation tax buffer, anything you are saving toward. Money extracted and then lent back to the company is the most expensive mistake in this whole area, and it happens constantly.</span></li>
+<li><b>What is left over</b><span>This is the part where the real decision lives. Not how to extract it, but whether to extract it at all this year.</span></li>
+</ol>
+
+<div class="pull">
+<p><b>Steps one to three give you a number.</b> Step four is where the money is, and you cannot get to it without the first three.</p>
+</div>
+
+<h2>The mechanical answer, for the money you do need</h2>
+
+<p>For profit you genuinely need in your hands, the standard structure for most directors is a salary at the personal allowance of £12,570, then dividends on top.</p>
+
+<p>The salary sits inside your personal allowance so there is no income tax on it, there is no employee National Insurance at that level, it is still deductible for the company, and it keeps your National Insurance record going for state pension purposes. The company pays employer National Insurance on the part above £5,000, roughly £1,136, which is usually outweighed by the corporation tax saved.</p>
+
+<p>Dividends then carry no National Insurance at all and are taxed at 10.75, 35.75 or 39.35 percent depending on your band, after a £500 allowance.</p>
+
+<p>There is more detail in <a href="/salary-vs-dividends/">the full salary versus dividends breakdown</a>, including where that advantage runs out.</p>
+
+<div class="inline-cta">
+<b>Put your own numbers in</b>
+<p>How much you want to take out, and what you actually keep after every layer of tax. Live 2026/27 figures, including the Child Benefit charge if it applies to you.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/?utm_source=blog_paymyself&utm_medium=article&utm_campaign=mid_article">Use the take home calculator</a>
+</div>
+
+<h2>The traps at particular numbers</h2>
+
+<h3>£50,270</h3>
+<p>Cross this and dividends above it jump from 10.75 to 35.75 percent. If you are taking slightly over, and you did not need the last part, that last slice was expensive.</p>
+
+<h3>£60,000 to £80,000, if you have children</h3>
+<p>The High Income Child Benefit Charge claws back Child Benefit across this range. For a family with two or three children the effective rate on income in this band is considerably higher than the headline, and it catches people who have no idea it exists.</p>
+
+<h3>£100,000</h3>
+<p>The personal allowance tapers away at £1 for every £2 above it, which creates an effective rate of around 60 percent between £100,000 and £125,140. This is the single most punishing band in the UK system and it is entirely avoidable if somebody plans for it before the year end.</p>
+
+<div class="pull">
+<p><b>Every one of these is a timing problem, not a rate problem.</b> Each is manageable if it is seen coming and almost none of them can be fixed afterwards.</p>
+</div>
+
+<h2>For the money you do not need</h2>
+
+<p>This is the part that separates a good year from an expensive one. If step four left you with profit you do not need this year, taking it anyway is a choice with a price attached. The alternatives are usually worth more than any adjustment to the split.</p>
+
+<ul>
+<li><strong>A company pension contribution.</strong> Deductible for the company, no National Insurance, and it moves money into your name without an extraction charge. Often the single biggest lever a profitable company has.</li>
+<li><strong>Leaving it in the company.</strong> Tax you have not triggered is the cheapest tax available. Retained profit stays available for next year, for investment, or for a different structure later.</li>
+<li><strong>Spreading across tax years.</strong> Dividends are taxed when declared. Two smaller dividends either side of 5 April can cost meaningfully less than one large one.</li>
+<li><strong>Family shareholdings.</strong> Where genuinely commercial and properly structured, more than one set of allowances and bands changes the arithmetic. It has real conditions and it is not a paper exercise.</li>
+</ul>
+
+<p>All of these depend on your circumstances and every one of them has a condition or a catch. Anyone presenting them without those is not doing you a favour.</p>
+
+<h2>The honest summary</h2>
+
+<p>If you take one thing from this: the split is a second order question. The first order question is how much you need, and once you have answered that properly the rest tends to fall out of it.</p>
+
+<p>If nobody has sat you down and asked you the first question, that is worth knowing, because it usually means nobody is looking at the second one either.</p>
+
+<div class="inline-cta">
+<b>Fifteen minutes and you will know where you stand</b>
+<p>What your current setup costs you, whether there is anything worth changing before your year end, and whether we are worth moving for. If you are already set up sensibly we will say so.</p>
+<a class="btn" href="https://apply.ctprivateoffice.com/?utm_source=blog_paymyself&utm_medium=article&utm_campaign=book_review">Book a 15 minute review</a>
+</div>
+
+<p><a href="/plans/">See what we charge</a> or read <a href="/why-us/">why directors switch to us</a>.</p>
+
+<p class="foot">
+Figures are 2026/27 for England, Wales and Northern Ireland. Scottish income tax bands differ.<br>
+General information, not personal tax advice. Your own position depends on facts this page does not know.<br>
+Tax 4 Pros Ltd, 20 Wenlock Road, London N1 7GU. <a href="https://tax4pros.co.uk/privacy">Privacy policy</a>
+</p>
+</div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[The question to answer before the salary and dividend split: how much do you actually need to take out?]]></excerpt:encoded>
+    <wp:post_id>906</wp:post_id>
+    <wp:post_date><![CDATA[2026-08-31 07:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-08-31 07:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[how-much-to-pay-yourself]]></wp:post_name>
+    <wp:status><![CDATA[draft]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[post]]></wp:post_type>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+</channel>
+</rss>
