@@ -79,30 +79,74 @@ furniture. It should look like an email a person wrote.
 
 ### A3 · Day 5 · The receipt
 
-**Subject:** A {{trade}} doing £{{turnover}} was overpaying by £{{amount}}
-**Preview:** Nothing clever. Nobody had looked.
+Two versions. The first is ready to send from a case study already published on
+the site. The second converts harder but needs one number from you.
 
-> TEMPLATE. Fill from a real client, anonymised. Do not invent one.
->
+---
+
+#### A3a · Ready to send, from the childcare case
+
+Source: `tax4pros.co.uk/case-studies/childcare-business-vat-structure-planning`.
+Already anonymised and already public, so nothing new is being disclosed.
+
+**Subject:** Two founders, one question nobody had answered
+**Preview:** They had premises, staff and a plan. Nobody had told them how to pay themselves.
+
 > {{contact.first_name}},
 >
-> A client came to us last year. [TRADE] business, [TURNOVER] through the company, [YEARS] years in, one director.
+> Two people came to us launching a childcare business in London. Premises signed, staff lined up, commercial plan done properly.
 >
-> He was paying [OLD FIGURE] a year in tax and he assumed that was simply what it cost.
+> What they did not have was any idea how the tax side worked. Whether to register for VAT. How to pay themselves. How to set the company up so it could grow later.
 >
-> What was actually happening: [THE SPECIFIC THING. One sentence. The structural mistake, not a trick.]
+> Reasonable questions. Nobody had answered any of them, because nobody had been asked to.
 >
-> His accountant had filed everything correctly and on time for [N] years. Nothing was wrong. Nobody had ever sat down and asked whether the setup still fitted the business.
+> Here is what that would have cost if they had carried on. Charging VAT they did not need to charge. Missing the reclaim on their set up costs, which were substantial. Paying themselves in the way that felt normal rather than the way that worked. And a company structure that would have quietly blocked a second site, a franchise or a sale, years before anyone noticed.
 >
-> We changed [WHAT CHANGED]. He now pays [NEW FIGURE].
+> None of that is exotic. It is the ordinary set of decisions every company makes in its first year, made once, and then lived with for a decade.
 >
-> That is [DIFFERENCE] a year, every year, for as long as the business runs.
+> We ran the VAT position, the pay structure and the company setup together rather than one at a time. They are now on a platform that can take a second site and an investor, instead of becoming another over taxed small business that has to be unpicked later.
 >
-> His words when we told him: "[VERBATIM QUOTE. The quote is the punchline. Leave it exactly as he said it.]"
+> Most childcare businesses do not fail because of demand. They fail because they were badly structured on day one.
+>
+> The same is true of most companies. It is just less obvious when you are five years in.
 >
 > Sarah
 
-**Notes:** this is the highest performing email in the sequence and the only one no competitor can copy. Rotate three or four real stories so the sequence stays fresh. Alter identifying detail, keep the numbers true. Run it past the client output reviewer before it goes in.
+**Notes:** works without a figure because the punchline is the structural mistake
+rather than a saving. Slightly softer than A3b. Send this one until you have
+supplied a number for the other.
+
+---
+
+#### A3b · The stronger version, needs one number from you
+
+This is the higher converting email and it is one figure away from being
+finished. Everything below is written. Fill the four brackets from a real client
+and it sends.
+
+**Subject:** A {{trade}} doing £{{turnover}} was overpaying by £{{amount}}
+**Preview:** Nothing clever. Nobody had looked.
+
+> {{contact.first_name}},
+>
+> A client came to us last year. [TRADE] business, [TURNOVER] through the company, one director taking money out of it.
+>
+> He was paying [OLD FIGURE] a year in tax and he assumed that was simply what it cost. Everything had been filed correctly and on time for years. Nothing was wrong.
+>
+> What nobody had done was ask him how much he actually needed to take out of the business. So every year the profit came out the way it had always come out, and every year it cost him [DIFFERENCE] more than it needed to.
+>
+> We changed [WHAT CHANGED. One sentence. The structural fix, not a trick.] He now pays [NEW FIGURE].
+>
+> That is [DIFFERENCE] a year. Every year, for as long as the business runs.
+>
+> His words when we showed him: "[VERBATIM QUOTE. Leave it exactly as he said it. The quote is the punchline.]"
+>
+> Sarah
+
+**What to supply:** trade, turnover band, old tax figure, new tax figure, the one
+sentence on what changed, and his actual words. Alter anything identifying, keep
+the numbers true. Rotate three or four of these so the sequence stays fresh, and
+run each past the client-output-reviewer before it goes live.
 
 ---
 
