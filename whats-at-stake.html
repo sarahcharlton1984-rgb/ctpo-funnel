@@ -295,6 +295,9 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; background: v
           email: email,
           first_name: (leadName && leadName.value ? leadName.value.trim() : ''),
           source: 'whats-at-stake-calculator',
+          // Segment decides which nurture sequence fires. See nurture-emails.md.
+          // This calculator is the CT Private Office entry point, so always HNW.
+          segment: 'ctpo-hnw',
           estate_value: estate.value,
           business_value: business.value,
           exit_horizon_years: horizon.value,

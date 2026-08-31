@@ -269,6 +269,8 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; background: v
           email: email,
           first_name: (nameEl && nameEl.value ? nameEl.value.trim() : ''),
           source: 't4p-pay-calculator',
+          // Segment decides which nurture sequence fires. See nurture-emails.md.
+          segment: Number(profit.value) >= 300000 ? 'ctpo-hnw' : 't4p-director',
           company_profit: profit.value,
           pay_style: allSalary ? 'all-salary' : 'salary-plus-dividends',
           current_route_tax: currentOut.textContent,
