@@ -16,16 +16,22 @@ All three post to the GHL "Calculator Lead Capture" webhook and send a
 
 ## Conversion pages
 
-- `plans.html` — Tax 4 Pros plans and pricing, price on the page
-- `why-us.html` — what switching involves (the main objection)
 - `who-is-sarah.html` — CT Private Office trust page
 
-## Articles (organic search)
+Tax 4 Pros pricing lives at `tax4pros.co.uk/packages`, which already exists.
+Nothing in this repo duplicates it; every T4P CTA points at it.
+
+## Articles (for tax4pros.co.uk, not served from here)
 
 - `accountant-cost-limited-company.html`
 - `changing-accountants.html`
 - `salary-vs-dividends.html`
 - `how-much-to-pay-yourself.html`
+
+`tax4pros.co.uk` is WordPress, so these are published by importing
+`tax4pros-wordpress-import.xml` (Tools → Import → WordPress). They arrive as
+drafts in Insights and render inside the theme with the site nav intact.
+`build-wordpress-import.py` regenerates the XML from the HTML.
 
 ## Not served
 
@@ -34,9 +40,6 @@ All three post to the GHL "Calculator Lead Capture" webhook and send a
 - `gbp-posts.md` — Google Business Profile setup, review asks, twelve weeks of posts
 
 ## Before publishing
-
-Prices in `plans.html` are placeholders pending confirmation against the real
-rate card.
 
 Source of truth mirrors `content/funnel/site/` in the youtube-autopilot repo.
 Tax figures must match `content/TAX_FIGURES_LIVE.md` — re-check after any Budget.

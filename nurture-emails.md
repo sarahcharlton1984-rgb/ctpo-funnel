@@ -115,13 +115,13 @@ furniture. It should look like an email a person wrote.
 >
 > You have had a few emails from me now, so here is the commercial bit, plainly.
 >
-> We do fixed monthly accountancy for limited company directors. One price, agreed before we start. Everything included in the list is included. There is no invoice at the year end that you were not expecting, and there is no charge for asking a question.
+> We do fixed monthly accountancy for limited company directors. One price, agreed before we start. Everything on the list is included. There is no invoice at the year end that you were not expecting, and there is no charge for asking a question.
 >
-> Most directors are on our Director plan at £295 a month. That covers the accounts, the corporation tax return, your self assessment, payroll, quarterly figures, and a proper look at how you pay yourself every year before the year end rather than after it.
+> There are four packages, from £125 a month if you keep your own books and just want the filings done properly, up to £395 for Gold, which is the one where somebody is looking at next year rather than only reporting on last year. Most directors in your position land on Silver at £295, which covers the accounts, the corporation tax return, your self assessment, payroll and monthly numbers.
 >
-> The full list and the other two plans are here:
+> Pricing is banded by turnover, because the workload is. It is all published, so you can work out which one you are without speaking to anybody:
 >
-> **{{plans_url}}**
+> **https://tax4pros.co.uk/packages**
 >
 > Two other things worth knowing.
 >
@@ -248,6 +248,7 @@ retainer. They are deciding whether to trust you with something large.
 ## Build notes
 
 1. **The segment tag is the dependency.** Set `t4p-director` or `ctpo-hnw` at capture, from the profit band and business value already entered into the calculator. Without it, both sequences fire at the wrong people.
+2. **Package names and prices in A4 are the live ones** from `tax4pros.co.uk/packages`: Compliance £125, Bronze £195, Silver £295, Gold £395 at up to £500k turnover, FD Lite from £795. Re-check them against the page before switching the sequence on, and again whenever the price list changes.
 2. **Plain text, from a person.** No banner, no template chrome, no unsubscribe language beyond the legal minimum. It should read like Sarah wrote it that morning.
 3. **Send from her real address** so replies land somewhere a human reads. Several will reply instead of booking, and those are the best leads in the sequence.
 4. **Every figure** goes through `check_figures.py` against the live figures file before the sequence is switched on, and again after any Budget.

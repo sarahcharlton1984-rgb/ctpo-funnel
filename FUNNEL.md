@@ -51,8 +51,10 @@ data, because if capture runs at 40% the traffic target nearly halves.
     £295/month          advisory fees
 ```
 
-Supporting pages that close rather than capture: `/plans` (price on the page)
-and `/why-us` (the switching objection, which is what actually stops people).
+The close is **`tax4pros.co.uk/packages`**, which already exists and already does
+the job: four packages priced on the page, banded by turnover, AML supervision and
+PI insurance stated, and a self-selection block that routes the leaving-the-UK case
+to CT Private Office. Nothing here duplicates it. Every CTA points at it.
 
 ## Pages
 
@@ -61,13 +63,21 @@ and `/why-us` (the switching objection, which is what actually stops people).
 | `index.html` | Take home calculator. Main capture. | director, or HNW above £300k |
 | `pay-calculator.html` | Pay structure gap. Strongest hook for switchers. | director, or HNW above £300k profit |
 | `whats-at-stake.html` | Estate and exit exposure. | always HNW |
-| `plans.html` | Three tiers, price visible. Closes. | — |
-| `why-us.html` | What switching involves. Kills the main objection. | — |
 | `accountant-cost-limited-company.html` | Ranks for "how much does an accountant cost". High buying intent. | — |
 | `changing-accountants.html` | Ranks for "changing accountants". Highest buying intent of the four. | — |
 | `salary-vs-dividends.html` | High volume informational. Feeds the calculator. | — |
 | `how-much-to-pay-yourself.html` | High volume informational. Feeds the calculator. | — |
 | `who-is-sarah.html` | CT Private Office trust page. | — |
+
+The four articles are published on **`tax4pros.co.uk`** (WordPress, Elementor,
+GoDaddy) via `tax4pros-wordpress-import.xml`, not served from this repo. They land
+in the theme with the site nav intact, which is what they need: these are organic
+search pages, so internal linking and a real site structure help them rank and help
+the reader trust them. They are not closed landing pages.
+
+`tax4pros.co.uk` already has `/packages` (the price list), `/case-studies`,
+`/meet-the-team`, `/insights` (the blog these posts join), `/services` and
+`/skool-community`. Check what exists there before building anything new.
 
 Every article carries a calculator CTA mid way and a booking CTA at the end,
 with UTMs already set so you can see which article produces leads.
@@ -77,14 +87,15 @@ with UTMs already set so you can see which article produces leads.
 Nothing below is code. These are the five things that have to happen outside
 this repo before the funnel runs.
 
-1. **Confirm the prices in `plans.html`.** They are placeholders anchored to the
-   £295 average and the existing £995 account. Flagged in an HTML comment.
+1. **Import the articles.** WordPress admin → Tools → Import → WordPress, upload
+   `tax4pros-wordpress-import.xml`. Four drafts land in Insights. Review, set a
+   featured image, publish.
 2. **Build the two GHL sequences** from `nurture-emails.md`, and split them on
    the `segment` field the calculators now send. Without the split, both
    sequences fire at the wrong people.
 3. **Point the booking CTAs at the real GHL calendar.** They currently go to
-   `apply.ctprivateoffice.com`. A T4P booking link for a 15 minute review would
-   convert better than an application page.
+   `apply.ctprivateoffice.com`. The `/packages` page already has a "Book a 15
+   minute fit call" link; use that same calendar so everything lands in one place.
 4. **Claim and populate the Google Business Profile,** and link it to
    `/pay-calculator` rather than the homepage. See `gbp-posts.md`.
 5. **Run `check_figures.py`** over the four articles and the email sequences

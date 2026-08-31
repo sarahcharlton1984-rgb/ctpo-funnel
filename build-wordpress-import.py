@@ -1,8 +1,6 @@
 import re, html, datetime, os
 
 PAGES = [
-    ("plans.html",                        "Plans and pricing",                              "plans",                        "page", "Fixed monthly accountancy for limited company directors. One price, agreed up front. No surprise invoices at the year end."),
-    ("why-us.html",                       "Why directors switch to us",                     "why-us",                       "page", "What Tax 4 Pros does, what switching actually involves, and who you are dealing with."),
     ("accountant-cost-limited-company.html","How much should an accountant cost for a limited company?","accountant-cost-limited-company","post", "What limited company directors actually pay for accountancy, what should be included, and the extras that turn a quote into a bigger bill."),
     ("changing-accountants.html",         "How to change accountants, and why it is easier than you think", "changing-accountants", "post", "What actually happens when you switch accountants: professional clearance, records, timing, and whether you have to tell them yourself."),
     ("salary-vs-dividends.html",          "Salary vs dividends in 2026/27: how the split actually works",   "salary-vs-dividends",  "post", "Why a low salary plus dividends still beats an all salary route in 2026/27, and the point at which the advantage runs out."),
@@ -68,8 +66,8 @@ for fname, title, slug, ptype, excerpt in PAGES:
     # Rewrite internal links for their new home.
     # Pages that move to tax4pros.co.uk stay relative; the calculators live on
     # apply.ctprivateoffice.com, so those must become absolute or they 404.
-    ON_WP = {'plans','why-us','accountant-cost-limited-company',
-             'changing-accountants','salary-vs-dividends','how-much-to-pay-yourself'}
+    ON_WP = {'accountant-cost-limited-company','changing-accountants',
+             'salary-vs-dividends','how-much-to-pay-yourself'}
     def fix(m):
         href = m.group(1)
         path, _, qs = href.partition('?')
@@ -93,9 +91,9 @@ parts = ['''<?xml version="1.0" encoding="UTF-8" ?>
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:wp="http://wordpress.org/export/1.2/">
 <channel>
-  <title>Tax 4 Pros funnel pages</title>
+  <title>Tax 4 Pros insight articles</title>
   <link>https://tax4pros.co.uk</link>
-  <description>Plans, trust page and four search articles</description>
+  <description>Four search articles for the Insights blog</description>
   <language>en-GB</language>
   <wp:wxr_version>1.2</wp:wxr_version>
   <wp:base_site_url>https://tax4pros.co.uk</wp:base_site_url>
