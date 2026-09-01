@@ -93,9 +93,11 @@ this repo before the funnel runs.
 2. **Build the two GHL sequences** from `nurture-emails.md`, and split them on
    the `segment` field the calculators now send. Without the split, both
    sequences fire at the wrong people.
-3. **Point the booking CTAs at the real GHL calendar.** They currently go to
-   `apply.ctprivateoffice.com`. The `/packages` page already has a "Book a 15
-   minute fit call" link; use that same calendar so everything lands in one place.
+3. **Booking CTAs: done.** The three article booking buttons point at the same
+   LeadGenJay calendar the `/packages` page uses
+   (`api.leadgenjay.com/widget/booking/qVlSrUPE1YUeJHZp6xFl`), so everything
+   lands in one place. If that calendar is ever replaced on `/packages`, update
+   the three article CTAs to match.
 4. **Claim and populate the Google Business Profile,** and link it to
    `/pay-calculator` rather than the homepage. See `gbp-posts.md`.
 5. **Run `check_figures.py`** over the four articles and the email sequences
