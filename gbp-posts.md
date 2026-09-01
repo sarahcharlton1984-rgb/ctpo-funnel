@@ -104,7 +104,7 @@ the UK system and it is avoidable if it is seen coming before the year end.
 **4.** Changing accountants takes about a week and you do not have to tell your
 old one yourself. The clearance letter does it. Most people who want to move
 stay put because they imagine an awkward conversation that never happens.
-→ link to `/changing-accountants`
+→ link to `tax4pros.co.uk/changing-accountants`
 
 **5.** If you have children and your income runs between roughly £60,000 and
 £80,000, the High Income Child Benefit Charge is quietly clawing it back. Most
@@ -112,7 +112,7 @@ people affected have no idea it exists until the return is filed.
 
 **6.** Ask any accountant what is NOT included in the fee. A firm with a genuinely
 fixed price can answer in one sentence. If they cannot, that is the answer.
-→ link to `/accountant-cost-limited-company`
+→ link to `tax4pros.co.uk/accountant-cost-limited-company`
 
 **7.** Money taken out of the company and then lent straight back in is one of the
 most expensive routine mistakes we see. If the business needs it, leaving it there
@@ -131,8 +131,9 @@ from your accountant at the filing deadline, the window has already closed. Ever
 year.
 
 **11.** We publish our prices, which is rarer in this profession than it should be.
-Three fixed monthly plans, the list of what is included underneath each one, and
-no invoice at the year end you were not expecting. → link to `/plans`
+Four packages, banded by turnover, with the list of what is included underneath
+each one and no invoice at the year end you were not expecting.
+→ link to `tax4pros.co.uk/packages`
 
 **12.** Your company setup was probably right when you started. Then you took on
 staff, or profit doubled, or you bought a property, and nobody revisited it. The
