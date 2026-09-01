@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free: The Director's Pay Sheet 2026/27 | Tax 4 Pros</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family:'Inter',Arial,sans-serif; background:#F5EFE6; color:#22303c; line-height:1.55; }
+.wrap { max-width:560px; margin:0 auto; padding:28px 20px 60px; }
+.wordmark { font-family:'EB Garamond',Georgia,serif; letter-spacing:3px; color:#0D1C2B; text-transform:uppercase; font-weight:600; font-size:14px; text-align:center; }
+.rule { width:52px; border:0; border-top:2px solid #C9A84C; margin:10px auto 22px; }
+h1 { font-family:'EB Garamond',Georgia,serif; color:#0D1C2B; font-size:28px; font-weight:600; text-align:center; line-height:1.2; margin-bottom:8px; }
+.sub { text-align:center; color:#5a6b78; font-size:14.5px; margin-bottom:28px; }
+.card { background:#fff; border-top:3px solid #C9A84C; border-radius:6px; padding:24px; margin-bottom:18px; box-shadow:0 1px 4px rgba(13,28,43,.08); }
+.card ul { margin:0 0 14px 18px; font-size:14.5px; }
+.card li { margin-bottom:6px; }
+input[type=email] { width:100%; padding:.7rem; border:1px solid #cfc5b0; border-radius:6px; font:inherit; }
+button { margin-top:.6rem; width:100%; padding:.8rem 1.1rem; border:0; border-radius:6px; background:#0D1C2B; color:#fff; font:inherit; font-weight:600; cursor:pointer; font-size:15px; }
+button:hover { background:#16283c; }
+#msg { margin-top:.5rem; min-height:1.2em; font-size:14px; }
+.getit { display:none; text-align:center; background:#0D1C2B; color:#fff; text-decoration:none; font-weight:600; padding:14px 20px; border-radius:5px; margin-top:12px; font-size:15px; }
+.foot { color:#8a97a1; font-size:12px; text-align:center; margin-top:26px; line-height:1.5; }
+a { color:#0D1C2B; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="wordmark">Tax 4 Pros</div>
+  <hr class="rule">
+  <h1>The Director's Pay Sheet 2026/27</h1>
+  <p class="sub">One page. The salary and dividend split at each profit level, corporation tax, employer's NI and your personal tax all counted, on this year's rates.</p>
+
+  <div class="card">
+    <ul>
+      <li>What you actually keep from &pound;30,000 to &pound;200,000 of profit</li>
+      <li>Why &pound;12,570 salary plus dividends still wins for most directors</li>
+      <li>The three thresholds that quietly cost the most, and the move at each one</li>
+    </ul>
+    <input type="email" id="em" placeholder="you@company.co.uk" autocomplete="email">
+    <button id="btn">Send me the Pay Sheet</button>
+    <div id="msg"></div>
+    <a class="getit" id="getit" href="pay-sheet.html">Open the Pay Sheet now</a>
+  </div>
+
+  <p class="foot">We will also send you the occasional short note on what is changing for directors, written by Sarah Charlton, tax strategist and founder of Tax 4 Pros. Unsubscribe any time. This is education, not personal advice.</p>
+</div>
+
+<script>
+(function () {
+  // GHL inbound webhook, same public capture endpoint as the calculator page.
+  var LEAD_WEBHOOK = "https://services.leadconnectorhq.com/hooks/6GPl4TryP7F4DBJBSJMc/webhook-trigger/a93bef9e-9720-4d64-a05c-4d29a63ab679";
+  var btn = document.getElementById('btn');
+  var msg = document.getElementById('msg');
+  var em  = document.getElementById('em');
+  function send() {
+    var email = (em.value || '').trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.textContent = 'Please enter a valid email.'; return; }
+    btn.disabled = true; msg.textContent = 'Sending...';
+    fetch(LEAD_WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, source: 'Pay Sheet' })
+    }).then(function (r) {
+      if (r.ok) {
+        msg.textContent = 'Done. It is on its way to your inbox, or read it right now:';
+        document.getElementById('getit').style.display = 'block';
+        btn.style.display = 'none';
+      } else {
+        msg.textContent = 'Something went wrong, please try again.';
+        btn.disabled = false;
+      }
+    }).catch(function () { msg.textContent = 'Something went wrong, please try again.'; btn.disabled = false; });
+  }
+  btn.addEventListener('click', send);
+  em.addEventListener('keydown', function (e) { if (e.key === 'Enter') send(); });
+})();
+</script>
+</body>
+</html>
