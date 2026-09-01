@@ -78,7 +78,8 @@ a { color:#0D1C2B; }
     </div>
   </div>
 
-  <a class="cta" href="https://apply.ctprivateoffice.com">Apply to work with us</a>
+  <a class="cta" href="https://tax4pros.co.uk/packages?utm_source=take_home_calculator&utm_medium=funnel&utm_campaign=plans">See the packages and prices</a>
+  <p style="text-align:center;color:#8a97a1;font-size:13px;margin-top:9px;">Fixed monthly fee. No surprise invoice at the year end.</p>
 </div>
 
 <script>
@@ -187,7 +188,14 @@ a { color:#0D1C2B; }
     fetch(LEAD_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, income: String(income), source: 'Calculator' })
+      body: JSON.stringify({
+        email: email,
+        income: String(income),
+        source: 'Calculator',
+        page: 'take-home-calculator',
+        // Segment decides which nurture sequence fires. See nurture-emails.md.
+        segment: Number(income) >= 300000 ? 'ctpo-hnw' : 't4p-director'
+      })
     }).then(function (r) {
       msg.textContent = r.ok ? 'Thanks, it is on its way.' : 'Something went wrong, please try again.';
       btn.disabled = !r.ok;

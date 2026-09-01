@@ -271,8 +271,8 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; background: v
       cta.textContent = 'Get the Tax Strategy Blueprint · £450 →';
       cta.href = 'https://apply.ctprivateoffice.com/blueprint?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=mid';
     } else {
-      cta.textContent = 'See the Tax 4 Pros plans →';
-      cta.href = 'https://apply.ctprivateoffice.com/plans?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=low';
+      cta.textContent = 'See the Tax 4 Pros packages →';
+      cta.href = 'https://tax4pros.co.uk/packages?utm_source=calculator&utm_medium=funnel&utm_campaign=whats_at_stake&utm_content=low';
     }
   }
 
@@ -295,6 +295,9 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; background: v
           email: email,
           first_name: (leadName && leadName.value ? leadName.value.trim() : ''),
           source: 'whats-at-stake-calculator',
+          // Segment decides which nurture sequence fires. See nurture-emails.md.
+          // This calculator is the CT Private Office entry point, so always HNW.
+          segment: 'ctpo-hnw',
           estate_value: estate.value,
           business_value: business.value,
           exit_horizon_years: horizon.value,
