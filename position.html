@@ -1,0 +1,1840 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Director's Position | Tax 4 Pros</title>
+<meta name="description" content="Your numbers, the tax they actually attract this year, on a sale and on death, and which of the seven levers are still open to you. Built on published 2026/27 rates.">
+<meta property="og:title" content="The Director's Position">
+<meta property="og:description" content="What your company structure is really costing you, stage by stage, on 2026/27 rates.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231A1F2E%22/><text y=%22.9em%22 x=%22.5em%22 text-anchor=%22middle%22 font-size=%2270%22>&#128208;</text></svg>">
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* email gate on the detailed stages */
+.gate{background:var(--surface); border:1px solid var(--accent-line); border-radius:3px; padding:26px 24px}
+.gate h2{font-size:12px; font-family:"JetBrains Mono",monospace; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--accent); font-weight:500; margin-bottom:14px}
+.gate h3{font-size:clamp(20px,3vw,26px); font-weight:700; letter-spacing:-.015em; margin-bottom:10px}
+.gate p{color:var(--ink-dim); max-width:60ch; margin:0 0 8px; font-size:14.5px}
+.gate form{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; align-items:flex-start}
+.gate input[type=text],.gate input[type=email]{flex:1 1 190px; text-align:left;
+  font-family:Inter,sans-serif; font-size:14px; padding:10px 12px}
+.gate button{background:var(--accent); color:var(--ground); border:0; border-radius:2px;
+  font-family:Inter,sans-serif; font-weight:600; font-size:14px; padding:11px 22px; cursor:pointer; flex:0 0 auto}
+.gate button:hover{background:var(--accent-soft)}
+.gate .err{color:var(--crit); font-size:13px; margin-top:8px; display:none}
+.gate .small{font-size:12.5px; color:var(--ink-faint); margin-top:12px; max-width:60ch}
+.locked{display:flex; flex-wrap:wrap; gap:7px; margin-top:16px}
+.locked span{border:1px solid var(--line); color:var(--ink-faint); border-radius:2px;
+  padding:5px 9px; font-size:12px}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#141A28; --surface:#1E2537; --surface-2:#252D43;
+  --line:#343D57; --line-soft:#2A3348;
+  --ink:#F5EFE6; --ink-dim:#9AA3B8; --ink-faint:#6E778E;
+  --accent:#C9A84C; --accent-soft:#E5D08A; --accent-line:rgba(201,168,76,.35);
+  --crit:#D9736A; --crit-fill:#A83232; --crit-wash:rgba(168,50,50,.16);
+  --ok-wash:rgba(201,168,76,.12);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --ground:#EDE4D6; --surface:#F9F4EC; --surface-2:#F2EADC;
+    --line:#DCD0BA; --line-soft:#E5DBC9;
+    --ink:#1A1F2E; --ink-dim:#6B6455; --ink-faint:#8A8172;
+    --accent:#8A6D1E; --accent-soft:#A8862E; --accent-line:rgba(138,109,30,.32);
+    --crit:#8E2A2A; --crit-fill:#A83232; --crit-wash:rgba(168,50,50,.10);
+    --ok-wash:rgba(138,109,30,.10);
+  }
+}
+:root[data-theme="light"]{
+  --ground:#EDE4D6; --surface:#F9F4EC; --surface-2:#F2EADC;
+  --line:#DCD0BA; --line-soft:#E5DBC9;
+  --ink:#1A1F2E; --ink-dim:#6B6455; --ink-faint:#8A8172;
+  --accent:#8A6D1E; --accent-soft:#A8862E; --accent-line:rgba(138,109,30,.32);
+  --crit:#8E2A2A; --crit-fill:#A83232; --crit-wash:rgba(168,50,50,.10);
+  --ok-wash:rgba(138,109,30,.10);
+}
+*{box-sizing:border-box}
+body{background:var(--ground); color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif; font-size:15px; line-height:1.55; margin:0}
+.wrap{max-width:1280px; margin:0 auto; padding-inline:20px; padding-block:0 56px}
+h1,h2,h3,h4{font-family:"Space Grotesk",Inter,system-ui,sans-serif; text-wrap:balance; margin:0}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+
+.masthead{border-bottom:1px solid var(--line); padding-block:22px 0; margin-bottom:24px}
+.eyebrow{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+.masthead h1{font-size:clamp(26px,4.4vw,38px); font-weight:700; letter-spacing:-.02em}
+.standfirst{color:var(--ink-dim); max-width:64ch; margin:10px 0 0; font-size:15px}
+.scope{margin:14px 0 0; padding:9px 13px; border-left:2px solid var(--accent);
+  background:var(--ok-wash); color:var(--ink-dim); font-size:13px; max-width:80ch}
+
+nav{display:flex; gap:2px; margin-top:20px; overflow-x:auto; scrollbar-width:thin}
+nav button{flex:0 0 auto; background:transparent; border:0; border-bottom:2px solid transparent;
+  color:var(--ink-dim); font-family:Inter,sans-serif; font-size:13.5px; font-weight:500;
+  padding:10px 14px; cursor:pointer; white-space:nowrap; display:flex; gap:9px; align-items:baseline}
+nav button:hover{color:var(--ink)}
+nav button[aria-current="true"]{color:var(--ink); border-bottom-color:var(--accent)}
+nav button i{font-style:normal; font-family:"JetBrains Mono",monospace; font-size:10.5px; color:var(--ink-faint)}
+nav button[aria-current="true"] i{color:var(--accent)}
+nav button:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+
+.shell{display:grid; grid-template-columns:minmax(290px,340px) 1fr; gap:26px; align-items:start}
+@media (max-width:980px){.shell{grid-template-columns:1fr}}
+
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:3px;
+  padding:4px 18px 18px; position:sticky; top:14px; max-height:calc(100vh - 28px); overflow-y:auto}
+@media (max-width:980px){.panel{position:static; max-height:none}}
+fieldset{border:0; border-top:1px solid var(--line-soft); margin:0; padding:16px 0 4px}
+fieldset:first-of-type{border-top:0}
+legend{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--accent); padding:0}
+.field{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:11px}
+.field label{font-size:13.5px; color:var(--ink-dim); flex:1 1 auto}
+.money{position:relative; flex:0 0 118px}
+.money::before{content:"\00A3"; position:absolute; left:9px; top:50%; transform:translateY(-50%);
+  color:var(--ink-faint); font-family:"JetBrains Mono",monospace; font-size:13px; pointer-events:none}
+input[type=number],select{width:100%; background:var(--ground); color:var(--ink);
+  border:1px solid var(--line); border-radius:2px; padding:7px 8px;
+  font-family:"JetBrains Mono",monospace; font-size:13.5px; font-variant-numeric:tabular-nums; text-align:right}
+.money input{padding-left:19px}
+select{flex:0 0 148px; text-align:left; font-family:Inter,sans-serif; font-size:13px}
+.num{flex:0 0 62px}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.toggle{display:flex; align-items:flex-start; gap:9px; margin-top:11px; cursor:pointer}
+.toggle input{margin:2px 0 0; accent-color:var(--accent); flex:0 0 auto}
+.toggle span{font-size:13px; color:var(--ink-dim); line-height:1.42}
+
+.report{display:flex; flex-direction:column; gap:20px; min-width:0}
+.block{background:var(--surface); border:1px solid var(--line); border-radius:3px; padding:20px}
+.block>h2{font-size:12px; font-family:"JetBrains Mono",monospace; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--accent); font-weight:500; margin-bottom:16px}
+.lede{font-size:15px; color:var(--ink-dim); max-width:68ch; margin:0}
+.lede+.lede{margin-top:10px}
+.lede b{color:var(--ink); font-weight:600}
+
+.headline{display:flex; flex-wrap:wrap; gap:24px 40px; align-items:flex-end}
+.figure .n{font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:clamp(30px,5vw,44px);
+  letter-spacing:-.025em; line-height:1; font-variant-numeric:tabular-nums}
+.figure .k{font-size:12.5px; color:var(--ink-dim); margin-top:7px; max-width:26ch}
+.figure.crit .n{color:var(--crit)}
+
+.bar{display:flex; height:24px; margin-top:20px; border:1px solid var(--line);
+  border-radius:2px; overflow:hidden; background:var(--ground)}
+.bar i{display:block; height:100%}
+.barkey{display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:11px; font-size:12px; color:var(--ink-dim)}
+.barkey span{display:flex; align-items:center; gap:6px}
+.barkey b{width:9px; height:9px; border-radius:1px; flex:0 0 auto}
+.barkey em{font-style:normal; font-family:"JetBrains Mono",monospace; color:var(--ink)}
+
+.exp{display:grid; grid-template-columns:3px 1fr auto; gap:0 15px; align-items:baseline;
+  padding:14px 0; border-bottom:1px solid var(--line-soft)}
+.exp:last-child{border-bottom:0}
+.exp .stripe{grid-row:1/span 2; background:var(--line); border-radius:2px; align-self:stretch}
+.exp.hot .stripe{background:var(--crit-fill)}
+.exp.warm .stripe{background:var(--accent)}
+.exp h3{font-size:15.5px; font-weight:600}
+.exp .amt{font-family:"JetBrains Mono",monospace; font-size:17px; font-weight:500; white-space:nowrap}
+.exp.hot .amt{color:var(--crit)}
+.exp p{grid-column:2/4; margin:5px 0 0; font-size:13px; color:var(--ink-dim); max-width:68ch}
+
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{border:1px solid var(--accent-line); background:var(--ok-wash); color:var(--ink);
+  border-radius:2px; padding:7px 11px; font-size:12.5px; display:flex; gap:8px; align-items:baseline}
+.chip.hot{border-color:var(--crit); background:var(--crit-wash)}
+.chip b{font-family:"JetBrains Mono",monospace; font-weight:500; color:var(--accent)}
+.chip.hot b{color:var(--crit)}
+.empty{color:var(--ink-faint); font-size:13.5px; font-style:italic; margin:0}
+
+/* reliefs ledger */
+.relief{display:grid; grid-template-columns:auto 1fr auto; gap:2px 13px; align-items:baseline;
+  padding:12px 0; border-top:1px solid var(--line-soft)}
+.relief:first-child{border-top:0; padding-top:0}
+.tag{font-family:"JetBrains Mono",monospace; font-size:9.5px; letter-spacing:.09em; text-transform:uppercase;
+  padding:3px 7px; border-radius:2px; border:1px solid var(--line); color:var(--ink-faint); white-space:nowrap}
+.tag.open{border-color:var(--accent-line); color:var(--accent)}
+.tag.risk{border-color:var(--crit); color:var(--crit)}
+.tag.used{border-color:var(--line); color:var(--ink-dim)}
+.relief h4{font-size:14.5px; font-weight:600}
+.relief .v{font-family:"JetBrains Mono",monospace; font-size:13.5px; color:var(--ink-dim); white-space:nowrap}
+.relief p{grid-column:2/4; margin:3px 0 0; font-size:12.5px; color:var(--ink-dim); max-width:68ch}
+
+/* if you do / if you don't */
+.fork{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);
+  border-radius:3px; overflow:hidden; margin-top:4px}
+@media (max-width:620px){.fork{grid-template-columns:1fr}}
+.fork>div{padding:15px 16px}
+.fork .yes{background:var(--ok-wash)}
+.fork .no{background:var(--crit-wash); border-left:1px solid var(--line)}
+@media (max-width:620px){.fork .no{border-left:0; border-top:1px solid var(--line)}}
+.fork h4{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.12em;
+  text-transform:uppercase; font-weight:500; margin-bottom:9px}
+.fork .yes h4{color:var(--accent)}
+.fork .no h4{color:var(--crit)}
+.fork .big{font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:26px;
+  letter-spacing:-.02em; font-variant-numeric:tabular-nums; line-height:1.1}
+.fork .no .big{color:var(--crit)}
+.fork p{margin:7px 0 0; font-size:12.5px; color:var(--ink-dim)}
+.delta{margin-top:11px; font-size:13.5px; color:var(--ink)}
+.delta b{font-family:"JetBrains Mono",monospace; color:var(--accent); font-weight:600}
+.catch{margin-top:12px; padding:10px 13px; border-left:2px solid var(--crit-fill);
+  background:var(--crit-wash); font-size:13px; color:var(--ink-dim); max-width:72ch}
+.catch b{color:var(--ink); font-weight:600}
+.sub{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-faint); margin:22px 0 10px}
+.sub:first-child{margin-top:0}
+
+/* the seven levers, ranked */
+.lever{display:grid; grid-template-columns:auto 1fr auto; gap:3px 14px; align-items:baseline;
+  padding:15px 0; border-top:1px solid var(--line-soft)}
+.lever:first-child{border-top:0; padding-top:0}
+.rank{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-faint)}
+.lever h3{font-size:15.5px; font-weight:600}
+.lever .at{font-family:"JetBrains Mono",monospace; font-size:13px; color:var(--ink-dim); white-space:nowrap}
+.lever p{grid-column:2/4; margin:4px 0 0; font-size:13px; color:var(--ink-dim); max-width:68ch}
+.pill{display:inline-block; margin-left:9px; font-family:"JetBrains Mono",monospace; font-size:10px;
+  letter-spacing:.1em; text-transform:uppercase; padding:2px 7px; border-radius:2px;
+  border:1px solid var(--accent-line); color:var(--accent); vertical-align:2px}
+.pill.shut{border-color:var(--line); color:var(--ink-faint)}
+.lever.dim h3{color:var(--ink-dim); font-weight:500}
+
+.steps{display:flex; flex-direction:column}
+.step{display:grid; grid-template-columns:auto 1fr; gap:0 16px; padding:16px 0; border-top:1px solid var(--line-soft)}
+.step:first-child{border-top:0; padding-top:0}
+.step .idx{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--accent); padding-top:3px}
+.step h3{font-size:15.5px; font-weight:600}
+.step .price{font-family:"JetBrains Mono",monospace; font-size:13px; color:var(--accent-soft); margin-left:8px; font-weight:400}
+.step p{margin:5px 0 0; font-size:13.5px; color:var(--ink-dim); max-width:66ch}
+.gate{margin-top:8px; font-size:12.5px; color:var(--ink-faint); border-left:2px solid var(--line); padding-left:11px}
+.cta{margin-top:16px; background:var(--accent); color:var(--ground); border:0; border-radius:2px;
+  font-family:Inter,sans-serif; font-weight:600; font-size:14px; padding:11px 20px; cursor:pointer}
+.cta:hover{background:var(--accent-soft)}
+.ctanote{margin-top:9px; font-size:12px; color:var(--ink-faint)}
+
+footer{margin-top:34px; padding-top:18px; border-top:1px solid var(--line);
+  color:var(--ink-faint); font-size:12.5px; max-width:84ch}
+footer p{margin:0 0 8px}
+footer strong{color:var(--ink-dim); font-weight:600}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .18s ease}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Tax 4 Pros</p>
+  <h1>The Director's Position</h1>
+  <p class="standfirst">Every stage of a company director's journey, what it costs you, which reliefs are open, and what happens if you act against what happens if you don't.</p>
+  <p class="scope">An estimate built from published 2026/27 rates, not tax advice, and it can only work with what you tell it. It assumes England, Wales or Northern Ireland, one trading company and a straightforward estate. The figures loaded are an example. Change them to yours.</p>
+  <nav id="nav" aria-label="Stages"></nav>
+</header>
+
+<div class="shell">
+  <form class="panel" id="inputs" autocomplete="off">
+    <fieldset>
+      <legend>The company</legend>
+      <div class="field"><label for="assoc">Companies you control, including this one</label><input class="num" type="number" id="assoc" value="1" step="1" min="1" max="20"></div>
+      <div class="field"><label for="turnover">Turnover</label><div class="money"><input type="number" id="turnover" value="640000" step="10000" min="0"></div></div>
+      <div class="field"><label for="bstotal">Balance sheet total (assets)</label><div class="money"><input type="number" id="bstotal" value="530000" step="10000" min="0"></div></div>
+      <div class="field"><label for="emp">Employees, average</label><input class="num" type="number" id="emp" value="6" step="1" min="0" max="5000"></div>
+      <div class="field"><label for="profit">Profit before your salary</label><div class="money"><input type="number" id="profit" value="185000" step="1000" min="0"></div></div>
+      <label class="toggle"><input type="checkbox" id="vatReg" checked><span>Registered for VAT</span></label>
+      <div class="field"><label for="customers">You sell mainly to</label>
+        <select id="customers">
+          <option value="b2b" selected>VAT registered businesses</option>
+          <option value="b2c">Consumers</option>
+          <option value="mixed">A mix of both</option>
+        </select></div>
+      <div class="field"><label for="cash">Cash held in the company</label><div class="money"><input type="number" id="cash" value="240000" step="1000" min="0"></div></div>
+      <div class="field"><label for="coinv">Investments held by the company</label><div class="money"><input type="number" id="coinv" value="120000" step="10000" min="0"></div></div>
+      <div class="field"><label for="dla">Director's loan, if overdrawn</label><div class="money"><input type="number" id="dla" value="0" step="1000" min="0"></div></div>
+      <div class="field"><label for="capex">Equipment bought this year</label><div class="money"><input type="number" id="capex" value="45000" step="1000" min="0"></div></div>
+      <label class="toggle"><input type="checkbox" id="capNew" checked><span>It was new and unused, not second hand</span></label>
+      <label class="toggle"><input type="checkbox" id="ceasing"><span>The company is winding up or ceasing to trade</span></label>
+      <label class="toggle"><input type="checkbox" id="cashEvidence"><span>The retained cash has a documented, committed purpose (board minutes, budgets, quotes)</span></label>
+      <label class="toggle"><input type="checkbox" id="payrollOther"><span>Someone other than a single director is paid over &pound;5,000</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Cars and benefits</legend>
+      <div class="field"><label for="carType">Company car</label>
+        <select id="carType">
+          <option value="none">None</option>
+          <option value="ev" selected>Electric</option>
+          <option value="hybrid">Plug-in hybrid</option>
+          <option value="petrol">Petrol or diesel</option>
+          <option value="van">Van or pickup</option>
+        </select></div>
+      <div class="field"><label for="carList">List price when new</label><div class="money"><input type="number" id="carList" value="48000" step="1000" min="0"></div></div>
+      <div class="field"><label for="co2">CO2, g/km</label><input class="num" type="number" id="co2" value="0" step="5" min="0" max="400"></div>
+      <div class="field"><label for="evRange">Electric only range, miles</label><input class="num" type="number" id="evRange" value="0" step="5" min="0" max="500"></div>
+      <label class="toggle"><input type="checkbox" id="carFuel"><span>The company also pays for your private fuel</span></label>
+      <div class="field"><label for="miles">Business miles in your own car</label><input class="num" type="number" id="miles" value="0" step="500" min="0" max="100000"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contracting</legend>
+      <label class="toggle"><input type="checkbox" id="psc" checked><span>The company supplies your personal services to clients</span></label>
+      <div class="field"><label for="clientType">Your end client is</label>
+        <select id="clientType">
+          <option value="small" selected>A small company</option>
+          <option value="medlarge">A medium or large company</option>
+          <option value="public">Public sector</option>
+          <option value="noncorp">A sole trader or partnership</option>
+          <option value="overseas">Overseas, no UK connection</option>
+        </select></div>
+      <div class="field"><label for="fee">Fee income from those services</label><div class="money"><input type="number" id="fee" value="120000" step="5000" min="0"></div></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>How you pay yourself</legend>
+      <div class="field"><label for="salary">Salary</label><div class="money"><input type="number" id="salary" value="12570" step="500" min="0"></div></div>
+      <div class="field"><label for="divs">Dividends taken</label><div class="money"><input type="number" id="divs" value="60000" step="1000" min="0"></div></div>
+      <div class="field"><label for="other">Other income (pension, employment)</label><div class="money"><input type="number" id="other" value="0" step="1000" min="0"></div></div>
+      <div class="field"><label for="rental">Rental or sole trade income</label><div class="money"><input type="number" id="rental" value="34000" step="1000" min="0"></div></div>
+      <div class="field"><label for="pen">Company pension contribution</label><div class="money"><input type="number" id="pen" value="0" step="1000" min="0"></div></div>
+      <div class="field"><label for="ownPen">Pension contributions from your own pocket</label><div class="money"><input type="number" id="ownPen" value="0" step="500" min="0"></div></div>
+      <div class="field"><label for="age">Your age</label><input class="num" type="number" id="age" value="48" step="1" min="16" max="100"></div>
+      <label class="toggle"><input type="checkbox" id="salSac"><span>Salary sacrifice arrangement in place</span></label>
+      <label class="toggle"><input type="checkbox" id="flexi"><span>You have already flexibly accessed a pension</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Family</legend>
+      <label class="toggle"><input type="checkbox" id="spouse" checked><span>Married or in a civil partnership</span></label>
+      <label class="toggle"><input type="checkbox" id="spouseShares"><span>Your spouse holds ordinary shares with full rights</span></label>
+      <div class="field"><label for="spouseInc">Spouse's other income</label><div class="money"><input type="number" id="spouseInc" value="0" step="1000" min="0"></div></div>
+      <div class="field"><label for="kids">Children you claim Child Benefit for</label><input class="num" type="number" id="kids" value="2" step="1" min="0" max="12"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What you own</legend>
+      <div class="field"><label for="home">Your home</label><div class="money"><input type="number" id="home" value="850000" step="10000" min="0"></div></div>
+      <div class="field"><label for="prop">Other property</label><div class="money"><input type="number" id="prop" value="420000" step="10000" min="0"></div></div>
+      <div class="field"><label for="mortInt">Mortgage interest on let property</label><div class="money"><input type="number" id="mortInt" value="14000" step="1000" min="0"></div></div>
+      <label class="toggle"><input type="checkbox" id="letConnected"><span>Any of it let to family or connected people</span></label>
+      <div class="field"><label for="inv">Personal savings and investments</label><div class="money"><input type="number" id="inv" value="180000" step="10000" min="0"></div></div>
+      <div class="field"><label for="pot">Pension pots</label><div class="money"><input type="number" id="pot" value="600000" step="10000" min="0"></div></div>
+      <div class="field"><label for="bizval">What the business is worth</label><div class="money"><input type="number" id="bizval" value="1400000" step="50000" min="0"></div></div>
+      <label class="toggle"><input type="checkbox" id="homeKids" checked><span>Home would pass to children or grandchildren</span></label>
+      <label class="toggle"><input type="checkbox" id="bpr" checked><span>Trading company, so the shares should qualify for Business Property Relief</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Where you're heading</legend>
+      <div class="field"><label for="sell">Selling the business</label>
+        <select id="sell"><option value="0">No plans</option><option value="2" selected>Within 2 years</option><option value="5">In 2 to 5 years</option><option value="9">Further out</option></select></div>
+      <label class="toggle"><input type="checkbox" id="badr" checked><span>You hold 5%+ of the shares, votes, profits and winding-up proceeds, and have been an officer for 2 years</span></label>
+      <div class="field"><label for="leave">Leaving the UK</label>
+        <select id="leave"><option value="0" selected>Not considering it</option><option value="1">Thinking about it</option><option value="2">Within 2 years</option></select></div>
+      <div class="field"><label for="yrs">Years UK resident</label><input class="num" type="number" id="yrs" value="22" step="1" min="0" max="80"></div>
+      <div class="field"><label for="gifted">Gifted away in the last 7 years</label><div class="money"><input type="number" id="gifted" value="0" step="10000" min="0"></div></div>
+    </fieldset>
+  </form>
+
+  <main class="report" id="stage"></main>
+</div>
+
+<footer>
+  <p><strong>Where the numbers come from.</strong> 2026/27 rates and thresholds as published by HMRC: corporation tax 19% to 25% with marginal relief, dividend tax 10.75% / 35.75% / 39.35%, employee NI 8% then 2%, employer NI 15% above a &pound;5,000 threshold, CGT 18% / 24% with Business Asset Disposal Relief at 18% on the first &pound;1m, IHT 40% above a &pound;325,000 nil-rate band and a &pound;175,000 residence nil-rate band that tapers away above a &pound;2m estate. Combined agricultural and business property relief is capped at &pound;2.5m per person from 6 April 2026, transferable between spouses. Unused pensions count in the estate from 6 April 2027, as legislated in Finance Act 2026.</p>
+  <p><strong>What this is not.</strong> An estimate on the figures you typed, not advice on your affairs, and it can only see what you have entered. It does not know your share classes, your loan account history, your spouse's estate or your shareholders' agreement. Business Property Relief in particular is a rounded judgement on full evidence, not something any tool can settle. Sarah Charlton is a tax strategist and the founder of Tax 4 Pros. Rates change at the Budget on 28 October 2026.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 2026/27 figures. Source: content/TAX_FIGURES_LIVE.md ---------- */
+  var PA = 12570, PA_TAPER = 100000, B1 = 37700, B2 = 125140;
+  var IT = {basic:0.20, higher:0.40, add:0.45};
+  var DIV = {allow:500, basic:0.1075, higher:0.3575, add:0.3935};
+  var NI = {primary:12570, uel:50270, main:0.08, upper:0.02, er:0.15, secondary:5000, ea:10500};
+  var CT = {lower:50000, upper:250000, small:0.19, main:0.25, fraction:0.015};
+  var CGT = {aea:3000, higher:0.24, badrLimit:1000000, badrRate:0.18};
+  var IHTC = {rate:0.40, nrb:325000, rnrb:175000, taperFrom:2000000, bprCap:2500000};
+  var S455 = 0.3575, ORI = 0.0375, ANNUAL_ALLOW = 60000, LSA = 268275, MANSION = 2000000;
+  var HICBC = {from:60000, to:80000, eldest:27.05, other:17.90};
+
+  /* ---------- helpers ---------- */
+  function h(tag, attrs){
+    var el = document.createElement(tag), rest = [].slice.call(arguments, 2), k;
+    if (attrs) for (k in attrs){ if (k === "class") el.className = attrs[k]; else el.setAttribute(k, attrs[k]); }
+    rest.forEach(function f(c){
+      if (c === null || c === undefined || c === false) return;
+      if (Array.isArray(c)) return c.forEach(f);
+      el.appendChild(typeof c === "object" ? c : document.createTextNode(String(c)));
+    });
+    return el;
+  }
+  var $ = function(id){ return document.getElementById(id); };
+  var num = function(id){ var v = parseFloat($(id).value); return isFinite(v) && v > 0 ? v : 0; };
+  var on = function(id){ return $(id).checked; };
+  var gbp = function(n){ return "£" + Math.round(n).toLocaleString("en-GB"); };
+  function gbpShort(n){
+    if (n >= 1000000) return "£" + (n/1000000).toFixed(n >= 10000000 ? 0 : 2).replace(/\.?0+$/,"") + "m";
+    if (n >= 1000) return "£" + Math.round(n/1000) + "k";
+    return gbp(n);
+  }
+  var pct = function(n){ return (n*100).toFixed(1) + "%"; };
+
+  function bands(from, to){
+    var cut = function(lo, hi){ return Math.max(0, Math.min(to,hi) - Math.max(from,lo)); };
+    return { basic: cut(0,B1), higher: cut(B1,B2), add: cut(B2,Infinity) };
+  }
+  /* The 50,000 and 250,000 limits are DIVIDED between associated companies. */
+  function ctLimits(n){
+    n = Math.max(1, n || 1);
+    return { lower: CT.lower / n, upper: CT.upper / n };
+  }
+  function corpTax(p, n){
+    var L = ctLimits(n);
+    if (p <= 0) return 0;
+    if (p <= L.lower) return p * CT.small;
+    if (p >= L.upper) return p * CT.main;
+    return p * CT.main - CT.fraction * (L.upper - p);
+  }
+  function marginalCT(p, n){
+    var L = ctLimits(n);
+    if (p <= L.lower) return CT.small;
+    if (p > L.upper) return CT.main;
+    return 0.265;
+  }
+  function personalTax(nonDiv, divs){
+    var total = nonDiv + divs;
+    var pa = total > PA_TAPER ? Math.max(0, PA - (total - PA_TAPER)/2) : PA;
+    var paToNonDiv = Math.min(nonDiv, pa), paToDiv = Math.min(divs, pa - paToNonDiv);
+    var ndT = nonDiv - paToNonDiv, dT = divs - paToDiv;
+    var nb = bands(0, ndT);
+    var incomeTax = nb.basic*IT.basic + nb.higher*IT.higher + nb.add*IT.add;
+    var allow = Math.min(DIV.allow, dT);
+    var db = bands(ndT + allow, ndT + dT);
+    var divTax = db.basic*DIV.basic + db.higher*DIV.higher + db.add*DIV.add;
+    return { incomeTax: incomeTax, divTax: divTax, total: incomeTax + divTax, pa: pa, adjusted: total };
+  }
+  function marginalDivRate(taxableBefore){
+    if (taxableBefore < B1) return DIV.basic;
+    if (taxableBefore < B2) return DIV.higher;
+    return DIV.add;
+  }
+
+  /* ---------- the whole position, computed once ---------- */
+  function compute(){
+    var r = {};
+    r.profitBefore = num("profit"); r.salary = num("salary"); r.divsTaken = num("divs");
+    r.other = num("other"); r.rental = num("rental");
+    r.pension = num("pen"); r.kids = Math.round(num("kids"));
+    r.dla = num("dla"); r.cash = num("cash"); r.coinv = num("coinv");
+    r.home = num("home"); r.prop = num("prop"); r.inv = num("inv"); r.pot = num("pot");
+    r.bizval = num("bizval"); r.yrs = Math.round(num("yrs")); r.gifted = num("gifted");
+    r.spouseInc = num("spouseInc");
+    r.sellIn = parseFloat($("sell").value); r.leave = parseFloat($("leave").value);
+    r.couple = on("spouse") ? 2 : 1;
+    r.turnover = num("turnover"); r.bstotal = num("bstotal"); r.emp = Math.round(num("emp"));
+    r.vatReg = on("vatReg"); r.customers = $("customers").value;
+    r.carType = $("carType").value; r.carList = num("carList"); r.co2 = num("co2");
+    r.carFuel = on("carFuel"); r.miles = num("miles");
+    r.evRange = num("evRange");
+    r.mortInt = num("mortInt"); r.letConnected = on("letConnected");
+    r.capex = num("capex"); r.capNew = on("capNew"); r.ceasing = on("ceasing");
+    r.ownPen = num("ownPen"); r.age = Math.round(num("age"));
+    r.salSac = on("salSac"); r.flexi = on("flexi");
+
+    /* marginal income tax rate on a benefit, which stacks on non-dividend income */
+    r.margIT = r.adjusted > B2 ? IT.add : (r.adjusted > NI.uel ? IT.higher : IT.basic);
+
+    /* pensions: threshold income excludes employer contributions, adjusted income adds them back */
+    r.thresholdIncome = Math.max(0, r.salary + r.other + r.rental + r.divsTaken - r.ownPen);
+    r.adjustedIncome = r.thresholdIncome + r.pension;
+    r.tapered = r.thresholdIncome > 200000 && r.adjustedIncome > 260000;
+    r.allowance = r.flexi ? 10000
+      : (r.tapered ? Math.max(10000, ANNUAL_ALLOW - (r.adjustedIncome - 260000) / 2) : ANNUAL_ALLOW);
+    r.psc = on("psc"); r.clientType = $("clientType").value; r.fee = num("fee");
+    r.chapter = (r.clientType === "medlarge" || r.clientType === "public") ? 10 : 8;
+
+    r.erNI = Math.max(0, r.salary - NI.secondary) * NI.er;
+    if (on("payrollOther")) r.erNI = Math.max(0, r.erNI - NI.ea);
+    r.taxableProfit = Math.max(0, r.profitBefore - r.salary - r.erNI - r.pension);
+    r.assoc = Math.max(1, Math.round(num("assoc")) || 1);
+    r.ctLimits = ctLimits(r.assoc);
+    r.ct = corpTax(r.taxableProfit, r.assoc);
+    r.marginalCT = marginalCT(r.taxableProfit, r.assoc);
+    r.distributable = r.taxableProfit - r.ct;
+
+    r.eeNI = Math.max(0, Math.min(r.salary, NI.uel) - NI.primary) * NI.main
+           + Math.max(0, r.salary - NI.uel) * NI.upper;
+    var pt = personalTax(r.salary + r.other + r.rental, r.divsTaken);
+    r.incomeTax = pt.incomeTax; r.divTax = pt.divTax; r.pa = pt.pa; r.adjusted = pt.adjusted;
+
+    r.cb = r.kids > 0 ? (HICBC.eldest + HICBC.other * (r.kids - 1)) * 52 : 0;
+    r.hicbc = (r.kids > 0 && r.adjusted > HICBC.from)
+      ? r.cb * Math.min(1, (r.adjusted - HICBC.from) / (HICBC.to - HICBC.from)) : 0;
+
+    r.s455 = r.dla * S455;
+    r.dlaBik = r.dla > 10000 ? r.dla * ORI : 0;
+
+    r.totalTax = r.ct + r.erNI + r.eeNI + r.incomeTax + r.divTax + r.hicbc;
+    r.effective = r.profitBefore > 0 ? r.totalTax / r.profitBefore : 0;
+    r.inHand = r.salary + r.divsTaken - r.eeNI - r.incomeTax - r.divTax - r.hicbc;
+
+    /* CGT on a sale */
+    r.gain = Math.max(0, r.bizval - CGT.aea);
+    r.badrHead = Math.min(r.gain, CGT.badrLimit);
+    r.cgtWithBadr = r.badrHead * CGT.badrRate + (r.gain - r.badrHead) * CGT.higher;
+    r.cgtNoBadr = r.gain * CGT.higher;
+    r.cgt = on("badr") ? r.cgtWithBadr : r.cgtNoBadr;
+    r.badrValue = r.cgtNoBadr - r.cgtWithBadr;
+
+    /* IHT */
+    r.bizInEstate = on("bpr") ? Math.max(0, r.bizval - IHTC.bprCap) * 0.5 : r.bizval;
+    r.nrb = IHTC.nrb * r.couple;
+    r.exceptedRisk = on("cashEvidence") ? r.coinv : r.cash + r.coinv;
+    function ihtOn(estate){
+      var rnrb = 0;
+      if (on("homeKids")){
+        rnrb = Math.min(r.home, IHTC.rnrb * r.couple);
+        if (estate > IHTC.taperFrom) rnrb = Math.max(0, rnrb - (estate - IHTC.taperFrom)/2);
+      }
+      return { rnrb: rnrb, tax: Math.max(0, estate - r.nrb - rnrb) * IHTC.rate };
+    }
+    r.ihtOn = ihtOn;
+    r.estate = r.home + r.prop + r.inv + r.pot + r.bizInEstate;
+    var withPot = ihtOn(r.estate);
+    r.iht = withPot.tax; r.rnrb = withPot.rnrb;
+    r.pensionCost = Math.max(0, r.iht - ihtOn(r.estate - r.pot).tax);
+    /* excepted assets: BPR-relieved value that loses its relief */
+    r.exceptedCost = on("bpr")
+      ? Math.min(r.exceptedRisk, Math.max(0, Math.min(r.bizval, IHTC.bprCap))) * IHTC.rate : 0;
+    return r;
+  }
+
+  /* ---------- reusable blocks ---------- */
+  function block(title, kids){ return h("section", {class:"block"}, h("h2", null, title), kids); }
+  function lede(){ return h("p", {class:"lede"}, [].slice.call(arguments)); }
+  function strong(t){ return h("b", null, t); }
+  function sub(t){ return h("p", {class:"sub"}, t); }
+
+  function relief(status, name, value, note){
+    return h("div", {class:"relief"},
+      h("span", {class:"tag " + status}, status === "open" ? "Open" : status === "risk" ? "At risk" : status === "used" ? "In use" : "Closed"),
+      h("h4", null, name),
+      h("div", {class:"v"}, value || ""),
+      h("p", null, note));
+  }
+
+  function fork(yesLabel, yesBig, yesNote, noLabel, noBig, noNote, deltaText, catchText){
+    return h("div", null,
+      h("div", {class:"fork"},
+        h("div", {class:"yes"}, h("h4", null, yesLabel), h("div", {class:"big mono"}, yesBig), h("p", null, yesNote)),
+        h("div", {class:"no"}, h("h4", null, noLabel), h("div", {class:"big mono"}, noBig), h("p", null, noNote))),
+      deltaText ? h("p", {class:"delta"}, deltaText) : null,
+      catchText ? h("p", {class:"catch"}, strong("The catch. "), catchText) : null);
+  }
+
+  /* ---------- stages ---------- */
+  var STAGES = [
+
+  {id:"position", label:"Your position", render:function(r){
+    var out = [];
+    var head = h("div", {class:"headline"},
+      h("div", {class:"figure crit"}, h("div", {class:"n mono"}, gbp(r.totalTax)),
+        h("div", {class:"k"}, "total tax on " + gbp(r.profitBefore) + " of profit")),
+      h("div", {class:"figure"}, h("div", {class:"n mono"}, pct(r.effective)),
+        h("div", {class:"k"}, "effective rate, every layer counted")),
+      h("div", {class:"figure"}, h("div", {class:"n mono"}, gbp(Math.max(0, r.inHand))),
+        h("div", {class:"k"}, "reaching you, after all of it")));
+
+    var parts = [
+      {k:"Corporation tax", v:r.ct, c:"var(--crit-fill)"},
+      {k:"Employer NI", v:r.erNI, c:"#7C5C8A"},
+      {k:"Employee NI", v:r.eeNI, c:"#4A6A8A"},
+      {k:"Income tax", v:r.incomeTax, c:"var(--accent)"},
+      {k:"Dividend tax", v:r.divTax, c:"var(--accent-soft)"},
+      {k:"Child Benefit charge", v:r.hicbc, c:"#8A7A4A"}
+    ].filter(function(p){ return p.v > 0.5; });
+    var denom = Math.max(r.profitBefore, r.totalTax, 1);
+    var bar = h("div", {class:"bar"}), key = h("div", {class:"barkey"});
+    parts.forEach(function(p){
+      bar.appendChild(h("i", {style:"width:" + (p.v/denom*100) + "%;background:" + p.c, title:p.k + " " + gbp(p.v)}));
+      key.appendChild(h("span", null, h("b", {style:"background:" + p.c}), p.k + " ", h("em", {class:"mono"}, gbp(p.v))));
+    });
+    bar.appendChild(h("i", {style:"width:" + Math.max(0,(denom - r.totalTax)/denom*100) + "%;background:transparent"}));
+    key.appendChild(h("span", null, h("b", {style:"background:transparent;border:1px solid var(--line)"}),
+      "Kept ", h("em", {class:"mono"}, gbp(Math.max(0, r.profitBefore - r.totalTax)))));
+
+    out.push(block("This year, on the money the company made", [head, bar, key]));
+
+    var exps = [];
+    function exp(cls, title, amt, note){
+      exps.push(h("div", {class:"exp " + cls}, h("div", {class:"stripe"}), h("h3", null, title),
+        h("div", {class:"amt"}, amt), h("p", null, note)));
+    }
+    exp(r.effective > 0.40 ? "hot" : "warm", "This year, on what you extracted", gbp(r.totalTax),
+      "Corporation tax in the company, then income tax, National Insurance and dividend tax on the way out. An effective "
+      + pct(r.effective) + " on the profit before your pay.");
+    if (r.bizval > 0) exp(r.cgt > 200000 ? "hot" : "warm", "On a sale of the business", gbp(r.cgt),
+      on("badr") ? "Business Asset Disposal Relief at 18% on the first £1m, 24% above it."
+                 : "24% throughout, with no Business Asset Disposal Relief applied.");
+    exp(r.iht > 400000 ? "hot" : (r.iht > 0 ? "warm" : ""), "On death, at 40%", gbp(r.iht),
+      r.iht > 0 ? "An estate of " + gbp(r.estate) + " against " + gbp(r.nrb + r.rnrb) + " of allowances."
+        : "Your allowances cover the estate as entered.");
+    out.push(block("What you are exposed to", exps));
+
+    var chips = [], any = false;
+    function chip(hot, label, value){ any = true;
+      chips.push(h("div", {class:"chip" + (hot ? " hot" : "")}, label + " ", h("b", null, value))); }
+    if (r.hicbc > 0) chip(true, "High Income Child Benefit Charge", gbp(r.hicbc) + " of " + gbp(r.cb));
+    if (r.adjusted > 100000 && r.adjusted < B2) chip(true, "Personal allowance taper, a 60% band", gbp(PA - r.pa) + " of allowance lost");
+    if (r.dla > 0) chip(true, "Section 455 if the loan is unrepaid in 9 months", gbp(r.s455));
+    if (r.dlaBik > 0) chip(false, "Benefit in kind on the loan, currently 3.75%", gbp(r.dlaBik));
+    if (r.divsTaken > r.distributable + 1) chip(true, "Dividends exceed distributable profit by", gbp(r.divsTaken - r.distributable));
+    if (r.coinv > 0) chip(true, "Investments held by the company", gbp(r.coinv) + ", see Profit you keep");
+    if (r.home > MANSION) chip(false, "High Value Council Tax Surcharge from April 2028",
+      r.home > 5000000 ? "£7,500 a year" : r.home > 3500000 ? "£5,000 a year" : r.home > 2500000 ? "£3,500 a year" : "£2,500 a year");
+    if (!r.vatReg && r.turnover > 90000) chip(true, "Taxable turnover is over the VAT threshold", "register, or claim exception");
+    else if (!r.vatReg && r.turnover > 75000) chip(true, "Approaching the VAT threshold", gbp(90000 - r.turnover) + " of headroom");
+    if (r.psc) chip(r.chapter === 8, "IR35, " + (r.chapter === 8 ? "Chapter 8" : "off-payroll"),
+      r.chapter === 8 ? "you determine, you carry it" : "your client determines");
+    if (r.rental > 50000) chip(true, "Making Tax Digital for Income Tax", "mandatory now, quarterly");
+    else if (r.rental > 30000) chip(false, "Making Tax Digital for Income Tax", "you join 6 April 2027");
+    else if (r.rental > 20000) chip(false, "Making Tax Digital for Income Tax", "you join 6 April 2028");
+    if (r.pension < ANNUAL_ALLOW && r.profitBefore > 60000) chip(false, "Pension annual allowance unused", gbp(ANNUAL_ALLOW - r.pension));
+    if (r.yrs >= 10) chip(false, "Long-term resident, so the inheritance tax tail if you left",
+      (r.yrs >= 20 ? 10 : (r.yrs >= 14 ? r.yrs - 10 : 3)) + " years");
+    if (!any) chips.push(h("p", {class:"empty"}, "Nothing else flagged on the figures you entered."));
+    out.push(block("Also on your file", h("div", {class:"chips"}, chips)));
+
+    /* the seven levers, ranked by what each is worth to this person */
+    var L = [
+      { n:"How you pay yourself", open:r.profitBefore > 0,
+        worth:Math.max(0, r.totalTax - r.profitBefore * 0.30),
+        note:"You are at " + pct(r.effective) + " all in. Salary level, the dividend split, a company pension contribution and who else holds shares all move this, and all of it is this tax year's work." },
+      { n:"What you keep in the company", open:(r.cash + r.coinv) > 50000,
+        worth:(r.cash + r.coinv) * 0.20,
+        note:(r.cash + r.coinv) > 50000
+          ? gbp(r.cash + r.coinv) + " is sitting there. Retained profit is a strategy, but it raises a trading status question that reaches Business Property Relief and Business Asset Disposal Relief by different routes."
+          : "Little retained, so nothing to work with here yet." },
+      { n:"Where you are tax resident", open:r.leave > 0,
+        worth:r.leave > 0 ? r.totalTax * 0.6 : 0,
+        note:r.leave === 2
+          ? "You have said within two years. The Statutory Residence Test is a day count against five ties, and after " + r.yrs + " years here the estate stays in the UK net for years after you go."
+          : r.leave === 1
+            ? "You are thinking about it. That is the right time to look, because the test is a day count and the planning has to happen before the tax year starts, not after."
+            : "Not on your list. It is the largest lever there is and the slowest, so it only counts if you actually want it." },
+      { n:"How and when you sell", open:r.bizval > 0 && r.sellIn > 0,
+        worth:r.bizval > 0 ? r.badrValue : 0,
+        note:r.bizval > 0
+          ? (r.sellIn === 2
+              ? "Within two years is tight. The relief needs its conditions met throughout the two years to completion, and a holding company added now cannot meet its own 12 month clock."
+              : "You have runway. Structure goes in more than twelve months before a sale, never during it.")
+          : "No business value entered." },
+      { n:"Your estate", open:r.iht > 0, worth:r.iht,
+        note:r.iht > 0
+          ? gbp(r.iht) + " at stake. Gifts start a seven year clock, gifts out of surplus income are exempt immediately, and from 6 April 2027 your pension stops being the shelter it has been."
+          : "Covered by your allowances as things stand." },
+      { n:"If you leave, where you go", open:r.leave === 2,
+        worth:r.leave === 2 ? r.iht * 0.25 : 0,
+        note:r.leave === 2
+          ? "The destination decides the treaty, the pension transfer charge and whether the company can follow you. A separate decision from leaving, and usually made too late."
+          : "Only relevant once leaving is a decision rather than a thought." },
+      { n:"The order you pull them in", open:true, worth:1,
+        note:"The one most directors miss. Extraction before structure wastes relief, and structure before a sale needs a year's notice. Sequence is worth more than any single move." }
+    ];
+    L.sort(function(a, b){ return a.open !== b.open ? (a.open ? -1 : 1) : b.worth - a.worth; });
+
+    var lev = h("div", null, L.map(function(l, i){
+      var head = h("h3", null, l.n, h("span", {class:"pill" + (l.open ? "" : " shut")}, l.open ? "Open" : "Not yet"));
+      return h("div", {class:"lever" + (l.open ? "" : " dim")},
+        h("div", {class:"rank"}, (i + 1) + "."),
+        head,
+        h("div", {class:"at"}, (l.open && l.worth > 1000) ? gbpShort(l.worth) + " in play" : ""),
+        h("p", null, l.note));
+    }));
+    out.push(block("The seven levers, ranked by what they are worth to you", lev));
+    return out;
+  }},
+
+  {id:"ir35", label:"IR35",
+   render:function(r){
+    var out = [];
+    if (!r.psc){
+      out.push(block("The issue", [
+        lede("IR35 asks one question: stripped of your company, would this contract look like employment?"),
+        lede("You have said the company does not supply your personal services to clients, so the rules do not reach you. ",
+          strong("If that changes, come back here first"), ", because IR35 decides whether the money is even the company's before any of the other stages apply."),
+        h("p", {class:"catch"}, strong("One thing to know anyway. "),
+          "If you ever work through an umbrella company rather than your own, a separate regime started on 6 April 2026. The agency that contracts with the end client, or the client where there is no agency, is now jointly and severally liable for the PAYE and National Insurance. There is no reasonable care defence in it.")
+      ]));
+      return out;
+    }
+
+    /* inside v outside, computed on this user's own numbers */
+    var F = r.fee;
+    var ctOnFee = F * r.marginalCT;
+    var divAvail = F - ctOnFee;
+    var taxableBefore = Math.max(0, (r.salary + r.other + r.rental + r.divsTaken) - r.pa);
+    var divTaxOnFee = divAvail * marginalDivRate(taxableBefore);
+    var outsideTax = ctOnFee + divTaxOnFee;
+
+    var ch8 = r.chapter === 8;
+    var pot = F * (ch8 ? 0.95 : 1);
+    var dp = pot / (1 + NI.er);
+    var erNIC = pot - dp;
+    var earn = r.salary;
+    var eeNIonDP = Math.max(0, Math.min(earn + dp, NI.uel) - Math.max(earn, NI.primary)) * NI.main
+                 + Math.max(0, (earn + dp) - Math.max(earn, NI.uel)) * NI.upper;
+    var ndBefore = Math.max(0, (r.salary + r.other + r.rental) - r.pa);
+    var bb = bands(ndBefore, ndBefore + dp);
+    var itOnDP = bb.basic*IT.basic + bb.higher*IT.higher + bb.add*IT.add;
+    var insideTax = erNIC + eeNIonDP + itOnDP;
+
+    out.push(block("The issue", [
+      lede("IR35 asks one question: stripped of your company, would this contract look like employment? ",
+        strong("Control, personal service and mutuality decide it"),
+        ". Who makes that decision, and who pays if it is wrong, depends on your end client's size."),
+      lede(r.chapter === 8
+        ? "On what you have entered, your engagement sits in Chapter 8, the original rules. You determine your own status, and you carry the liability."
+        : "On what you have entered, your engagement sits in Chapter 10, the off-payroll rules. Your client determines your status and must give you a statement saying why."),
+      h("p", {class:"catch"}, strong(r.chapter === 8 ? "Small does not mean outside. " : "Their call, their bill. "),
+        r.chapter === 8
+          ? "It means the call is yours, and so is the liability. This is the most common misunderstanding about IR35 and it moves the risk onto you rather than removing it. If HMRC disagrees with your determination, it comes to your company, and the offset that helps in off-payroll cases does not apply here."
+          : "The fee-payer, normally the agency, operates PAYE and pays employer National Insurance. If HMRC cannot collect from them it can walk the debt up the chain to the client. It cannot be transferred to you. What is taken out of your rate commercially is a different matter.")
+    ]));
+
+    out.push(block("What actually decides which regime you are in", [
+      relief(r.clientType === "small" ? "open" : "used", "The small company test, 2026/27",
+        "£10.2m / £5.1m / 50",
+        "A corporate client is small if it meets two of three: turnover no more than £10.2m, balance sheet total no more than £5.1m, no more than 50 employees, for two consecutive financial years. A small subsidiary of a large group is not small."),
+      relief("open", "The thresholds rise, but not yet", "£15m / £7.5m / 50",
+        "The Companies Act figures were uplifted for financial years beginning on or after 6 April 2025, but the off-payroll test lags behind the filing deadlines. HMRC says the earliest tax year affected is 2027/28. Anyone quoting £15m for this year is a year early."),
+      r.clientType === "noncorp"
+        ? relief("risk", "Your client is not a company", "unresolved",
+            "For a sole trader or partnership the test is turnover only, with no balance sheet test, no employee count and no two-year rule. The figure itself is genuinely unsettled: the statute points at the new threshold while HMRC's manual still prints the old one. This tool will not guess. Take this one to an adviser.")
+        : null,
+      ch8
+        ? relief("open", "The 5% allowance", "5% of turnover",
+            "Chapter 8 reduces the engagement income by 5% at step one of the deemed payment. It survives in 2026/27. It is 5% off turnover, not 5% off your tax bill, and it does not exist in the off-payroll route because those rules replace Chapter 8 entirely.")
+        : relief("open", "Your Status Determination Statement", "45 days",
+            "The client must give you the determination with reasons, taking reasonable care. If you disagree, they have 45 days from receiving your representations to confirm with reasons or issue a new statement. Miss that, or fail to pass the statement down the chain, and the client becomes the fee-payer itself."),
+      !ch8 ? relief("open", "The offset, since 6 April 2024", "",
+        "Where a deemed employer owes PAYE, HMRC estimates the income tax and corporation tax you and your company already paid on the same engagement and treats it as recovered. It is a best estimate, no repayment can be claimed for it, and it only exists in the off-payroll route.") : null,
+      relief("risk", "CEST is not the answer it looks like", "",
+        "HMRC will stand by a result only as long as the information is accurate and used in accordance with its guidance, both judged afterwards. The last outcome data HMRC published covers November 2019 to August 2021, when the tool returned no determination in 21% of off-payroll checks. Nothing has been published since, and the tool was rebuilt in April 2025."),
+      relief("risk", "The case law has moved", "PGMOL",
+        "The Supreme Court held in 2024 that mutuality and control can exist inside short engagements, and that clearing those two tests does not settle status. When the case returned, the referees were held not to be employees on the overall picture. Anything that scores only control, substitution and mutuality will tell you you are outside more often than you are.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("The same ", strong(gbp(F)), " of fee income, taxed inside and outside."),
+      fork(
+        "If the engagement is outside", gbp(outsideTax),
+          gbp(ctOnFee) + " corporation tax at " + pct(r.marginalCT) + ", then " + gbp(divTaxOnFee)
+          + " dividend tax on the way out at " + pct(marginalDivRate(taxableBefore)) + ".",
+        "If it is inside", gbp(insideTax),
+          (ch8 ? "5% comes off first, then " : "") + gbp(erNIC) + " employer National Insurance, "
+          + gbp(itOnDP) + " income tax and " + gbp(eeNIonDP) + " employee National Insurance on a deemed payment of " + gbp(dp) + ".",
+        h("span", null, "Difference on this contract: ", h("b", null, gbp(Math.abs(insideTax - outsideTax))),
+          insideTax > outsideTax ? "." : ", in favour of inside on these figures."),
+        "Read the assumptions before you use that number. It treats this fee as the next money on top of what you already take, it assumes employer National Insurance comes out of the contract value, which is the commercial reality even where the fee-payer is legally liable, and it ignores expenses and pension contributions, both of which move it. Outside IR35 is never just corporation tax: the money is taxed in the company and again when you take it out. Anyone quoting you a single percentage for what IR35 costs is guessing.")
+    ]));
+    return out;
+  }},
+
+  {id:"pay", label:"Paying yourself", render:function(r){
+    var out = [];
+    out.push(block("The issue", [
+      lede("Money made inside a company is taxed twice. Corporation tax when the company earns it, then ",
+        strong("income tax, National Insurance or dividend tax when you take it out"),
+        ". Your salary and dividend split decides how hard the second layer bites."),
+      lede("On your figures the company keeps " + gbp(r.taxableProfit) + " of taxable profit, pays " + gbp(r.ct)
+        + " of corporation tax at a marginal " + pct(r.marginalCT) + ", and you pay a further "
+        + gbp(r.incomeTax + r.divTax + r.eeNI) + " personally.")
+    ]));
+
+    var salaryOK = Math.abs(r.salary - PA) < 500;
+    out.push(block("Reliefs and allowances in play", [
+      relief(salaryOK ? "used" : "open", "Personal allowance", gbp(r.pa),
+        salaryOK ? "Your salary is at the allowance, which uses it in full and earns a qualifying year for the State Pension."
+          : "A salary at " + gbp(PA) + " uses the allowance in full, costs no employee NI, earns a State Pension year and is deductible for the company."),
+      relief(r.divsTaken > 0 ? "used" : "open", "Dividend allowance", gbp(DIV.allow),
+        "Long frozen and small. It is not a planning tool, it just takes the first " + gbp(DIV.allow) + " out of charge."),
+      relief(on("payrollOther") ? "used" : "open", "Employment Allowance", gbp(NI.ea),
+        on("payrollOther") ? "Available, because someone besides a single director is paid above the secondary threshold."
+          : "Not available while a single director is the only person paid above " + gbp(NI.secondary) + ". A second person on the payroll unlocks it."),
+      r.assoc > 1
+        ? relief("risk", "Your corporation tax bands are divided", gbp(r.ctLimits.lower) + " / " + gbp(r.ctLimits.upper),
+            "You have said you control " + r.assoc + " companies. The £50,000 and £250,000 marginal relief limits are split equally between associated companies, so this one reaches the 25% rate at "
+            + gbp(r.ctLimits.upper) + " rather than £250,000. Dormant and genuinely passive holding companies are left out of the count, and a spouse's company can be pulled in where there is substantial commercial interdependence. That last one is a facts test, so treat this as a flag, not a verdict.")
+        : null,
+      relief(r.pension >= ANNUAL_ALLOW ? "used" : "open", "Pension annual allowance", gbp(ANNUAL_ALLOW),
+        "Employer contributions are deductible for corporation tax, carry no National Insurance either side, and three years of carry forward may be available."),
+      r.adjusted > 100000 && r.adjusted < B2
+        ? relief("risk", "Personal allowance taper", gbp(PA - r.pa) + " lost",
+            "Between " + gbp(PA_TAPER) + " and " + gbp(B2) + " you lose £1 of allowance for every £2 of income, an effective 60% band. A pension contribution reduces the income that is measured.")
+        : null
+    ]));
+
+    var step = 20000;
+    var divFromStep = step * (1 - r.marginalCT);
+    var taxableNow = Math.max(0, (r.salary + r.other + r.rental + r.divsTaken) - r.pa);
+    var divTaxOnStep = divFromStep * marginalDivRate(taxableNow);
+    var netDiv = divFromStep - divTaxOnStep;
+    out.push(block("What happens if you do, and if you don't", [
+      lede("Take the next ", strong(gbp(step)), " of company profit two different ways."),
+      fork(
+        "If you put it into a pension", gbp(step), "Lands in the pot whole. No corporation tax, no National Insurance either side.",
+        "If you take it as a dividend", gbp(netDiv),
+          gbp(step) + " less " + gbp(step - divFromStep) + " corporation tax, then " + gbp(divTaxOnStep) + " dividend tax at " + pct(marginalDivRate(taxableNow)) + ".",
+        h("span", null, "Difference today: ", h("b", null, gbp(step - netDiv)), " on a single " + gbp(step) + " decision."),
+        "The pension money is not yours yet. It is locked until pension age, only the first " + gbp(LSA)
+        + " comes out tax free, the rest is taxed as income when you draw it, and from 6 April 2027 an unused pot counts in your estate for inheritance tax. This is a deferral and a change of wrapper, not a saving."),
+      r.hicbc > 0 ? h("div", null, sub("And it reaches your Child Benefit"),
+        lede("Your adjusted income is " + gbp(r.adjusted) + ", so you are repaying " + gbp(r.hicbc) + " of the "
+          + gbp(r.cb) + " you claim. A pension contribution reduces the income that charge is measured on. Drop below "
+          + gbp(HICBC.from) + " and the charge goes entirely.")) : null
+    ]));
+    return out;
+  }},
+
+  {id:"pension", label:"Pensions",
+   render:function(r){
+    var out = [];
+    out.push(block("The issue", [
+      lede("An employer pension contribution costs no National Insurance, reduces corporation tax, and ",
+        strong("is not limited by your salary"),
+        ". That last point is why it works for a director on £12,570 with the rest in dividends."),
+      lede("It is not free money. Three quarters of it is taxed when you draw it, you cannot touch it until 57, and from 6 April 2027 whatever is left sits in your estate for inheritance tax."),
+      h("p", {class:"catch"}, strong("The one that catches directors. "),
+        "Tax relief on contributions you make personally is capped at your relevant UK earnings, and ",
+        strong("dividends are not earnings"),
+        ". On a £" + r.salary.toLocaleString("en-GB") + " salary, your own contributions are capped at about that, or £3,600 gross, whichever is higher. Your company faces no such limit.")
+    ]));
+
+    /* refusals before numbers, per the research */
+    var refusals = [];
+    if (r.flexi) refusals.push("You have already flexibly accessed a pension. That triggers the money purchase annual allowance of £10,000, and carry forward is not available against it. Anyone telling you to put £60,000 in is about to cost you an annual allowance charge at your marginal rate.");
+    if (r.thresholdIncome > 180000) refusals.push("Your income is close to the £200,000 threshold income gate. The taper needs every source of income, and this tool only knows what you have typed. Do not act on an allowance figure from here.");
+    if (r.assoc > 1) refusals.push("You control more than one company, so the corporation tax limits are divided and the marginal rate in the comparison below changes. The figures use your divided limits, but the associated company test is a facts test.");
+    if (r.age >= 53) refusals.push("You are close enough to pension age that protections, earlier crystallisations and the £268,275 lump sum allowance all start to matter. Those need a look at your actual scheme records.");
+
+    out.push(block(r.flexi ? "Stop here" : "Your annual allowance", [
+      r.flexi
+        ? h("div", null,
+            h("div", {class:"headline"},
+              h("div", {class:"figure crit"}, h("div", {class:"n mono"}, gbp(10000)),
+                h("div", {class:"k"}, "money purchase annual allowance, not £60,000"))),
+            h("p", {class:"catch"}, strong("And no carry forward. "),
+              "Carry forward cannot be used against the money purchase allowance, so the three previous years are no help. This is the single most common way a large contribution plan goes wrong."))
+        : h("div", {class:"headline"},
+            h("div", {class:"figure"}, h("div", {class:"n mono"}, gbp(r.allowance)),
+              h("div", {class:"k"}, r.tapered ? "tapered annual allowance" : "annual allowance for the year")),
+            h("div", {class:"figure"}, h("div", {class:"n mono"}, gbp(Math.max(0, r.allowance - r.pension))),
+              h("div", {class:"k"}, "headroom left on what you have entered"))),
+      relief(r.tapered ? "risk" : "open", "The taper needs BOTH gates", "£200,000 and £260,000",
+        "It only bites where threshold income is over £200,000 AND adjusted income is over £260,000. Threshold income leaves employer contributions out, which is why a director on a modest salary plus dividends can take a large company contribution without tapering at all. Above £260,000 you lose £1 of allowance for every £2, down to a £10,000 floor."),
+      relief("risk", "You cannot sacrifice your way under it", "",
+        "Salary given up under an arrangement made after 8 July 2015 is added back into threshold income. And threshold income is all your taxable income, so dividends, rent and interest all count."),
+      relief(r.flexi ? "closed" : "open", "Carry forward", "up to " + gbp(ANNUAL_ALLOW * 4),
+        r.flexi ? "Not available to you against the money purchase allowance."
+          : "Three previous tax years on top of this one, so up to £240,000 in a single year. You must have been a member of a registered scheme in each year you carry from, though you need not have paid into it. Current year first, then the earliest year."),
+      relief("risk", "Carry forward does not lift the earnings cap", "",
+        "It extends the annual allowance, not the limit on your own contributions. Your company's contributions are unaffected by your earnings; yours are not.")
+    ]));
+
+    if (refusals.length) {
+      out.push(block("Where this tool stops", [
+        lede("These are not caveats. On any of them the honest answer is that a form cannot work it out."),
+        h("div", null, refusals.map(function(t){ return h("p", {class:"catch"}, t); }))
+      ]));
+    }
+
+    /* the real comparison, on their own marginal rates */
+    var P = 10000;
+    var ctOn = P * r.marginalCT;
+    var divAvail = P - ctOn;
+    var taxableBefore = Math.max(0, (r.salary + r.other + r.rental + r.divsTaken) - r.pa);
+    var divRate = marginalDivRate(taxableBefore);
+    var divTax = divAvail * divRate;
+    var netDiv = divAvail - divTax;
+    var drawBasic = P * 0.25 + P * 0.75 * 0.80;
+    var drawHigher = P * 0.25 + P * 0.75 * 0.60;
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede(strong(gbp(P)), " of company profit, two routes, every layer counted."),
+      fork(
+        "Into the pension", gbp(P),
+          "Lands whole. Corporation tax relief of " + gbp(ctOn) + " means it costs the company " + gbp(P - ctOn) + ". No National Insurance either side.",
+        "Out as a dividend", gbp(netDiv),
+          gbp(ctOn) + " corporation tax at " + pct(r.marginalCT) + ", then " + gbp(divTax) + " dividend tax at " + pct(divRate) + ".",
+        h("span", null, "Total tax on the dividend route: ", h("b", null, gbp(ctOn + divTax)),
+          ", an effective " + pct((ctOn + divTax) / P) + " on the same money."),
+        "The pension is not the better deal, it is the later one. Drawing it as a basic rate taxpayer leaves about " + gbp(drawBasic)
+        + "; as a higher rate taxpayer about " + gbp(drawHigher) + ", because a quarter is tax free within the £268,275 lump sum allowance and the rest is taxed as income then. Against " + gbp(netDiv)
+        + " in your hand today. Locked until 57 from April 2028, and in your estate for inheritance tax from April 2027, which is the change that undid the old pension-as-a-wrapper advice.")
+    ]));
+
+    out.push(block("Salary sacrifice, and whether it is worth it for you", [
+      lede(strong("Sacrifice saves National Insurance, not income tax."),
+        " The income tax relief exists anyway through your scheme. What sacrifice adds is the NI saving, 15% for the company and 8% or 2% for you."),
+      r.salary <= 12570
+        ? h("p", {class:"catch"}, strong("On your salary it is close to pointless. "),
+            "At " + gbp(r.salary) + " there is no employee National Insurance to save at all, and the employer saving is 15% of the amount above £5,000, roughly "
+            + gbp(Math.max(0, r.salary - NI.secondary) * NI.er) + " if you sacrificed the lot. A straight employer contribution is cleaner, needs no contract variation, and is untouched by the cap coming in 2029.")
+        : null,
+      relief("risk", "It has to be a real contract variation", "before the pay is earned",
+        "Agreed in advance and documented. You cannot apply it retrospectively to pay already earned."),
+      relief("risk", "What it quietly reduces", "",
+        "Statutory maternity and sick pay, Maternity Allowance, Additional State Pension and most mortgage affordability assessments all run off your reduced cash pay. That is a real cost, not a footnote."),
+      relief("open", "Minimum wage, and when it does not apply to you", "",
+        "Sacrifice cannot take pay below the National Minimum Wage. But a director who is an office holder without a contract of employment is not a worker for minimum wage purposes, so the warning may not bite on you at all. Which it is depends on whether you have a service contract."),
+      relief("open", "The 2029 cap", "£2,000 a year",
+        "From 6 April 2029 the National Insurance saving on sacrificed pension contributions is capped at £2,000 a year. Pensions only. It does not touch income tax relief, and it does not touch a straight employer contribution."),
+      relief("open", "What else can still be sacrificed", "",
+        "Pensions and pension advice, cycles and cycling safety equipment, employer provided childcare and vouchers for those already in the scheme before October 2018, retraining and outplacement counselling, and statutory redundancy within limits. Low emission cars work differently: they are not on that list, they are carved out of the comparison so the normal benefit charge applies.")
+    ]));
+
+    out.push(block("Contributions for your spouse, and where HMRC draws the line", [
+      lede("Your company can contribute for anyone on the payroll. Whether it gets the corporation tax deduction is a different question."),
+      lede("HMRC's published position is that the ", strong("whole remuneration package"),
+        ", salary plus benefits plus pension together, is tested against the value of the work actually done, benchmarked against what an unconnected employee doing similar work would be paid. There is no safe harbour, no percentage and no multiple."),
+      h("p", {class:"catch"}, strong("For a working director running the company, "),
+        "a large contribution against genuine profits is ordinarily fine. For a spouse doing a few hours of admin, a £60,000 contribution is not defensible on its face. HMRC disallows the excessive part rather than the whole payment, so the exposure is a proportionate corporation tax adjustment, but it is real. This tool will not put a number on a connected party.")
+    ]));
+    return out;
+  }},
+
+  {id:"cars", label:"Cars",
+   render:function(r){
+    function rangePct(m){ return m >= 130 ? 4 : m >= 70 ? 7 : m >= 40 ? 10 : m >= 30 ? 14 : 16; }
+    function petrolPct(g){
+      if (g <= 54) return 17;
+      if (g <= 74) return 18 + Math.floor((g - 55) / 5);
+      return Math.min(37, 21 + Math.floor((g - 75) / 5));
+    }
+    var pct2, basis, unknown = false;
+    if (r.carType === "ev"){ pct2 = 4; basis = "Zero emissions, so 4% for 2026/27."; }
+    else if (r.carType === "hybrid"){
+      if (r.evRange > 0){ pct2 = rangePct(r.evRange); basis = r.evRange + " miles of electric range puts it at " + pct2 + "%."; }
+      else { pct2 = null; unknown = true; basis = "A plug-in hybrid is taxed on its electric only range, not on its CO2 figure. Enter the range on the left."; }
+    }
+    else if (r.carType === "petrol"){ pct2 = petrolPct(r.co2); basis = r.co2 + "g/km puts it at " + pct2 + "% before any diesel supplement."; }
+    else { pct2 = null; basis = ""; }
+
+    var bik = pct2 ? r.carList * pct2 / 100 : 0;
+    var itOnBik = bik * r.margIT;
+    var c1a = bik * NI.er;
+    var fuelBen = (pct2 && r.carFuel) ? 29200 * pct2 / 100 : 0;
+    var fuelIT = fuelBen * r.margIT, fuelC1A = fuelBen * NI.er;
+    var amap = Math.min(r.miles, 10000) * 0.55 + Math.max(0, r.miles - 10000) * 0.25;
+
+    var out = [];
+    out.push(block("The issue", [
+      lede("A company car is taxed on ", strong("the list price when it was new"),
+        ", not on what the company paid for it. A three year old bargain is taxed on its price when new, which is why buying cheap does not help."),
+      lede("And it is two layers, not one. You pay income tax on a percentage of that list price, and ",
+        strong("the company pays Class 1A National Insurance at 15% on the same number"),
+        ". The company layer is the one directors forget.")
+    ]));
+
+    if (r.carType === "none"){
+      out.push(block("You have not entered a car", [
+        lede("Which may well be the right answer. The quietly better route for many directors is to own the car personally and claim mileage: ",
+          strong("55p a mile for the first 10,000 business miles"),
+          " and 25p after that, tax free, no benefit in kind, nothing on a P11D and no Class 1A for the company."),
+        lede("That 55p is new. It rose from 45p on 6 April 2026, the first change in fifteen years, so anything you read written before then is out of date."),
+        r.miles > 0
+          ? h("p", {class:"catch"}, strong("On your " + Math.round(r.miles).toLocaleString("en-GB") + " business miles, "),
+              "that is " + gbp(amap) + " you can take out of the company tax free and National Insurance free.")
+          : h("p", {class:"catch"}, strong("Add your business miles on the left "),
+              "and this will show what you can take out tax free.")
+      ]));
+      return out;
+    }
+
+    if (r.carType === "van"){
+      out.push(block("Vans are a different regime, and a better one", [
+        lede("A van is a flat charge, not a percentage of price: ", strong(gbp(4170)),
+          " for 2026/27, with ", strong(gbp(798)), " on top if the company pays for private fuel. A zero emission van is nil."),
+        lede("Better still, there is no charge at all where private use is limited to insignificant private use plus ordinary commuting."),
+        h("p", {class:"catch"}, strong("Which is exactly why double cab pickups were being bought, and exactly why HMRC closed it. "),
+          "From 6 April 2025 most double cab pickups are treated as CARS for benefit in kind and for capital allowances, because they are equally suited to carrying passengers and goods. If you bought, leased or ordered yours before 6 April 2025 you keep van treatment until the earliest of selling it, the lease ending, or 5 April 2029. ",
+          strong("The VAT treatment did not change"),
+          ": input tax still follows the one tonne payload test. Two different rules on the same vehicle, and conflating them is the usual mistake.")
+      ]));
+      return out;
+    }
+
+    out.push(block("What your car costs, each year", [
+      unknown
+        ? h("div", null,
+            lede(basis),
+            h("p", {class:"catch"}, strong("Without it, the honest answer is a range. "),
+              "A plug-in hybrid in the 1 to 50g/km band runs from 4% to 16% of list price depending on electric range, which on " + gbp(r.carList) + " is anywhere between "
+              + gbp(r.carList * 0.04) + " and " + gbp(r.carList * 0.16) + " of taxable benefit. This tool will not guess which."))
+        : h("div", null,
+            h("div", {class:"headline"},
+              h("div", {class:"figure"}, h("div", {class:"n mono"}, pct2 + "%"), h("div", {class:"k"}, "of list price")),
+              h("div", {class:"figure crit"}, h("div", {class:"n mono"}, gbp(itOnBik + c1a + fuelIT + fuelC1A)),
+                h("div", {class:"k"}, "total tax a year, both layers")),
+              h("div", {class:"figure"}, h("div", {class:"n mono"}, gbp(bik + fuelBen)), h("div", {class:"k"}, "taxable benefit"))),
+            h("p", {class:"lede", style:"margin-top:14px"}, basis + " You pay " + gbp(itOnBik) + " at " + pct(r.margIT)
+              + ", and the company pays " + gbp(c1a) + " of Class 1A."
+              + (r.carFuel ? " Private fuel adds " + gbp(fuelBen) + " of benefit on top." : ""))),
+      r.carType === "petrol" && r.co2 > 0
+        ? h("p", {class:"catch"}, strong("If it is solely diesel, add 4 points, "),
+            "capped at 37%, unless the car is RDE2 or Euro 6d certified. This tool does not know which yours is, and it will not assume. Check the certificate of conformity.")
+        : null,
+      r.carType === "hybrid"
+        ? h("p", {class:"catch"}, strong("One more check for plug-in hybrids. "),
+            "If yours was first registered from 1 January 2025 and tested to a newer emissions standard, its quoted CO2 may read 51g/km or more but it is deemed to emit 1g/km, so it is taxed on the electric range table anyway. The registration document alone will not tell you.")
+        : null
+    ]));
+
+    if (r.carFuel) {
+      out.push(block("The fuel card is almost never worth it", [
+        lede("Private fuel is not charged on the fuel you actually use. It is ", strong(gbp(29200)),
+          " multiplied by the same percentage as the car, so on yours that is " + gbp(fuelBen) + " of benefit, costing you "
+          + gbp(fuelIT) + " and the company " + gbp(fuelC1A) + "."),
+        h("p", {class:"catch"}, strong("The break even is tens of thousands of private miles a year. "),
+          "Almost nobody drives that. The fix is simple: either reimburse all private fuel by 6 July following the tax year, or have the company never pay for private fuel and reimburse business mileage at advisory rates instead.")
+      ]));
+    }
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("The same car, owned two different ways."),
+      fork(
+        "Owned by you, mileage claimed", gbp(0),
+          "No benefit in kind, nothing on a P11D, no Class 1A. You claim 55p a mile for the first 10,000 business miles and 25p after."
+          + (r.miles > 0 ? " On your miles that is " + gbp(amap) + " tax free." : ""),
+        "Owned by the company", gbp(itOnBik + c1a + fuelIT + fuelC1A),
+          unknown ? "Cannot be calculated without the electric range." : "Your income tax plus the company's Class 1A, every year you keep it.",
+        h("span", null, "You cannot claim mileage on a company car. ",
+          h("b", null, "For a company car you reimburse business fuel at advisory rates instead"),
+          ", currently 7p a mile for home charging and 15p for public charging on an electric car."),
+        "Do not read this as \"never put a car through the company\". An electric car at 4% of list price is genuinely cheap, and the company gets a 100% first year allowance on a new zero emission car until 2027, which is worth corporation tax relief on the whole cost in year one, with a balancing charge when you sell it. What is not true is that it costs nothing. Cars are excluded from the annual investment allowance, from full expensing and from the new 40% first year allowance, and anything over 50g/km sits in the special rate pool at 6% a year.")
+    ]));
+
+    out.push(block("Two exemptions directors miss", [
+      relief("open", "Charging at the workplace", "exempt",
+        "No tax charge where charging facilities, electricity included, are provided at or near your workplace and made available to employees at that workplace generally. It covers your own vehicle, and it does not cover workplace parking."),
+      relief("open", "Charging a company car at home", "exempt since 2023",
+        "HMRC changed its published view in September 2023 and now accepts that reimbursing the part of your domestic electricity bill used to charge a company car is exempt, provided the employer can show the reimbursement relates solely to that vehicle. In practice that means a separate meter or defensible records."),
+      relief("open", "Electricity is not fuel", "no fuel benefit",
+        "There is no car fuel benefit charge on electricity for an electric company car, because electricity is not fuel for that purpose."),
+      relief("risk", "The staff party is an exemption, not an allowance", "£150 a head",
+        "Annual recurring event, open to staff generally, £150 per head including VAT across the year. Go a penny over and the whole cost becomes taxable, not just the excess. Never call it an allowance.")
+    ]));
+    return out;
+  }},
+
+  {id:"keep", label:"Profit you keep",
+   flag:function(r){ return r.coinv > 0 || (!on("cashEvidence") && r.cash > 100000); },
+   render:function(r){
+    var out = [];
+    out.push(block("The issue", [
+      lede("Leaving profit in the company is a legitimate strategy. It is taxed once, at corporation tax rates, and it is not taxed again until you take it. ",
+        strong("What it quietly costs you is relief."), " A company that looks like an investment business, or that holds money it does not need, stops being fully sheltered from inheritance tax."),
+      lede("You have entered " + gbp(r.cash) + " of cash and " + gbp(r.coinv) + " of investments held inside the company.")
+    ]));
+
+    out.push(block("Two separate tests, and they fail differently", [
+      sub("Gate one, does the company qualify at all"),
+      lede("Business Property Relief is denied outright where a business ", strong("consists wholly or mainly of making or holding investments"),
+        ". That is all or nothing. Relief on the whole shareholding goes to nil, not to a reduced rate."),
+      lede("There is no percentage to hit. It is judged in the round on the capital employed on each side, the time people spend, the split of turnover and the split of profit. A large enough investment portfolio is an activity, and it can tip the company over."),
+      r.coinv > 0 ? h("p", {class:"catch"}, strong("On your figures. "),
+        "The company holds " + gbp(r.coinv) + " of investments against a business valued at " + gbp(r.bizval)
+        + ". This tool cannot and will not tell you which side of that line you are on. It flags it, because the consequence is "
+        + gbp(Math.min(r.bizval, IHTC.bprCap) * IHTC.rate) + " of relief on the shareholding, and because the answer depends on evidence a form cannot see.") : null,
+
+      sub("Gate two, does every pound inside it get the relief"),
+      lede("Surplus cash and investments the company does not need for its trade are usually stripped out of Business Property Relief as excepted assets, ",
+        strong("even where the company still qualifies"), ". There is no published safe level; it turns on evidence."),
+      lede("The test is that the asset was either used for the business throughout the last two years, or is required at the time of transfer for future use. Either limb saves it. ",
+        strong("Required means an identified, evidenced purpose"), ", not prudence and not a rainy day fund. Cash held in case an opportunity comes along is the argument that has already lost in the tribunals.")
+    ]));
+
+    out.push(block("Reliefs and allowances in play", [
+      relief(on("bpr") ? (r.exceptedRisk > 0 ? "risk" : "open") : "closed", "Business Property Relief",
+        "100% to " + gbpShort(IHTC.bprCap), on("bpr")
+          ? "Capped at " + gbp(IHTC.bprCap) + " per person from 6 April 2026 and transferable between spouses, so up to "
+            + gbp(IHTC.bprCap * 2) + " for a married couple. Above the cap relief drops to 50%, giving an effective 20%."
+          : "Not claimed on your figures, so the business value sits in the estate in full."),
+      relief(on("cashEvidence") ? "open" : "risk", "Excepted assets carve-out",
+        r.exceptedCost > 0 ? gbp(r.exceptedCost) + " at stake" : "",
+        on("cashEvidence")
+          ? "You have said the retained cash has a documented, committed purpose. That evidence is the whole case. It has to be contemporaneous and dated before any transfer."
+          : "No documented purpose recorded, so on these figures " + gbp(r.exceptedRisk) + " is exposed to being carved out of the relief."),
+      relief("open", "Ten annual instalments", "",
+        "Inheritance tax on qualifying business property can be paid in ten equal yearly instalments. Interest applies if they run late."),
+      r.dla > 0 ? relief("risk", "Section 455 charge", gbp(r.s455),
+        "35.75% on a loan made on or after 6 April 2026 and not repaid within nine months of the year end. Refundable once the loan is repaid, but it is your cash in the meantime.") : null
+    ]));
+
+    var exposed = on("cashEvidence") ? r.coinv : r.cash + r.coinv;
+    var cost = on("bpr") ? Math.min(exposed, Math.min(r.bizval, IHTC.bprCap)) * IHTC.rate : 0;
+    out.push(block("What happens if you do, and if you don't", [
+      lede("The company holds ", strong(gbp(exposed)), " that a tool cannot justify as needed for the trade."),
+      fork(
+        "If the evidence exists", gbp(0),
+          "Board minutes, budgets, quotes, a committed project, all dated before any transfer. The cash is required for future use and stays inside the relief.",
+        "If it does not", gbp(cost),
+          "The value is left out of account as an excepted asset. The shares still qualify, that money simply gets no relief, at 40%.",
+        h("span", null, "Same cash, same company. The difference is ", h("b", null, gbp(cost)), " and it is made of paperwork."),
+        "There is no safe level of retained cash, no de minimis and no percentage of turnover that protects you. Anyone quoting one is repeating a rule of thumb reverse engineered from a single old concession. And the cost rose on 6 April 2026, because excepted value uses up none of your " + gbp(IHTC.bprCap) + " allowance while the rest of the estate pushes past it.")
+    ]));
+    return out;
+  }},
+
+  {id:"capital", label:"Buying and losses",
+   render:function(r){
+    var out = [];
+    var relief100 = r.capNew && !r.ceasing ? r.capex : 0;
+    var cashNow = relief100 * r.marginalCT;
+
+    out.push(block("The issue", [
+      lede("Buy new equipment through the company and ", strong("full expensing gives you 100% of the cost against profits in the year you buy it"),
+        ", with no cap. That is the best relief available and most directors never hear its name."),
+      lede("It is companies only, it needs the asset to be ", strong("new and unused"),
+        ", and cars never qualify, no matter how they are financed.")
+    ]));
+
+    if (r.ceasing) {
+      out.push(block("Stop, because you have said you are ceasing", [
+        h("p", {class:"catch"}, strong("Buying equipment now will not get you the relief. "),
+          "The annual investment allowance and every first year allowance, full expensing included, are barred on expenditure in the chargeable period in which the trade permanently ends. Writing down allowances are the most you will get. ",
+          strong("Anyone telling you to spend before you wind up is giving you actively harmful advice"), "."),
+        lede("What does improve on cessation is losses. See the losses block below.")
+      ]));
+    }
+
+    out.push(block("What you can actually claim", [
+      relief(r.capNew && !r.ceasing ? "open" : "closed", "Full expensing", "100%",
+        "New and unused main rate plant and machinery, companies only, uncapped."
+        + (r.capex > 0 && r.capNew && !r.ceasing
+            ? " On your " + gbp(r.capex) + " that is the whole cost against profits, worth about " + gbp(cashNow) + " of corporation tax at your marginal " + pct(r.marginalCT) + "."
+            : "")
+        + (!r.capNew ? " Not available on second hand assets, which is what you have said yours is." : "")),
+      relief(!r.capNew && !r.ceasing ? "open" : "used", "Annual investment allowance", gbp(1000000),
+        "Covers second hand assets and special rate expenditure too, and sole traders can use it. "
+        + (r.assoc > 1
+            ? "But you control " + r.assoc + " companies, and companies under common control share ONE allowance between them. The million is not per company."
+            : "Companies under common control share one allowance between them, so it is not automatically one each.")),
+      relief("open", "The 50% allowance", "special rate",
+        "New and unused integral features, long life assets and thermal insulation get 50% in year one, with the balance going into the 6% pool."),
+      relief("open", "The 40% allowance, and why it probably is not for you", "from 1 Jan 2026",
+        "New, and genuinely useful, but it is a fallback rather than an upgrade. If your company is buying new main rate plant, full expensing already gives you 100%, so 40% would be worse. It exists for unincorporated businesses, for anyone who has used up the million, and for assets bought to lease out."),
+      relief("risk", "Writing down allowances slowed this year", "14%, not 18%",
+        "The main pool rate fell from 18% to 14% from April 2026. The special rate pool stays at 6%. Note that HMRC's own self assessment helpsheet still shows 18%, because it covers last year, so a correct figure can look wrong when you go and check it."),
+      relief("open", "Small pools", gbp(1000),
+        "If a pool balance falls to £1,000 or less you can write it off entirely rather than crawl down at 14%. Adjusted if your accounting period is not twelve months."),
+      relief("open", "Buildings", "3% a year",
+        "Structures and buildings allowance runs at 3% straight line, and it is on construction or renovation cost, not on what you paid for the property. No land, nothing residential, and you cannot claim at all without a written allowance statement, which buyers routinely fail to get from the seller.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("The part nobody mentions when they sell you the 100%."),
+      fork(
+        "Buying it", gbp(relief100),
+          relief100 > 0 ? "Deducted in full this year, worth " + gbp(cashNow) + " of corporation tax at your marginal rate."
+                        : "No full expensing available on what you have entered.",
+        "Selling it later", "All of it back",
+          "Where the whole cost was full expensed, the ENTIRE sale proceeds become an immediate balancing charge. There is no pool to absorb it and no spreading.",
+        h("span", null, "Full expensing is ", h("b", null, "a timing benefit, not free money"),
+          ". Sell that equipment for " + gbp(Math.round(r.capex * 0.4)) + " in three years and " + gbp(Math.round(r.capex * 0.4)) + " goes straight onto taxable profits."),
+        "For the 50% allowance it is half the proceeds as a balancing charge and half into the pool. Neither of these is a reason not to claim. They are a reason not to spend cash you need on something you will sell, purely because a relief exists. And every one of these reliefs converts a deduction into cash only at your company's marginal rate, which is why the associated company question at the top of this app changes these numbers too.")
+    ]));
+
+    out.push(block("If the year goes badly", [
+      relief("open", "Carry back", "12 months",
+        "A trading loss goes against the current period's other profits first, and only then back twelve months. The three year carry back from the pandemic is gone, and cannot apply to any period now."),
+      relief(r.ceasing ? "open" : "used", "On cessation it stretches to three years", "final 12 months only",
+        "Terminal loss relief carries back three years, but only for losses arising in the final twelve months of trading, relieving later years first. That window is narrower than the phrase suggests."),
+      relief("risk", "Carrying forward is capped", "£5m plus 50%",
+        "Carried forward losses can only shelter profits up to a £5m deductions allowance plus half of whatever is left above it. And that £5m is a GROUP allowance, shared, which needs an allocation statement filed every period even when you are not using it."),
+      relief("risk", "The final period trap, again", "",
+        "Worth repeating because it costs real money: no annual investment allowance and no first year allowances on anything bought in the period the trade ends.")
+    ]));
+    return out;
+  }},
+
+  {id:"family", label:"Family", render:function(r){
+    var out = [];
+    out.push(block("The issue", [
+      lede("Two allowances, two basic rate bands, two sets of nil-rate bands. ",
+        strong("A household is taxed as individuals"), ", and most director households leave one person's allowances unused while the other pays at the top rate.")
+    ]));
+
+    var half = r.divsTaken / 2;
+    var soloTax = personalTax(r.salary + r.other + r.rental, r.divsTaken).total;
+    var splitTax = personalTax(r.salary + r.other + r.rental, half).total + personalTax(r.spouseInc, half).total;
+    var saving = Math.max(0, soloTax - splitTax);
+
+    out.push(block("Reliefs and allowances in play", [
+      relief(on("spouseShares") ? "used" : "open", "Your spouse's personal allowance and basic rate band",
+        gbp(PA) + " + " + gbp(B1),
+        on("spouseShares") ? "In use. The shares must be ordinary shares carrying full rights, not a dividend waiver and not a fixed-rate preference share."
+          : "Unused on these figures. Ordinary shares with full rights can carry dividends into their bands instead of yours."),
+      relief(r.couple === 2 ? "open" : "closed", "Transferable nil-rate bands", gbp(IHTC.nrb * 2) + " + " + gbp(IHTC.rnrb * 2),
+        r.couple === 2 ? "Anything unused on the first death passes to the survivor, so up to £1m between you where the home goes to direct descendants."
+          : "Only available to spouses and civil partners. Cohabiting partners get one set each and nothing transfers."),
+      r.kids > 0 ? relief(r.hicbc > 0 ? "risk" : "open", "Child Benefit", gbp(r.cb) + " a year",
+        r.hicbc > 0 ? "You are repaying " + gbp(r.hicbc) + " through the High Income Child Benefit Charge. It is measured on the higher earner's individual adjusted income, between " + gbp(HICBC.from) + " and " + gbp(HICBC.to) + ", not on household income."
+          : "Claimed in full, with no charge on your current income.") : null,
+      relief("open", "Family on the payroll", "",
+        "A spouse or adult child genuinely working in the business can be paid a commercial wage for real work. The wage must match the work actually done, and it needs to be paid.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("Splitting ", strong(gbp(r.divsTaken)), " of dividends across two people instead of one."),
+      fork(
+        "If the shares are held jointly", gbp(splitTax),
+          gbp(half) + " each, running through two personal allowances and two basic rate bands.",
+        "If they stay with you", gbp(soloTax),
+          "All " + gbp(r.divsTaken) + " stacked on one person, pushing into the higher dividend rate at 35.75%.",
+        saving > 0 ? h("span", null, "Difference this year: ", h("b", null, gbp(saving)), ".")
+          : h("span", null, "On these figures the split makes no difference, because the income does not reach a higher band."),
+        "This only works with genuine ordinary shares carrying full rights to dividends, votes and capital. The settlements legislation exists precisely to catch arrangements where income is diverted without real ownership passing. A dividend waiver, a preference share or a share issued only when a dividend is declared will not survive a challenge, and your spouse's income is then taxed back on you.")
+    ]));
+    return out;
+  }},
+
+  {id:"property", label:"Property",
+   render:function(r){
+    var out = [];
+    if (r.rental === 0 && r.prop === 0){
+      out.push(block("The issue", [
+        lede("Nothing entered for rental income or other property, so this stage has nothing to work with. Add either on the left and it will fill in."),
+        lede("Worth knowing anyway: ", strong("the furnished holiday letting regime was abolished on 6 April 2025"),
+          ". If you have read anything about full interest relief, Business Asset Disposal Relief or rollover on a holiday let, it described a regime that no longer exists.")
+      ]));
+      return out;
+    }
+    var taxedOn = Math.max(0, r.rental);
+    var reducer = Math.min(r.mortInt, taxedOn) * 0.20;
+    var geared = r.mortInt > 0 && r.rental > 0 && (r.mortInt / r.rental) > 0.25;
+
+    out.push(block("The issue", [
+      lede("Interest on a residential let held in your own name is ", strong("not a deduction"),
+        ". It is added back, and you get a tax reducer worth 20% of it instead."),
+      lede("That is not just a smaller relief. ",
+        strong("The added back interest inflates your taxable income"),
+        ", which can push you into the higher rate, strip your personal allowance between £100,000 and £125,140, or trigger the Child Benefit charge, while your actual cash in hand has not moved at all."),
+      r.mortInt > 0
+        ? h("p", {class:"catch"}, strong("On your figures. "),
+            gbp(r.rental) + " of rental income with " + gbp(r.mortInt) + " of interest. You are taxed as though you earned "
+            + gbp(taxedOn) + ", and get back a reducer of about " + gbp(reducer) + ". "
+            + (geared ? "You are geared enough that this is doing real damage, which is the actual reason landlords incorporate. It is a gearing problem, not a rate problem."
+                      : "You are lightly geared, which means incorporating would probably gain you very little. An ungeared landlord gains almost nothing."))
+        : h("p", {class:"catch"}, strong("No interest entered, "),
+            "so the restriction is not biting you. That matters, because it is the main reason to consider a company, and without gearing the case largely disappears.")
+    ]));
+
+    out.push(block("What the rates actually are", [
+      relief("open", "Rental profit, 2026/27", "20% / 40% / 45%",
+        "The ordinary income tax rates, stacked on your other income. There is a separate set of property rates coming, 22%, 42% and 47%, but they start on 6 April 2027, not now. Anyone quoting them for this year is a year early."),
+      relief("risk", "And the reducer changes with them", "20% now, 22% from 2027",
+        "From April 2027 the finance cost reducer is given at the new property basic rate rather than 20%. Single sourced so far, so treat it as the direction of travel rather than something to plan around."),
+      relief("risk", "Furnished holiday lets are gone", "since 6 April 2025",
+        "The regime was abolished. Former holiday lets are ordinary property businesses now, so the interest restriction applies to them, and the capital gains reliefs, the capital allowances on new spend and the pension-relevant earnings all went with it."),
+      relief(r.leave > 0 ? "risk" : "open", "Leaving does not take the property with you", "",
+        "UK land stays inside UK capital gains tax for non residents throughout, with no five year escape, and that extends to shares in property-rich companies. The 60 day report and pay applies even when no tax is due.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("The same ", strong(gbp(10000)), " of rental profit, personally and through a company, fully taken out. Illustrative, higher rate, let to unconnected tenants."),
+      fork(
+        "Held personally", gbp(4000), "40% income tax, and done.",
+        "Held in a company", gbp(4796),
+          "£1,900 corporation tax at 19%, then 35.75% dividend tax on the £8,100 left, so about 48% all in.",
+        h("span", null, "On profit you actually take out, ", h("b", null, "personal ownership usually wins"),
+          ". The company only gets ahead where the money stays inside it and compounds, or where gearing is inflating your personal taxable income above your real profit."),
+        "And that comparison is the friendly version. If the company is at the 25% main rate, or is caught as a close investment-holding company, the total is closer to 52%. Assumptions on screen, and every one of them moves the answer."),
+      r.letConnected
+        ? h("p", {class:"catch"}, strong("You have said some of it is let to family or connected people. "),
+            "That changes the company answer badly. A close company letting to connected persons is a close investment-holding company: main rate corporation tax on all its profits, no small profits rate and no marginal relief. It also kills the property rental business reliefs from stamp duty and from the annual charge below. Letting to family is the single fastest way to lose every advantage of the company route.")
+        : null
+    ]));
+
+    out.push(block("The three obstacles to getting there", [
+      relief("risk", "Capital gains tax on the way in", "market value",
+        "Transferring to your own company is a disposal at market value, whatever you actually charge. Incorporation relief can roll the gain into the shares, but only where the activity amounts to a business, everything except cash goes across as a going concern, and you take shares."),
+      relief("risk", "And since 6 April 2026 it must be CLAIMED", "no longer automatic",
+        "This is the most current thing on this page. Incorporation relief used to apply automatically. For transfers on or after 6 April 2026 it has to be claimed on your tax return, by the first anniversary of the 31 January following the tax year of transfer. Miss the claim and the capital gains tax simply stands."),
+      relief("risk", "There is no clearance to get", "",
+        "HMRC will not tell you in advance whether your letting is a business. Non-statutory clearance on questions of fact was withdrawn in 2016. It has to be evidenced as you go, not confirmed up front. HMRC will accept business status at 20 hours a week or more of personal activity, but there is no statutory hours test, and HMRC amended its own guidance in August 2026 to say fewer hours can still be a business."),
+      relief("risk", "Stamp duty, twice over", "5% surcharge, and 17%",
+        "A company pays the higher rates on every residential purchase, including its first, and those rates are 5 points above the standard bands since October 2024, not 3. On a single dwelling over £500,000 there is also a 17% flat charge, up from 15%. Property rental business relief can take you out of the 17%. It does NOT take you out of the 5%."),
+      relief("risk", "Refinancing", "a commercial cost, not a tax one",
+        "Personal buy to let borrowing does not transfer. You redeem and take a new corporate facility, with fees, valuations, legals, early repayment charges and usually a higher rate. This is frequently the line that turns a positive model negative.")
+    ]));
+
+    if (r.prop > 500000) {
+      out.push(block("If you do put a home in a company, do not miss this", [
+        lede(strong("The annual tax on enveloped dwellings"),
+          " catches UK residential dwellings worth more than £500,000 held by a company. The charge starts at ",
+          strong(gbp(4600)), " a year and rises with value."),
+        h("p", {class:"catch"}, strong("A relief still needs a return. "),
+          "Where a relief reduces the charge to nil, usually because it is a genuine commercial let to unconnected tenants, you still have to file a relief declaration return every year, by 30 April, in advance. Miss it and the penalties apply to a nil liability. Note also that the banding runs off the value at 1 April 2022, or your acquisition cost if later, not what it is worth today.")
+      ]));
+    }
+
+    out.push(block("Where this tool stops", [
+      lede("On property the honest answer is a refusal more often than a number."),
+      h("p", {class:"catch"}, "Whether incorporation relief is available is a question of fact with no clearance route and no numerical test. Whether stamp duty can be reduced through partnership treatment depends on a genuine partnership actually existing. What refinancing will cost is a broker question. And any headline saying you would save a specific amount by incorporating needs all three of those plus your extraction pattern. This stage will not print that number, and you should be wary of anyone who does."),
+      h("p", {class:"catch"}, strong("Also outside this tool: "),
+        "Scotland and Wales have their own land taxes, so the stamp duty figures above do not apply there, and the 2027 property rates are for England and Northern Ireland. And the Budget on 28 October 2026 has live speculation attached to residential capital gains and to the high value council tax surcharge. Speculation is not law, and nothing here projects past that date.")
+    ]));
+    return out;
+  }},
+
+  {id:"sell", label:"Selling", render:function(r){
+    var out = [];
+    out.push(block("The issue", [
+      lede("A sale is the single largest taxable event most directors ever have. ",
+        strong("The structure that makes it efficient has to be in place long before the buyer appears"),
+        ", and the relief everybody has heard of turns on a test most people fail without knowing it.")
+    ]));
+    out.push(block("Reliefs and allowances in play", [
+      relief(on("badr") ? "open" : "risk", "Business Asset Disposal Relief", "18% on the first " + gbpShort(CGT.badrLimit),
+        "The lifetime limit is " + gbp(CGT.badrLimit) + " and the rate is 18% for 2026/27, against 24% otherwise. Maximum value "
+        + gbp(CGT.badrLimit * (CGT.higher - CGT.badrRate)) + "."),
+      relief("risk", "The four-part 5% test", "",
+        "Personal company means 5% of ordinary share capital, 5% of votes, 5% of distributable profits and 5% of assets on a winding up, or 5% of proceeds on a whole company sale. Alphabet and growth shares routinely fail the economic legs. Holding 5% of the shares is not enough."),
+      relief(r.sellIn === 2 ? "risk" : "open", "The two-year clock", "",
+        "The conditions must hold throughout the two years ending with the disposal, including being an officer or employee. If the trade ceases first, you have three years from cessation to sell."),
+      relief("open", "Annual exempt amount", gbp(CGT.aea), "Down from £12,300 in 2022/23. On a sale of this size it is a rounding error."),
+      relief("open", "Substantial Shareholding Exemption", "company level",
+        "A holding company's gain on qualifying shares can be exempt from corporation tax. Note whose relief that is: the cash lands in the holding company, and taking it out personally is taxed as normal. It needs 12 months of qualifying holding within the previous 6 years, so a holding company bolted on just before a sale fails its own clock.")
+    ]));
+    out.push(block("What happens if you do, and if you don't", [
+      lede("Selling for ", strong(gbp(r.bizval)), ", with and without the relief."),
+      fork(
+        "If you qualify", gbp(r.cgtWithBadr), "18% on the first " + gbp(CGT.badrLimit) + ", 24% on the rest.",
+        "If you do not", gbp(r.cgtNoBadr), "24% on the whole gain.",
+        h("span", null, "The relief is worth ", h("b", null, gbp(r.badrValue)), " on this sale."),
+        r.sellIn === 2
+          ? "You have said within two years. That is the tightest possible window. Every condition has to have been met for the two years ending on completion, so anything you change now may not have run long enough, and a holding company inserted at this point cannot meet its own 12-month clock."
+          : "Structure goes in more than twelve months before a sale, not during it. The reliefs are earned by time, and time is the one input you cannot buy back once a buyer is at the table.")
+    ]));
+    return out;
+  }},
+
+  {id:"leave", label:"Leaving", render:function(r){
+    var tail = r.yrs >= 20 ? 10 : (r.yrs >= 14 ? r.yrs - 10 : (r.yrs >= 10 ? 3 : 0));
+    var out = [];
+    out.push(block("The issue", [
+      lede("Leaving the UK is a day count against a statutory test, not a decision or a feeling. ",
+        strong("And it does not end cleanly."), " Your estate stays in the UK inheritance tax net for years after you go, and coming back too soon undoes the rest."),
+      r.leave === 2
+        ? lede(strong("You have said within two years, so the clock is already running."),
+            " The test bites on tax years, not on the date you get on the plane, and split year treatment is not elective. Getting the departure date wrong by a few weeks can cost you an entire tax year of UK residence.")
+        : r.leave === 1
+          ? lede(strong("You have said you are thinking about it."),
+              " That is the right moment to look at this, because almost everything here has to be done before a tax year starts rather than after it ends. Reading this the following January is the expensive version.")
+          : lede("You have said you are not considering it. Everything below is the cost of the option you are not taking, which is worth knowing before a Budget makes the decision for you.")
+    ]));
+    out.push(block("Reliefs and allowances in play", [
+      relief("open", "The automatic tests", "16 / 46 / 183 days",
+        "Under 16 UK days makes you automatically non-resident if you were resident in any of the previous three years. 183 days or more makes you resident, with no exceptions. The full-time work abroad test has its own conditions."),
+      relief("risk", "The five ties", "",
+        "Family, accommodation, work, the 90-day tie and the country tie. As a leaver with all five available, 16 to 45 days needs four or more ties to make you resident, 46 to 90 needs three, 91 to 120 needs two, 121 to 182 needs one."),
+      relief(tail > 0 ? "risk" : "open", "The long-term resident tail", tail > 0 ? tail + " years" : "none",
+        r.yrs >= 10
+          ? "After " + r.yrs + " years of UK residence your worldwide estate stays in UK inheritance tax for " + tail + " years after you leave. Fewer than ten years of residence and there is no tail at all."
+          : "Under ten years of UK residence, so no long-term resident tail applies on these figures."),
+      relief("risk", "Temporary non-residence", "more than 5 years",
+        "Return inside the period and gains made while away, close company dividends and certain pension lump sums are taxed in the year you come back. From 6 April 2026 the carve-out for profits arising after departure is abolished, so leave, empty the company, return no longer works."),
+      relief("risk", "Your pension does not leave with you", "",
+        "From 6 April 2027 a UK registered pension stays inside UK inheritance tax through where the scheme is established, not where you live. Transferring to an overseas scheme carries a 25% charge unless narrow conditions are met.")
+    ]));
+    out.push(block("What happens if you do, and if you don't", [
+      lede("Leaving, then either staying away or coming home early."),
+      fork(
+        "If you stay away long enough", "More than 5 years",
+          "Gains realised while non-resident stay outside the UK net, subject to UK land and property-rich shares which are always caught.",
+        "If you return early", "Clawed back",
+          "Taxed in the year of return: capital gains realised while away, close company distributions, certain pension lump sums and chargeable event gains.",
+        h("span", null, "Plan on more than five years of non-residence, and on ",
+          h("b", null, "six full tax years"), " where split year treatment does not apply."),
+        "None of this is triggered by intention. It is midnights, ties and dates, evidenced. And the inheritance tail runs alongside it, so on your " + r.yrs + " years of residence the estate stays exposed for " + (tail || 0) + " years regardless of where you are living.")
+    ]));
+    return out;
+  }},
+
+  {id:"pass", label:"Passing it on", render:function(r){
+    var out = [];
+    var noPot = r.ihtOn(r.estate - r.pot).tax;
+    out.push(block("The issue", [
+      lede("Forty per cent above the allowances, on money that has already been taxed on the way in. ",
+        strong("And from 6 April 2027 the pension joins the estate"),
+        ", which for most directors is the single biggest change to their position in a decade."),
+      lede("Estate as entered: " + gbp(r.estate) + ", against " + gbp(r.nrb + r.rnrb) + " of allowances.")
+    ]));
+    out.push(block("Reliefs and allowances in play", [
+      relief("open", "Nil-rate band", gbp(r.nrb),
+        "£325,000 each, frozen until 5 April 2031, and transferable between spouses and civil partners."),
+      relief(r.rnrb > 0 ? "open" : "risk", "Residence nil-rate band", gbp(r.rnrb),
+        r.estate > IHTC.taperFrom
+          ? "Tapering on your figures. Above a " + gbp(IHTC.taperFrom) + " estate you lose £1 for every £2 over, which creates an effective 60% band and is why your pension now matters twice."
+          : "£175,000 each where the home passes to direct descendants."),
+      relief(r.pot > 0 ? "risk" : "open", "Pensions", r.pensionCost > 0 ? gbp(r.pensionCost) + " of the bill" : "",
+        r.pot > 0 ? "Your " + gbp(r.pot) + " pot adds " + gbp(r.pensionCost)
+          + " to the bill from 6 April 2027, and counts toward the " + gbp(IHTC.taperFrom)
+          + " taper. Where death is after 75 the beneficiary also pays income tax on what they draw, so the combined effect can reach around 64% for a higher-rate beneficiary."
+          : "No pension entered."),
+      relief("open", "Gifts and the seven-year clock", gbp(r.gifted) + " given so far",
+        "Outright gifts to individuals fall out of the estate after seven years. Taper relief reduces the tax, not the value, and only where the gifts exceed the nil-rate band."),
+      relief("open", "Normal expenditure out of income", "immediate",
+        "Gifts from surplus income are exempt straight away, with no seven-year wait. Three conditions: part of a normal pattern or a documented commitment to one, made out of income and not capital, and leaving you enough income to maintain your standard of living. Claimed by the executors on form IHT403, so contemporaneous records are what make it stick."),
+      relief("open", "Annual exemption", "£3,000",
+        "Plus small gifts of £250 per person and gifts on marriage. Modest, but they run every year.")
+    ]));
+    out.push(block("What happens if you do, and if you don't", [
+      lede("The pension change alone, on your figures."),
+      fork(
+        "Under the rules to 5 April 2027", gbp(noPot),
+          "The unused pot sits outside the estate, as it has since 2015.",
+        "From 6 April 2027", gbp(r.iht),
+          "The pot is counted, and it also pushes the estate further into the residence nil-rate band taper.",
+        r.pensionCost > 0 ? h("span", null, "A change of ", h("b", null, gbp(r.pensionCost)),
+          " arriving on a date already in law, with nothing else about your affairs changing.")
+          : h("span", null, "No change on these figures, because the estate is already covered or there is no pot."),
+        "Everything above is reversible only while you are alive and well enough to act. Gifts need seven years to work, a pattern of gifting out of income needs to be established and documented, and the allowances are frozen to 2031 while asset values are not. Doing nothing is itself a decision, and it is the expensive one.")
+    ]));
+    return out;
+  }},
+
+  {id:"trusts", label:"Trusts",
+   render:function(r){
+    var out = [];
+    var hasMinors = r.kids > 0;
+    out.push(block("The issue", [
+      lede("A trust separates ", strong("who controls an asset from who benefits from it"),
+        ". That is the whole idea, and it is why it survives as a tool for a director who wants value to move down a generation without handing a nineteen year old the shares."),
+      lede("It is also why trusts stopped being fashionable. On 22 March 2006 the relevant property regime was extended to virtually every new lifetime trust, which brought a charge on the way in, a charge every ten years and a charge on the way out. That date is the reason your accountant's opinion of trusts probably formed before it.")
+    ]));
+
+    out.push(block("The three charges, and when they are nil", [
+      relief("risk", "On the way in", "20%",
+        "The lifetime rate, half the death rate, on value settled above your available nil-rate band. Settle something genuinely worth nothing, such as growth shares issued at nil value, and the entry charge is nil, which is the whole point of doing it early."),
+      relief("risk", "Every ten years", "up to 6%",
+        "The principal charge, a maximum effective 6% of the trust value on each tenth anniversary. It is a maximum, not a rate: the actual figure depends on the trust's history and available allowances."),
+      relief("risk", "On the way out", "up to 6%",
+        "Time-apportioned, on capital leaving to a beneficiary. Leave early in a ten year cycle and the charge is proportionately smaller."),
+      relief("open", "Trustees get their own business relief allowance", gbp(IHTC.bprCap),
+        "From 6 April 2026 trustees have their own £2.5m of 100% relief for ten-yearly and exit charges, refreshing every ten years. Trusts settled before 30 October 2024 each keep a full allowance. Trusts settled by the same settlor on or after that date SHARE one allowance, chronologically, which is the anti-fragmentation rule. So the old advice to create several trusts no longer multiplies the relief."),
+      relief("risk", "None of the rates changed at the last Budget", "",
+        "The 20%, the 6% and the 6% are long standing and were untouched at Autumn Budget 2025. What changed underneath them is the business relief cap.")
+    ]));
+
+    out.push(block("The trap that catches parents", [
+      lede("Putting shares into a trust is a disposal for capital gains tax. You normally hold the gain over so no tax arises now, ",
+        strong("but holdover is denied where the trust is settlor-interested"), "."),
+      lede("And since 6 April 2006 settlor-interested includes ",
+        strong("any trust from which your own minor unmarried child might benefit"),
+        ". Not does benefit. Might. The mere possibility kills the relief, and there is a six year clawback if the position changes."),
+      hasMinors
+        ? h("p", {class:"catch"}, strong("You have entered " + r.kids + " children. "),
+            "If any are under 18 and unmarried, a discretionary trust drafted the usual way will name them, or their class, as possible beneficiaries. That is enough to deny holdover on the way in and turn a planning step into a dry capital gains tax bill on " + gbp(r.bizval) + " of value. This is the single biggest trap for parents of minors and it is a drafting question, not a numbers question.")
+        : h("p", {class:"catch"}, strong("Worth knowing even so. "),
+            "If a minor unmarried child of yours could benefit under the trust, holdover is denied. It catches people who added a class of beneficiaries without thinking about who falls inside it."),
+      lede("There are two holdover routes and they are not interchangeable. One covers business assets, unlisted trading shares or a personal company. The other covers any chargeable transfer, which is what a trust entry is, and it takes priority where both could apply.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("Qualifying trading company shares, ", strong(gbp(r.bizval)), ", into a trust now against holding them until death."),
+      fork(
+        "Settled now", "Often nil on entry",
+          "Business property relief can cover the transfer, so the 20% entry charge is frequently nil on qualifying trading shares. Growth in value after settlement happens outside your estate.",
+        "Held until death", "The rules on that day",
+          "The shares stay in your estate, and every pound of growth with them. Relief may still apply, but on the rules and the cap as they stand at the date of death, which no tool can tell you.",
+        h("span", null, "The reason to act early is not the entry charge. It is that ",
+          h("b", null, "everything the shares are worth after settlement grows outside your estate"), "."),
+        "Three conditions people skip. You must have owned the shares two years before the transfer gets business relief. If you die within seven years of the gift, the relief only holds if the trustees still own qualifying property at that point, so a sale by the trustees in year three can undo it. And relief is tested against the rules at death, not at the date you settled, which means a future Budget can reach back through a decision you made today. Trusts are a long commitment made under rules that move.")
+    ]));
+
+    out.push(block("What a trust costs to run", [
+      relief("risk", "Trust income tax", "45% and 39.35%",
+        "45% on non-dividend income and 39.35% on dividends, the rate applicable to trusts. There is a £500 threshold below which the trust's basic rate applies, and it is all or nothing: a pound over and the whole lot is at trust rates. It is split across a settlor's trusts, with a £100 floor each."),
+      relief("risk", "Income paid to your own minor child comes back to you", "£100",
+        "Discretionary trust income paid to or for the benefit of your minor unmarried child is taxed on you as the parent, above a £100 a year de minimis. Which removes most of the point of doing it that way."),
+      relief("risk", "Registration", "90 days",
+        "Every UK express trust registers with HMRC's Trust Registration Service within 90 days of creation, and changes are notified within 90 days. Not optional, and a common oversight on older family trusts."),
+      relief("open", "Reasonable pay is not a reservation of benefit", "",
+        "A worry directors raise: if I give the shares away but keep running the company, have I reserved a benefit? Not where your remuneration is reasonable commercial pay for real work, unchanged by and unconnected to the gift.")
+    ]));
+    return out;
+  }},
+
+  {id:"vat", label:"VAT",
+   render:function(r){
+    var T = r.turnover;
+    var cannotPass = T / 6;                       /* VAT on a VAT inclusive price is one sixth */
+    var frsNet = 0.165 * 1.2;                     /* 16.5% of gross = 19.8% of net */
+    var frsKeep = T * (0.20 - frsNet);
+    var b2c = r.customers === "b2c", mixed = r.customers === "mixed";
+    var over = T > 90000;
+
+    var out = [];
+    out.push(block("The issue", [
+      lede("VAT registration is ", strong("not one test, it is two"),
+        ", running at the same time, and directors only ever hear about one of them."),
+      lede(strong("The backward look is rolling."),
+        " At the end of every month you add up taxable turnover for the previous 12 months or less. Not your accounting year, not the tax year. A business doing £40,000 in a quiet first half and £60,000 in a busy second half crosses in December, even though the year end figure looks fine."),
+      lede(strong("The forward look is a different animal."),
+        " If at any point you have reasonable grounds to believe you will pass £90,000 in the next 30 days ",
+        strong("alone"),
+        ", you are liable from the day that expectation arose. Not the day the money lands. It ignores the previous 12 months entirely, so a business turning over £20,000 a year can be caught by it the day it signs one large contract."),
+      h("p", {class:"catch"}, strong("And it is taxable turnover, not turnover. "),
+        "Standard, reduced and zero rated supplies count. Exempt supplies and anything outside the scope do not. A zero rated business has to register even though it charges no VAT, which usually puts it in a refund position.")
+    ]));
+
+    out.push(block("The dates that differ, and the one people miss", [
+      relief(over && !r.vatReg ? "risk" : "open", "If you cross on the backward look", "1st of the second month",
+        "Notify within 30 days of the end of the month you crossed in, and registration takes effect on the first day of the second month after that. That gap is not a grace period. The duty to notify is already live."),
+      relief("risk", "If you cross on the forward look", "that same day",
+        "Notify within 30 days of the date the expectation arose, and you are registered from that date, with no lag at all. Which means VAT on invoices you may already have quoted net."),
+      relief("open", "Exception from registration", "£88,000",
+        "The relief almost nobody claims. Where you have crossed but expect the next 12 months to come in under the deregistration threshold, HMRC may agree to treat you as not liable. It is HMRC's judgement, not an election, it is applied for on paper, and it is forward looking, so a one off spike qualifies and a growing business does not. If it is refused you are registered from the original date with the VAT owing from then."),
+      relief("risk", "Late registration is not a fixed fine", "0% to 100%",
+        "It is charged as a percentage of the VAT you should have accounted for, scaled by behaviour. Careless and disclosed early is the bottom of the range. Deliberate and concealed is the top."),
+      relief("open", "Deregistration", "£88,000",
+        "If taxable turnover falls below this you can come out, which matters if you sell to consumers and your trade has shrunk.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("What registration actually costs you on ", strong(gbp(T)), " of turnover."),
+      fork(
+        "If your customers reclaim it", gbp(0),
+          "A VAT registered business customer recovers what you charge, so the real terms change to them is nil, and you start recovering input VAT on your own costs. Registration can leave you better off.",
+        "If they cannot", gbp(cannotPass),
+          "Hold your prices and the VAT comes out of your margin. On a VAT inclusive price the tax is one sixth, not one fifth. Before recovering input VAT on your costs.",
+        b2c
+          ? h("span", null, "You have said you sell mainly to consumers, so ", h("b", null, gbp(cannotPass)),
+              " is the number that matters. The choice is a price rise, a margin cut, or a split of the two.")
+          : mixed
+            ? h("span", null, "Mixed, so the real answer sits between them, weighted by how much of your work is for businesses.")
+            : h("span", null, "You have said you sell mainly to VAT registered businesses, so registration is close to neutral on price and positive on input recovery."),
+        "The line you will hear everywhere is that VAT costs you 20% of your turnover. It is wrong twice. On a VAT inclusive price the tax is a sixth, and none of it counts the input VAT you get back on your own costs. What VAT actually costs you is the part you cannot pass on, plus the compliance. Note also that around half of businesses below the threshold register voluntarily, which tells you the answer is not obvious in either direction.")
+    ]));
+
+    out.push(block("The Flat Rate Scheme, honestly", [
+      lede("Sold as a simplification that pays for itself. For a service company it is usually neither."),
+      lede("If your spend on actual goods is under 2% of your turnover, or under £1,000 a year, you are a ",
+        strong("limited cost business"), " and your rate is 16.5%. For a consultancy, an agency or a contractor company, where the costs are people and software, that is the default outcome, not the exception."),
+      fork(
+        "What you collect", "20% of net", "Charged to the customer in the ordinary way.",
+        "What you hand over", "19.8% of net",
+          "16.5% is applied to the VAT inclusive figure, so on net turnover it works out at 16.5% times 1.2.",
+        h("span", null, "You keep ", h("b", null, gbp(Math.max(0, frsKeep))),
+          " on " + gbp(T) + " of turnover, and you give up input VAT recovery on everything except a capital asset costing over £2,000."),
+        "Anyone showing you 16.5% against 20% and calling the difference a saving is comparing two numbers that sit on different bases, which is the same mistake as holding a corporation tax rate up against an income tax rate. The only honest comparison is a full year of cash under each, with input tax counted on both sides. The scheme still earns its place in a genuinely goods heavy business on a favourable sector rate, and there it is worth checking properly.")
+    ]));
+
+    out.push(block("Once you are registered", [
+      relief(r.vatReg ? "used" : "open", "Making Tax Digital", "all registrations, since April 2022",
+        "It stopped being a threshold question four years ago. Every VAT registered business is in it, voluntary registrations included. Records kept digitally, returns filed from software, and digital links between each piece of software in the chain. Copy and paste is expressly not a digital link, and the soft landing that used to excuse it ended in April 2021."),
+      relief("risk", "Late returns", "£200 at four points",
+        "One point per late quarterly return. At four points a £200 penalty, and another £200 for every late return after that while you are still at the threshold. Points drop off after 24 months, and clearing a full set takes four returns filed on time."),
+      relief("risk", "Late payment", "3%, 3%, then 10% a year",
+        "3% of what is outstanding at day 15, another 3% of what is still outstanding at day 30, then a second penalty building daily at 10% a year. For VAT periods beginning on or after 1 April 2025. If you have been treating the VAT account as working capital, that is the interest rate you are paying."),
+      relief("open", "Cash accounting", "£1.35m to join",
+        "Account for VAT when you are paid rather than when you invoice. Worth having if your customers are slow. You must leave at £1.6m."),
+      relief("open", "Annual accounting", "£1.35m to join", "One return a year with instalments. Smooths the cash flow, and you leave at £1.6m.")
+    ]));
+    return out;
+  }},
+
+  {id:"accounts", label:"What's public",
+   render:function(r){
+    function met(a, b, c){ return (a?1:0) + (b?1:0) + (c?1:0); }
+    var isMicro  = met(r.turnover <= 1000000,  r.bstotal <= 500000,  r.emp <= 10)  >= 2;
+    var isSmall  = met(r.turnover <= 15000000, r.bstotal <= 7500000, r.emp <= 50)  >= 2;
+    var isMedium = met(r.turnover <= 54000000, r.bstotal <= 27000000, r.emp <= 250) >= 2;
+    var size = isMicro ? "micro-entity" : isSmall ? "small" : isMedium ? "medium" : "large";
+    var canFillet = isMicro || isSmall;
+
+    var out = [];
+    out.push(block("The issue", [
+      lede("Your accounts are a public document. Anyone can pull them, free, in about ten seconds: a competitor, a customer, a supplier deciding your credit terms, a member of staff wondering what you earn. ",
+        strong("What they can see is decided by which size box you fall into"), ", and that is about to change."),
+      lede("On the figures you have entered the company looks like a ", strong(size),
+        " company. Two of the three tests decide it, and a change only counts if it holds for two consecutive years, so check last year's figures before relying on this."),
+      h("p", {class:"catch"}, strong("Say it carefully. "),
+        "Small for accounts is not the same as small anywhere else. The off-payroll rules read the same Companies Act definition but run off filing deadlines, so a company can be small for its accounts this year and still not small for IR35 until 2027/28. See the IR35 stage.")
+    ]));
+
+    out.push(block("The size tests, for financial years beginning on or after 6 April 2025", [
+      relief(isMicro ? "used" : "open", "Micro-entity", "£1m / £500,000 / 10",
+        "Turnover, balance sheet total and employees. Files a balance sheet only, with the notes at its foot, and cannot prepare abridged accounts."),
+      relief(!isMicro && isSmall ? "used" : "open", "Small", "£15m / £7.5m / 50",
+        "Raised from £10.2m and £5.1m. The employee limits did not move, only the two money tests."),
+      relief(!isSmall && isMedium ? "used" : "open", "Medium", "£54m / £27m / 250",
+        "Raised from £36m and £18m."),
+      relief("open", "The two-year rule, and the way round it", "",
+        "A category only changes if you cross the line in two consecutive financial years, and a company's first year is tested on that year alone. There is a transitional that lets you re-test the earlier year as though the new thresholds had always applied, so a company that was medium on the old numbers can be small now without waiting."),
+      relief("risk", "Watch the commencement", "years BEGINNING on or after 6 Apr 2025",
+        "Not \"from April 2025\". A 31 December year end first meets the new thresholds in the year ending 31 December 2026. If your current period began before 6 April 2025 you are still on the old figures.")
+    ]));
+
+    out.push(block("Filleted and abridged are not the same thing", [
+      lede(strong("Filleted"), " is about what you file. The law says a small company ", strong("must"),
+        " deliver a balance sheet and ", strong("may also"),
+        " deliver the profit and loss account and the directors' report. Leaving those two out is filleting. It needs no shareholder consent and nearly every small company does it."),
+      lede(strong("Abridged"), " is about how the accounts are prepared, with fewer line items, and it ",
+        strong("requires every member to consent, every single year"),
+        ", plus a statement to the registrar saying they did. A micro-entity cannot abridge at all."),
+      h("p", {class:"catch"}, strong("And filleting is not privacy. "),
+        "Your balance sheet still goes on the register, so it still shows your net assets, and the year-on-year movement in retained earnings lets anyone with a spreadsheet work out roughly what you made. HMRC receives the full accounts with your corporation tax return either way, and so do your shareholders. What filleting buys you is keeping the profit and loss account off the public register. Nothing more.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede("What the public register holds, ", strong("today"), " against ", strong("from 1 April 2028"), "."),
+      fork(
+        "Today", "Balance sheet",
+          canFillet ? "Filleted. The profit and loss account and the directors' report stay off the register, at no cost and with no consent needed."
+                    : "On these figures the company is above the small thresholds, so full accounts go on the register already.",
+        "From 1 April 2028", "Balance sheet and P&L",
+          "Small and micro companies must file a profit and loss account. Abridged accounts are abolished at the same time.",
+        h("span", null, "There is an opt-out, and it matters exactly this much: ",
+          h("b", null, "you must still file it, you may opt out of publishing it"),
+          ". Companies House, HMRC and law enforcement see the figures either way."),
+        "Two things people get wrong about this. It is not \"you will have to publish your profits\", because of the opt-out, and it is not \"you can opt out of filing\", because you cannot. How the opt-out will actually work has not been published yet, so treat anyone describing the process as guessing. Separately, from the same date every set of accounts must be filed through commercial software in iXBRL, and the free filing route on the Companies House website closes for accounts. If you file your own micro accounts on the site today, you will need software or an agent. That date moved once already, from April 2027, so expect to hear the old one repeated.")
+    ]));
+
+    out.push(block("Audit, and the deadlines", [
+      relief(canFillet ? "open" : "risk", "Audit exemption", "rides on the small test",
+        "There is no separate audit threshold. It follows the small company definition, so it moved up to £15m and £7.5m automatically. Never treat it as a figure of its own."),
+      relief("risk", "Three ways audit exemption breaks", "",
+        "Members holding 10% of the nominal share capital can demand an audit by notice, as long as it lands at least a month before your year end, and you cannot plan that away. A company in a group generally needs the whole group to be small. Public companies, banks, insurers and regulated investment firms are excluded outright."),
+      relief("open", "Accounts deadline", "9 months",
+        "Nine months from the end of the accounting reference period. First accounts covering more than 12 months are due 21 months from incorporation, or 3 months from the accounting reference date, whichever is later."),
+      relief("risk", "Late filing penalties", "£150 to £1,500",
+        "Up to a month late £150, one to three months £375, three to six months £750, over six months £1,500. Filed late in two successive years and the penalty doubles. Automatic, and not a tax deduction."),
+      relief("open", "Confirmation statement", "every 12 months, 14 days to file",
+        "Filing early restarts the twelve-month period. Note that Companies House guidance now says it will not accept a confirmation statement until every director has verified their identity, so leave time for that.")
+    ]));
+    return out;
+  }},
+
+  {id:"filing", label:"Filing",
+   flag:function(r){ return r.rental > 30000; },
+   render:function(r){
+    var q = r.rental, status, when, live;
+    if (q > 50000){ status = "In scope now"; when = "since 6 April 2026"; live = true; }
+    else if (q > 30000){ status = "In scope"; when = "from 6 April 2027"; live = false; }
+    else if (q > 20000){ status = "In scope"; when = "from 6 April 2028"; live = false; }
+    else if (q > 0){ status = "Not yet"; when = "below £20,000 the government has not decided"; live = false; }
+    else { status = "Not in scope"; when = "no sole trade or property income entered"; live = false; }
+
+    var out = [];
+    out.push(block("The issue", [
+      lede("Making Tax Digital for Income Tax is the biggest change to how people file in a generation, and ",
+        strong("most directors assume it applies to them when it does not"), "."),
+      lede("It covers ", strong("sole trade and property income only"),
+        ". Your salary and your dividends are outside it entirely. A director with no rent and no sole trade work is unaffected, no matter how large the company is."),
+      lede("And it is measured on ", strong("gross qualifying income, before expenses"),
+        ", not on profit. A landlord with " + gbp(60000) + " of rent and " + gbp(20000) + " of costs is in scope on the " + gbp(60000) + "."),
+      q > 0
+        ? h("p", {class:"catch"}, strong("On your figures. "), gbp(q)
+            + " of rental or sole trade income entered, so you are " + status.toLowerCase() + ", " + when + ".")
+        : h("p", {class:"catch"}, strong("On your figures. "),
+            "Nothing entered for rent or sole trade work, so Making Tax Digital does not reach you. If you own property personally and it earns, add it on the left and this changes.")
+    ]));
+
+    out.push(block("The thresholds and the dates", [
+      relief(q > 50000 ? "risk" : "open", "Over £50,000 qualifying income", "live now",
+        "Mandatory since 6 April 2026. Quarterly updates plus a final declaration, through compatible software. Say it is happening, not that it is coming."),
+      relief(q > 30000 && q <= 50000 ? "risk" : "open", "Over £30,000", "6 April 2027", "The second cohort. Roughly a year to get the record keeping straight."),
+      relief(q > 20000 && q <= 30000 ? "risk" : "open", "Over £20,000", "6 April 2028", "Confirmed by government. Below £20,000 nothing has been decided."),
+      relief("open", "The quarterly deadlines", "7 Aug / 7 Nov / 7 Feb / 7 May",
+        "Fixed. Electing to report on calendar quarters changes what you report, not when it is due."),
+      relief("open", "Your company is not in this", "scrapped",
+        "Making Tax Digital for Corporation Tax was dropped from HMRC's roadmap in July 2025. There is no date for it, and anyone giving you one is guessing."),
+      relief("open", "Your agent can file for you", "",
+        "Agents can register clients and submit on their behalf. Being in scope does not mean doing it yourself.")
+    ]));
+
+    out.push(block("What happens if you do, and if you don't", [
+      lede(live ? "You are in scope now. Filing on time against missing the lot."
+                : "When you come into scope, filing on time against missing the lot."),
+      fork(
+        "If the four updates land", gbp(0),
+          "Quarterly updates through compatible software, then the final declaration after the year end.",
+        "If all four are missed", gbp(200),
+          "One point per late submission and a £200 charge at four points, on top of anything owed on the tax itself.",
+        h("span", null, "The penalty is not the real cost. ",
+          h("b", null, "Late payment runs 3% of the tax outstanding at day 15, another 3% at day 30, then 10% a year"), "."),
+        "There is a soft landing for the first cohort, with no points on the four quarterly updates for 2026/27, but it does not cover the final declaration, which is the one that carries the tax. The points regime extends to all Self Assessment from 6 April 2027. And note what quarterly filing really costs: not the fee, the bookkeeping discipline. Four deadlines a year need records kept as you go, which is the actual change.")
+    ]));
+    return out;
+  }},
+
+  {id:"next", label:"What happens next", render:function(r){
+    var out = [];
+    out.push(block("You now have the diagnosis", [
+      lede("This is the part that used to take an hour on a first call: what you are exposed to, which reliefs are open, and what each decision costs either way. ",
+        strong("You did not need an adviser for that."), " You need one for what comes after."),
+      lede("What a tool cannot do is see what you have not told it. It does not know your share classes, your articles, your shareholders' agreement, your loan account history or your spouse's estate. The reliefs it flags as at risk are judgements made on full evidence, not on a form.")
+    ]));
+    out.push(block("The route from here", h("div", {class:"steps"}, [
+      h("div", {class:"step"}, h("div", {class:"idx"}, "01"), h("div", null,
+        h("h3", null, "The diagnosis", h("span", {class:"price"}, "free")),
+        h("p", null, "Everything above, yours to keep, and it re-runs whenever your numbers change."))),
+      h("div", {class:"step"}, h("div", {class:"idx"}, "02"), h("div", null,
+        h("h3", null, "Your plan, written against these numbers", h("span", {class:"price"}, "£47 once")),
+        h("p", null, "The 12 Month Tax Game Plan for what to fix this year and The Exit Playbook for the levers that need a longer run-up, both keyed to your actual figures rather than a generic director."))),
+      h("div", {class:"step"}, h("div", {class:"idx"}, "03"), h("div", null,
+        h("h3", null, "Keep it live", h("span", {class:"price"}, "£50 a month")),
+        h("p", null, "Your position stays in here and moves as your numbers do, with the lessons for the levers actually open to you, in the order they should be pulled, and a re-run the morning after every Budget."))),
+      h("div", {class:"step"}, h("div", {class:"idx"}, "04"), h("div", null,
+        h("h3", null, "Book a call to implement", h("span", {class:"price"}, "when you're ready")),
+        h("p", null, "To check the app has read your situation correctly, and to do the part it cannot: the holding company, the family investment company, the share reorganisation, the residency move, the sale."),
+        h("p", {class:"gate"}, "Opens once you have taken step 02 or 03. That is deliberate. It keeps the call for people ready to act, and it means you arrive with the diagnosis already done."),
+        h("a", {class:"cta", href:"https://tax4pros.co.uk/apply?utm_source=position&utm_medium=app&utm_campaign=directors_position"}, "Apply to work with us"),
+        h("p", {class:"ctanote"}, "Or take the free Director's Pay Sheet first: ",
+          h("a", {href:"https://tax4pros.co.uk/pay-sheet?utm_source=position&utm_medium=app&utm_campaign=directors_position", style:"color:var(--accent)"}, "tax4pros.co.uk/pay-sheet"))))
+    ])));
+    return out;
+  }}
+  ];
+
+  /* ---------- shell ---------- */
+  var current = "position";
+
+  /* ---------- email gate ----------
+     Your position is free and always visible. The stage-by-stage detail asks for
+     a name and an email first. Fire-and-forget: a network failure must never cost
+     the visitor their report. */
+  var UNLOCKED = false;
+  try { UNLOCKED = localStorage.getItem("dp.unlocked") === "1"; } catch (e) {}
+  var WEBHOOK = "https://services.leadconnectorhq.com/hooks/6GPl4TryP7F4DBJBSJMc/webhook-trigger/a93bef9e-9720-4d64-a05c-4d29a63ab679";
+
+  function capture(r, name, email){
+    try {
+      fetch(WEBHOOK, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: email,
+          first_name: name,
+          source: "t4p-directors-position",
+          company_profit: String(Math.round(r.profitBefore)),
+          total_tax_this_year: String(Math.round(r.totalTax)),
+          effective_rate: pct(r.effective),
+          cgt_on_sale: String(Math.round(r.cgt)),
+          iht_exposure: String(Math.round(r.iht)),
+          companies_controlled: String(r.assoc),
+          selling: r.sellIn === 0 ? "no plans" : r.sellIn === 2 ? "within 2 years"
+                 : r.sellIn === 5 ? "2 to 5 years" : "further out",
+          leaving: r.leave === 0 ? "not considering" : r.leave === 1 ? "thinking about it" : "within 2 years",
+          vat_registered: r.vatReg ? "yes" : "no",
+          ir35_regime: r.psc ? ("chapter " + r.chapter) : "not applicable"
+        })
+      }).catch(function(){});
+    } catch (err) {}
+  }
+
+  function gateBlock(r){
+    var wrap = h("section", {class:"gate"},
+      h("h2", null, "The rest of your report"),
+      h("h3", null, "Sixteen more stages, on your numbers"),
+      h("p", null, "You have seen the headline. The detail is where the money is: what your pay structure costs, "
+        + "which reliefs are open, what a sale or a move would trigger, and what happens if you act against what happens if you don't."),
+      h("p", null, "No charge. One email, and it stays unlocked on this device."));
+
+    var chips = h("div", {class:"locked"});
+    STAGES.forEach(function(s){
+      if (s.id !== "position" && s.id !== "next") chips.appendChild(h("span", null, s.label));
+    });
+    wrap.appendChild(chips);
+
+    var nameI = h("input", {type:"text", id:"gate-name", placeholder:"First name", autocomplete:"given-name"});
+    var mailI = h("input", {type:"email", id:"gate-email", placeholder:"Email address", autocomplete:"email"});
+    var btn = h("button", {type:"submit"}, "Unlock the full report");
+    var err = h("p", {class:"err", id:"gate-err"}, "That email address does not look right.");
+    var form = h("form", {id:"gate-form", novalidate:"novalidate"}, nameI, mailI, btn);
+    wrap.appendChild(form);
+    wrap.appendChild(err);
+    wrap.appendChild(h("p", {class:"small"},
+      "Tax 4 Pros will email you about your position and how to act on it. Unsubscribe in one click, any time. "
+      + "Your figures are used to answer you properly and are not sold to anyone."));
+
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var email = mailI.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { err.style.display = "block"; return; }
+      err.style.display = "none";
+      capture(r, nameI.value.trim(), email);
+      UNLOCKED = true;
+      try { localStorage.setItem("dp.unlocked", "1"); } catch (e) {}
+      run();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    return wrap;
+  }
+
+
+  function renderNav(r){
+    var nav = $("nav");
+    nav.textContent = "";
+    STAGES.forEach(function(s, i){
+      var b = h("button", {type:"button", "aria-current": s.id === current ? "true" : "false"},
+        h("i", null, String(i + 1).padStart(2, "0")), s.label);
+      b.addEventListener("click", function(){ current = s.id; run(); window.scrollTo({top:0, behavior:"smooth"}); });
+      nav.appendChild(b);
+    });
+  }
+
+  function save(){
+    try {
+      var data = {};
+      $("inputs").querySelectorAll("input,select").forEach(function(el){
+        data[el.id] = el.type === "checkbox" ? el.checked : el.value;
+      });
+      localStorage.setItem("dp.v1", JSON.stringify(data));
+    } catch (e) { /* private window or blocked storage: the page still works */ }
+  }
+  function restore(){
+    try {
+      var raw = localStorage.getItem("dp.v1");
+      if (!raw) return;
+      var data = JSON.parse(raw);
+      Object.keys(data).forEach(function(id){
+        var el = $(id);
+        if (!el) return;
+        if (el.type === "checkbox") el.checked = !!data[id]; else el.value = data[id];
+      });
+    } catch (e) { /* ignore and keep the example figures */ }
+  }
+
+  function run(){
+    var r = compute();
+    renderNav(r);
+    var stage = STAGES.filter(function(s){ return s.id === current; })[0] || STAGES[0];
+    if (!UNLOCKED && stage.id !== "position"){
+      var host0 = $("stage");
+      host0.textContent = "";
+      host0.appendChild(gateBlock(r));
+      save();
+      return;
+    }
+    var host = $("stage");
+    host.textContent = "";
+    stage.render(r).forEach(function(b){ if (b) host.appendChild(b); });
+    save();
+  }
+
+  $("inputs").addEventListener("input", run);
+  $("inputs").addEventListener("change", run);
+  restore();
+  run();
+})();
+</script>
+
+</body>
+</html>
